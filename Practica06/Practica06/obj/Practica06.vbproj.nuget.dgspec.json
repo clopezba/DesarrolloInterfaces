@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\clopb\\Documents\\Estudios\\FPGS DAM\\2º\\DI\\repos\\Practica06\\Practica06\\Practica06.vbproj": {}
+    "C:\\Users\\clopb\\source\\repos\\Practica06\\Practica06\\Practica06.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\clopb\\Documents\\Estudios\\FPGS DAM\\2º\\DI\\repos\\Practica06\\Practica06\\Practica06.vbproj": {
+    "C:\\Users\\clopb\\source\\repos\\Practica06\\Practica06\\Practica06.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\clopb\\Documents\\Estudios\\FPGS DAM\\2º\\DI\\repos\\Practica06\\Practica06\\Practica06.vbproj",
+        "projectUniqueName": "C:\\Users\\clopb\\source\\repos\\Practica06\\Practica06\\Practica06.vbproj",
         "projectName": "Practica06",
-        "projectPath": "C:\\Users\\clopb\\Documents\\Estudios\\FPGS DAM\\2º\\DI\\repos\\Practica06\\Practica06\\Practica06.vbproj",
+        "projectPath": "C:\\Users\\clopb\\source\\repos\\Practica06\\Practica06\\Practica06.vbproj",
         "packagesPath": "C:\\Users\\clopb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\clopb\\Documents\\Estudios\\FPGS DAM\\2º\\DI\\repos\\Practica06\\Practica06\\obj\\",
+        "outputPath": "C:\\Users\\clopb\\source\\repos\\Practica06\\Practica06\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\clopb\\AppData\\Roaming\\NuGet\\NuGet.Config",

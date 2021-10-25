@@ -1,6 +1,8 @@
 ﻿Public Class Form1
     'Para poder asignarle un evento al boton debemos poner Friend WithEvent
     'Friend WithEvents MiBoton As Button 
+    Dim X As Integer = 0
+    Dim Y As Integer = 0
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
         Dim MiBoton = New Button
@@ -16,17 +18,8 @@
 
     Private Sub MiBoton_Click(sender As Object, e As EventArgs)
         Dim MiTexto = New TextBox
-        Dim X As Integer = 0
-        Dim Y As Integer = 0
         Me.Controls.Add(MiTexto)
-
-        Dim pulsado As Boolean = True
-        If pulsado Then
-            X += 100
-            Y += 100
-            MiTexto.Location = New Point(X, Y)
-        End If
-
-
+        MiTexto.Location = New Point(X, Y)
+        Y += 20
     End Sub
 End Class
