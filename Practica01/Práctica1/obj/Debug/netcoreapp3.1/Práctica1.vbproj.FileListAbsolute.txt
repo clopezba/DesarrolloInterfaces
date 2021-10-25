@@ -1,0 +1,32 @@
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.vbproj.AssemblyReference.cache
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.Form1.resources
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.vbproj.GenerateResource.cache
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.AssemblyInfoInputs.cache
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.AssemblyInfo.vb
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.vbproj.CoreCompileInputs.cache
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.exe
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.deps.json
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.runtimeconfig.json
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.runtimeconfig.dev.json
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.dll
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.pdb
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.dll
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.pdb
+C:\Users\DAM2Alu10\source\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.genruntimeconfig.cache
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.exe
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.deps.json
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.runtimeconfig.json
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.runtimeconfig.dev.json
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.dll
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\bin\Debug\netcoreapp3.1\Práctica1.pdb
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.vbproj.AssemblyReference.cache
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.Form1.resources
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.vbproj.GenerateResource.cache
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.AssemblyInfoInputs.cache
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.AssemblyInfo.vb
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.vbproj.CoreCompileInputs.cache
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.dll
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.pdb
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Práctica1\Práctica1\obj\Debug\netcoreapp3.1\Práctica1.genruntimeconfig.cache
