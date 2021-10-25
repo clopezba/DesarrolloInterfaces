@@ -1,0 +1,32 @@
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\bin\Debug\netcoreapp3.1\Controles Comunes.exe
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\bin\Debug\netcoreapp3.1\Controles Comunes.deps.json
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\bin\Debug\netcoreapp3.1\Controles Comunes.runtimeconfig.json
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\bin\Debug\netcoreapp3.1\Controles Comunes.runtimeconfig.dev.json
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\bin\Debug\netcoreapp3.1\Controles Comunes.dll
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\bin\Debug\netcoreapp3.1\Controles Comunes.pdb
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.vbproj.AssemblyReference.cache
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles_Comunes.Principal.resources
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.vbproj.GenerateResource.cache
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.AssemblyInfoInputs.cache
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.AssemblyInfo.vb
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.vbproj.CoreCompileInputs.cache
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.dll
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.pdb
+C:\Users\DAM2Alu10\source\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.genruntimeconfig.cache
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\bin\Debug\netcoreapp3.1\Controles Comunes.exe
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\bin\Debug\netcoreapp3.1\Controles Comunes.deps.json
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\bin\Debug\netcoreapp3.1\Controles Comunes.runtimeconfig.json
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\bin\Debug\netcoreapp3.1\Controles Comunes.runtimeconfig.dev.json
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\bin\Debug\netcoreapp3.1\Controles Comunes.dll
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\bin\Debug\netcoreapp3.1\Controles Comunes.pdb
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.vbproj.AssemblyReference.cache
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles_Comunes.Principal.resources
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.vbproj.GenerateResource.cache
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.AssemblyInfoInputs.cache
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.AssemblyInfo.vb
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.vbproj.CoreCompileInputs.cache
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.dll
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.pdb
+C:\Users\clopb\Documents\Estudios\FPGS DAM\2º\DI\repos\Controles Comunes\Controles Comunes\obj\Debug\netcoreapp3.1\Controles Comunes.genruntimeconfig.cache
