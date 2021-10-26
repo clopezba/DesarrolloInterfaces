@@ -1,0 +1,16 @@
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\obj\Debug\netcoreapp3.1\Constructor.vbproj.AssemblyReference.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\obj\Debug\netcoreapp3.1\Constructor.Form1.resources
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\obj\Debug\netcoreapp3.1\Constructor.vbproj.GenerateResource.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\obj\Debug\netcoreapp3.1\Constructor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\obj\Debug\netcoreapp3.1\Constructor.AssemblyInfoInputs.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\obj\Debug\netcoreapp3.1\Constructor.AssemblyInfo.vb
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\obj\Debug\netcoreapp3.1\Constructor.vbproj.CoreCompileInputs.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\obj\Debug\netcoreapp3.1\Constructor.genruntimeconfig.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\bin\Debug\netcoreapp3.1\Cosntructor.exe
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\bin\Debug\netcoreapp3.1\Cosntructor.deps.json
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\bin\Debug\netcoreapp3.1\Cosntructor.runtimeconfig.json
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\bin\Debug\netcoreapp3.1\Cosntructor.runtimeconfig.dev.json
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\bin\Debug\netcoreapp3.1\Cosntructor.dll
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\bin\Debug\netcoreapp3.1\Cosntructor.pdb
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\obj\Debug\netcoreapp3.1\Cosntructor.dll
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Constructor\Constructor\obj\Debug\netcoreapp3.1\Cosntructor.pdb
