@@ -1,0 +1,17 @@
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\obj\Debug\netcoreapp3.1\OtrosControles.vbproj.AssemblyReference.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\obj\Debug\netcoreapp3.1\OtrosControles.Form1.resources
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\obj\Debug\netcoreapp3.1\OtrosControles.vbproj.GenerateResource.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\obj\Debug\netcoreapp3.1\OtrosControles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\obj\Debug\netcoreapp3.1\OtrosControles.AssemblyInfoInputs.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\obj\Debug\netcoreapp3.1\OtrosControles.AssemblyInfo.vb
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\obj\Debug\netcoreapp3.1\OtrosControles.vbproj.CoreCompileInputs.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\bin\Debug\netcoreapp3.1\OtrosControles.exe
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\bin\Debug\netcoreapp3.1\OtrosControles.deps.json
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\bin\Debug\netcoreapp3.1\OtrosControles.runtimeconfig.json
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\bin\Debug\netcoreapp3.1\OtrosControles.runtimeconfig.dev.json
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\bin\Debug\netcoreapp3.1\OtrosControles.dll
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\bin\Debug\netcoreapp3.1\OtrosControles.pdb
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\obj\Debug\netcoreapp3.1\OtrosControles.dll
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\obj\Debug\netcoreapp3.1\OtrosControles.pdb
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\obj\Debug\netcoreapp3.1\OtrosControles.genruntimeconfig.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\OtrosControles\OtrosControles\obj\Debug\netcoreapp3.1\OtrosControles.Resources.resources
