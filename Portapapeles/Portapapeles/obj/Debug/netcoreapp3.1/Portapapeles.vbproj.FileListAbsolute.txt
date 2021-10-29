@@ -1,0 +1,16 @@
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\bin\Debug\netcoreapp3.1\Portapapeles.exe
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\bin\Debug\netcoreapp3.1\Portapapeles.deps.json
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\bin\Debug\netcoreapp3.1\Portapapeles.runtimeconfig.json
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\bin\Debug\netcoreapp3.1\Portapapeles.runtimeconfig.dev.json
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\bin\Debug\netcoreapp3.1\Portapapeles.dll
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\bin\Debug\netcoreapp3.1\Portapapeles.pdb
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\obj\Debug\netcoreapp3.1\Portapapeles.vbproj.AssemblyReference.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\obj\Debug\netcoreapp3.1\Portapapeles.Form1.resources
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\obj\Debug\netcoreapp3.1\Portapapeles.vbproj.GenerateResource.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\obj\Debug\netcoreapp3.1\Portapapeles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\obj\Debug\netcoreapp3.1\Portapapeles.AssemblyInfoInputs.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\obj\Debug\netcoreapp3.1\Portapapeles.AssemblyInfo.vb
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\obj\Debug\netcoreapp3.1\Portapapeles.vbproj.CoreCompileInputs.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\obj\Debug\netcoreapp3.1\Portapapeles.dll
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\obj\Debug\netcoreapp3.1\Portapapeles.pdb
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Portapapeles\Portapapeles\obj\Debug\netcoreapp3.1\Portapapeles.genruntimeconfig.cache
