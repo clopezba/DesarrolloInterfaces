@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DAM2Alu10\\source\\repos\\Practica05\\Practica05\\Practica05.vbproj": {}
+    "C:\\Users\\DAM2Alu10\\source\\repos\\DesarrolloInterfaces\\Practica05\\Practica05\\Practica05.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\DAM2Alu10\\source\\repos\\Practica05\\Practica05\\Practica05.vbproj": {
+    "C:\\Users\\DAM2Alu10\\source\\repos\\DesarrolloInterfaces\\Practica05\\Practica05\\Practica05.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DAM2Alu10\\source\\repos\\Practica05\\Practica05\\Practica05.vbproj",
+        "projectUniqueName": "C:\\Users\\DAM2Alu10\\source\\repos\\DesarrolloInterfaces\\Practica05\\Practica05\\Practica05.vbproj",
         "projectName": "Practica05",
-        "projectPath": "C:\\Users\\DAM2Alu10\\source\\repos\\Practica05\\Practica05\\Practica05.vbproj",
+        "projectPath": "C:\\Users\\DAM2Alu10\\source\\repos\\DesarrolloInterfaces\\Practica05\\Practica05\\Practica05.vbproj",
         "packagesPath": "C:\\Users\\DAM2Alu10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DAM2Alu10\\source\\repos\\Practica05\\Practica05\\obj\\",
+        "outputPath": "C:\\Users\\DAM2Alu10\\source\\repos\\DesarrolloInterfaces\\Practica05\\Practica05\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DAM2Alu10\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,3 +1,7 @@
 is_global = true
 build_property.RootNamespace = Practica05
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\clopb\source\repos\Practica05\Practica05\
+=======
+build_property.ProjectDir = C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica05\Practica05\
+>>>>>>> a570a485d2c7aba2716c5339e4fe1209ef4add45
