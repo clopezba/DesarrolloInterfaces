@@ -10,3 +10,15 @@ C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica07\Practica07\obj\D
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica07\Practica07\obj\Debug\Practica07.exe
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica07\Practica07\obj\Debug\Practica07.xml
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica07\Practica07\obj\Debug\Practica07.pdb
+C:\Users\clopb\source\repos\Practica07\Practica07\bin\Debug\Practica07.exe.config
+C:\Users\clopb\source\repos\Practica07\Practica07\bin\Debug\Practica07.exe
+C:\Users\clopb\source\repos\Practica07\Practica07\bin\Debug\Practica07.pdb
+C:\Users\clopb\source\repos\Practica07\Practica07\bin\Debug\Practica07.xml
+C:\Users\clopb\source\repos\Practica07\Practica07\obj\Debug\Practica07.vbproj.AssemblyReference.cache
+C:\Users\clopb\source\repos\Practica07\Practica07\obj\Debug\Practica07.Form1.resources
+C:\Users\clopb\source\repos\Practica07\Practica07\obj\Debug\Practica07.Resources.resources
+C:\Users\clopb\source\repos\Practica07\Practica07\obj\Debug\Practica07.vbproj.GenerateResource.cache
+C:\Users\clopb\source\repos\Practica07\Practica07\obj\Debug\Practica07.vbproj.CoreCompileInputs.cache
+C:\Users\clopb\source\repos\Practica07\Practica07\obj\Debug\Practica07.exe
+C:\Users\clopb\source\repos\Practica07\Practica07\obj\Debug\Practica07.xml
+C:\Users\clopb\source\repos\Practica07\Practica07\obj\Debug\Practica07.pdb

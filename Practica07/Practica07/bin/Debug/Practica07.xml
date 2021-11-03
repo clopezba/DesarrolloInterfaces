@@ -22,10 +22,5 @@ Practica07
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="M:Practica07.Form1.cargaFuentes">
- <summary>
- Carga todas las fuentes del sistema en un ComboBox
- </summary>
-</member>
 </members>
 </doc>

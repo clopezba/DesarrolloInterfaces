@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblSaludo = New System.Windows.Forms.Label()
         Me.trckSize = New System.Windows.Forms.TrackBar()
@@ -40,19 +40,21 @@ Partial Class Form1
         'lblSaludo
         '
         Me.lblSaludo.AutoSize = True
-        Me.lblSaludo.Location = New System.Drawing.Point(464, 147)
+        Me.lblSaludo.Location = New System.Drawing.Point(619, 181)
+        Me.lblSaludo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSaludo.Name = "lblSaludo"
-        Me.lblSaludo.Size = New System.Drawing.Size(29, 13)
+        Me.lblSaludo.Size = New System.Drawing.Size(37, 17)
         Me.lblSaludo.TabIndex = 0
         Me.lblSaludo.Text = "Hola"
         '
         'trckSize
         '
-        Me.trckSize.Location = New System.Drawing.Point(394, 244)
+        Me.trckSize.Location = New System.Drawing.Point(525, 300)
+        Me.trckSize.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.trckSize.Maximum = 50
         Me.trckSize.Minimum = 8
         Me.trckSize.Name = "trckSize"
-        Me.trckSize.Size = New System.Drawing.Size(285, 45)
+        Me.trckSize.Size = New System.Drawing.Size(380, 56)
         Me.trckSize.TabIndex = 1
         Me.trckSize.TickStyle = System.Windows.Forms.TickStyle.TopLeft
         Me.trckSize.Value = 8
@@ -60,18 +62,21 @@ Partial Class Form1
         'cmbxFuentes
         '
         Me.cmbxFuentes.FormattingEnabled = True
-        Me.cmbxFuentes.Location = New System.Drawing.Point(394, 321)
+        Me.cmbxFuentes.Location = New System.Drawing.Point(525, 395)
+        Me.cmbxFuentes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbxFuentes.Name = "cmbxFuentes"
-        Me.cmbxFuentes.Size = New System.Drawing.Size(285, 21)
+        Me.cmbxFuentes.Size = New System.Drawing.Size(379, 24)
         Me.cmbxFuentes.TabIndex = 2
         '
         'grbxEstilos
         '
         Me.grbxEstilos.Controls.Add(Me.chbxNormal)
         Me.grbxEstilos.Controls.Add(Me.pnlEstilos)
-        Me.grbxEstilos.Location = New System.Drawing.Point(137, 158)
+        Me.grbxEstilos.Location = New System.Drawing.Point(183, 194)
+        Me.grbxEstilos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grbxEstilos.Name = "grbxEstilos"
-        Me.grbxEstilos.Size = New System.Drawing.Size(123, 166)
+        Me.grbxEstilos.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grbxEstilos.Size = New System.Drawing.Size(164, 204)
         Me.grbxEstilos.TabIndex = 3
         Me.grbxEstilos.TabStop = False
         Me.grbxEstilos.Text = "Estilos"
@@ -79,9 +84,12 @@ Partial Class Form1
         'chbxNormal
         '
         Me.chbxNormal.AutoSize = True
-        Me.chbxNormal.Location = New System.Drawing.Point(10, 23)
+        Me.chbxNormal.Checked = True
+        Me.chbxNormal.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chbxNormal.Location = New System.Drawing.Point(13, 28)
+        Me.chbxNormal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chbxNormal.Name = "chbxNormal"
-        Me.chbxNormal.Size = New System.Drawing.Size(59, 17)
+        Me.chbxNormal.Size = New System.Drawing.Size(75, 21)
         Me.chbxNormal.TabIndex = 1
         Me.chbxNormal.Text = "Normal"
         Me.chbxNormal.UseVisualStyleBackColor = True
@@ -92,18 +100,20 @@ Partial Class Form1
         Me.pnlEstilos.Controls.Add(Me.chbxSubrayada)
         Me.pnlEstilos.Controls.Add(Me.chbxInclinada)
         Me.pnlEstilos.Controls.Add(Me.chbxNegrita)
-        Me.pnlEstilos.Location = New System.Drawing.Point(6, 47)
+        Me.pnlEstilos.Location = New System.Drawing.Point(8, 58)
+        Me.pnlEstilos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlEstilos.Name = "pnlEstilos"
-        Me.pnlEstilos.Size = New System.Drawing.Size(104, 101)
+        Me.pnlEstilos.Size = New System.Drawing.Size(139, 124)
         Me.pnlEstilos.TabIndex = 0
         '
         'chbxTachada
         '
         Me.chbxTachada.AutoSize = True
-        Me.chbxTachada.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chbxTachada.Location = New System.Drawing.Point(4, 73)
+        Me.chbxTachada.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxTachada.Location = New System.Drawing.Point(5, 90)
+        Me.chbxTachada.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chbxTachada.Name = "chbxTachada"
-        Me.chbxTachada.Size = New System.Drawing.Size(69, 17)
+        Me.chbxTachada.Size = New System.Drawing.Size(86, 21)
         Me.chbxTachada.TabIndex = 0
         Me.chbxTachada.Text = "Tachada"
         Me.chbxTachada.UseVisualStyleBackColor = True
@@ -111,10 +121,11 @@ Partial Class Form1
         'chbxSubrayada
         '
         Me.chbxSubrayada.AutoSize = True
-        Me.chbxSubrayada.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chbxSubrayada.Location = New System.Drawing.Point(4, 50)
+        Me.chbxSubrayada.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxSubrayada.Location = New System.Drawing.Point(5, 62)
+        Me.chbxSubrayada.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chbxSubrayada.Name = "chbxSubrayada"
-        Me.chbxSubrayada.Size = New System.Drawing.Size(77, 17)
+        Me.chbxSubrayada.Size = New System.Drawing.Size(99, 21)
         Me.chbxSubrayada.TabIndex = 0
         Me.chbxSubrayada.Text = "Subrayada"
         Me.chbxSubrayada.UseVisualStyleBackColor = True
@@ -122,10 +133,11 @@ Partial Class Form1
         'chbxInclinada
         '
         Me.chbxInclinada.AutoSize = True
-        Me.chbxInclinada.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chbxInclinada.Location = New System.Drawing.Point(4, 27)
+        Me.chbxInclinada.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxInclinada.Location = New System.Drawing.Point(5, 33)
+        Me.chbxInclinada.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chbxInclinada.Name = "chbxInclinada"
-        Me.chbxInclinada.Size = New System.Drawing.Size(69, 17)
+        Me.chbxInclinada.Size = New System.Drawing.Size(86, 21)
         Me.chbxInclinada.TabIndex = 0
         Me.chbxInclinada.Text = "Inclinada"
         Me.chbxInclinada.UseVisualStyleBackColor = True
@@ -133,23 +145,25 @@ Partial Class Form1
         'chbxNegrita
         '
         Me.chbxNegrita.AutoSize = True
-        Me.chbxNegrita.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chbxNegrita.Location = New System.Drawing.Point(4, 4)
+        Me.chbxNegrita.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxNegrita.Location = New System.Drawing.Point(5, 5)
+        Me.chbxNegrita.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chbxNegrita.Name = "chbxNegrita"
-        Me.chbxNegrita.Size = New System.Drawing.Size(67, 17)
+        Me.chbxNegrita.Size = New System.Drawing.Size(83, 21)
         Me.chbxNegrita.TabIndex = 0
         Me.chbxNegrita.Text = "Negrita"
         Me.chbxNegrita.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.grbxEstilos)
         Me.Controls.Add(Me.cmbxFuentes)
         Me.Controls.Add(Me.trckSize)
         Me.Controls.Add(Me.lblSaludo)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.trckSize, System.ComponentModel.ISupportInitialize).EndInit()
