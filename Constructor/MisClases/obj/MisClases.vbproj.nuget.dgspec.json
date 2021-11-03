@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\clopb\\source\\repos\\Constructor\\MisClases\\MisClases.vbproj": {}
+    "C:\\Users\\DAM2Alu10\\source\\repos\\DesarrolloInterfaces\\Constructor\\MisClases\\MisClases.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\clopb\\source\\repos\\Constructor\\MisClases\\MisClases.vbproj": {
+    "C:\\Users\\DAM2Alu10\\source\\repos\\DesarrolloInterfaces\\Constructor\\MisClases\\MisClases.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\clopb\\source\\repos\\Constructor\\MisClases\\MisClases.vbproj",
+        "projectUniqueName": "C:\\Users\\DAM2Alu10\\source\\repos\\DesarrolloInterfaces\\Constructor\\MisClases\\MisClases.vbproj",
         "projectName": "MisClases",
-        "projectPath": "C:\\Users\\clopb\\source\\repos\\Constructor\\MisClases\\MisClases.vbproj",
-        "packagesPath": "C:\\Users\\clopb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\clopb\\source\\repos\\Constructor\\MisClases\\obj\\",
+        "projectPath": "C:\\Users\\DAM2Alu10\\source\\repos\\DesarrolloInterfaces\\Constructor\\MisClases\\MisClases.vbproj",
+        "packagesPath": "C:\\Users\\DAM2Alu10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DAM2Alu10\\source\\repos\\DesarrolloInterfaces\\Constructor\\MisClases\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\clopb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DAM2Alu10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
