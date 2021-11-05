@@ -26,8 +26,6 @@ Partial Class Form1
         Me.MenuOpciones = New System.Windows.Forms.MenuStrip()
         Me.PrincipalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CargarHijosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TextoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ImagenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CerrarVentanaActualToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CerrarTodasLasVentanasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
@@ -42,6 +40,8 @@ Partial Class Form1
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
+        Me.TextoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ImagenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuOpciones.SuspendLayout()
         Me.ToolBar.SuspendLayout()
         Me.SuspendLayout()
@@ -69,20 +69,6 @@ Partial Class Form1
         Me.CargarHijosToolStripMenuItem.Name = "CargarHijosToolStripMenuItem"
         Me.CargarHijosToolStripMenuItem.Size = New System.Drawing.Size(205, 22)
         Me.CargarHijosToolStripMenuItem.Text = "Cargar hijos"
-        '
-        'TextoToolStripMenuItem
-        '
-        Me.TextoToolStripMenuItem.Image = CType(resources.GetObject("TextoToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.TextoToolStripMenuItem.Name = "TextoToolStripMenuItem"
-        Me.TextoToolStripMenuItem.Size = New System.Drawing.Size(114, 22)
-        Me.TextoToolStripMenuItem.Text = "Texto"
-        '
-        'ImagenToolStripMenuItem
-        '
-        Me.ImagenToolStripMenuItem.Image = CType(resources.GetObject("ImagenToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.ImagenToolStripMenuItem.Name = "ImagenToolStripMenuItem"
-        Me.ImagenToolStripMenuItem.Size = New System.Drawing.Size(114, 22)
-        Me.ImagenToolStripMenuItem.Text = "Imagen"
         '
         'CerrarVentanaActualToolStripMenuItem
         '
@@ -185,6 +171,20 @@ Partial Class Form1
         Me.ToolStripButton4.Name = "ToolStripButton4"
         Me.ToolStripButton4.Size = New System.Drawing.Size(24, 24)
         Me.ToolStripButton4.Text = "Acerca de..."
+        '
+        'TextoToolStripMenuItem
+        '
+        Me.TextoToolStripMenuItem.Image = CType(resources.GetObject("TextoToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.TextoToolStripMenuItem.Name = "TextoToolStripMenuItem"
+        Me.TextoToolStripMenuItem.Size = New System.Drawing.Size(114, 22)
+        Me.TextoToolStripMenuItem.Text = "Texto"
+        '
+        'ImagenToolStripMenuItem
+        '
+        Me.ImagenToolStripMenuItem.Image = CType(resources.GetObject("ImagenToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.ImagenToolStripMenuItem.Name = "ImagenToolStripMenuItem"
+        Me.ImagenToolStripMenuItem.Size = New System.Drawing.Size(114, 22)
+        Me.ImagenToolStripMenuItem.Text = "Imagen"
         '
         'Form1
         '

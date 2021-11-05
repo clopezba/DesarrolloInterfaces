@@ -12,3 +12,4 @@ C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica08\Practica08\obj\D
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica08\Practica08\obj\Debug\Practica08.pdb
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica08\Practica08\obj\Debug\Practica08.Form_RTF.resources
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica08\Practica08\obj\Debug\Practica08.Form_Imagen.resources
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica08\Practica08\obj\Debug\Practica08.About.resources
