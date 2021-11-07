@@ -10,3 +10,15 @@ C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\MenuesToolbar\MenuesToolbar
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.exe
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.xml
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.pdb
+C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\bin\Debug\MenuesToolbar.exe.config
+C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\bin\Debug\MenuesToolbar.exe
+C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\bin\Debug\MenuesToolbar.pdb
+C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\bin\Debug\MenuesToolbar.xml
+C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.vbproj.AssemblyReference.cache
+C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.Form1.resources
+C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.Resources.resources
+C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.vbproj.GenerateResource.cache
+C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.vbproj.CoreCompileInputs.cache
+C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.exe
+C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.xml
+C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.pdb
