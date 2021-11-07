@@ -22,32 +22,63 @@ Partial Class Form_Imagen
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.components = New System.ComponentModel.Container()
+        Me.PicBox = New System.Windows.Forms.PictureBox()
+        Me.MenuContext = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.BorrarTodoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InsertarDesdePortapapelesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        CType(Me.PicBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuContext.SuspendLayout()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'PicBox
         '
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(800, 450)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.PicBox.ContextMenuStrip = Me.MenuContext
+        Me.PicBox.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PicBox.Location = New System.Drawing.Point(0, 0)
+        Me.PicBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.PicBox.Name = "PicBox"
+        Me.PicBox.Size = New System.Drawing.Size(1067, 554)
+        Me.PicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PicBox.TabIndex = 0
+        Me.PicBox.TabStop = False
+        '
+        'MenuContext
+        '
+        Me.MenuContext.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuContext.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BorrarTodoToolStripMenuItem, Me.InsertarDesdePortapapelesToolStripMenuItem})
+        Me.MenuContext.Name = "MenuContext"
+        Me.MenuContext.Size = New System.Drawing.Size(264, 52)
+        '
+        'BorrarTodoToolStripMenuItem
+        '
+        Me.BorrarTodoToolStripMenuItem.Name = "BorrarTodoToolStripMenuItem"
+        Me.BorrarTodoToolStripMenuItem.Size = New System.Drawing.Size(263, 24)
+        Me.BorrarTodoToolStripMenuItem.Text = "Borrar todo"
+        '
+        'InsertarDesdePortapapelesToolStripMenuItem
+        '
+        Me.InsertarDesdePortapapelesToolStripMenuItem.Name = "InsertarDesdePortapapelesToolStripMenuItem"
+        Me.InsertarDesdePortapapelesToolStripMenuItem.Size = New System.Drawing.Size(263, 24)
+        Me.InsertarDesdePortapapelesToolStripMenuItem.Text = "Insertar desde portapapeles"
         '
         'Form_Imagen
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.ClientSize = New System.Drawing.Size(1067, 554)
+        Me.Controls.Add(Me.PicBox)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form_Imagen"
         Me.Text = "Form_Imagen"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PicBox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuContext.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PicBox As PictureBox
+    Friend WithEvents MenuContext As ContextMenuStrip
+    Friend WithEvents BorrarTodoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents InsertarDesdePortapapelesToolStripMenuItem As ToolStripMenuItem
 End Class
