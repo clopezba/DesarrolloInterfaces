@@ -4,8 +4,6 @@
     End Sub
 
     Private Sub InsertarDesdePortapapelesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InsertarDesdePortapapelesToolStripMenuItem.Click
-        Dim MiImagen As New PictureBox
-        MiImagen = PicBox
-        MiImagen.Image = Clipboard.GetImage()
+        PicBox.Image = Clipboard.GetImage()
     End Sub
 End Class
