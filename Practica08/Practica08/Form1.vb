@@ -1,24 +1,23 @@
 ﻿Public Class Form1
-    'Contadores de formularios creados
-    Dim contTxt As Integer = 0
-    Dim contImg As Integer = 0
-
     'Abrir formulario de RichTextFormat
     Private Sub TextoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TextoToolStripMenuItem.Click, ToolStripButton1.Click
+        Static cont As Integer = 1
         Dim MiTexto As New Form_RTF
-        contTxt += 1
         MiTexto.MdiParent = Me
-        MiTexto.Text = "Formulario Hijo para Texto RTF -- Nº" & contTxt
+        MiTexto.Text = "Formulario Hijo para Texto RTF -- Nº" & cont
         MiTexto.Show()
+        cont += 1
     End Sub
     'Abrir formulario de Imagen
     Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ImagenToolStripMenuItem.Click, ToolStripButton2.Click
+        Static cont As Integer = 1
         Dim MiImagen As New Form_Imagen
-        contImg += 1
         MiImagen.MdiParent = Me
-        MiImagen.Text = "Formulario Hijo para Imagen BMP -- Nº" & contImg
+        MiImagen.Text = "Formulario Hijo para Imagen BMP -- Nº" & cont
         MiImagen.Show()
+        cont += 1
     End Sub
+
     'Ver formulario "Acerca de..."
     Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click, ToolStripButton4.Click
         Dim MiAbout As New About
@@ -39,9 +38,9 @@
     'Cerrar todas las ventanas
     Private Sub CerrarTodasLasVentanasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarTodasLasVentanasToolStripMenuItem.Click, ToolStripButton3.Click
         Try
-            Do While Me.MdiChildren.Length > 0
-                ActiveMdiChild.Close()
-            Loop
+            For Each MiVentana As Form In MdiChildren
+                MiVentana.Close()
+            Next
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
