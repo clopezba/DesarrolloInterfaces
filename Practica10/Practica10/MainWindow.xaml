@@ -1,0 +1,29 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="MainWindow_Load">
+    <Grid>
+        <ListBox x:Name="listaIzq" HorizontalAlignment="Left" Height="100" Margin="76,136,0,0" VerticalAlignment="Top" Width="100" SelectionMode="Multiple">
+            <ListBoxItem Content="Audi"/>
+            <ListBoxItem Content="Ford"/>
+        </ListBox>
+        <TextBox x:Name="txtIzq" HorizontalAlignment="Left" Height="23" Margin="76,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" KeyDown="txtIzq_KeyPress"/>
+        <ListBox x:Name="listaCen" HorizontalAlignment="Left" Height="100" Margin="341,136,0,0" VerticalAlignment="Top" Width="100" SelectionMode="Multiple"/>
+        <TextBox x:Name="txtCen" HorizontalAlignment="Left" Height="23" Margin="341,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <ListBox x:Name="listaDer" HorizontalAlignment="Left" Height="100" Margin="585,136,0,0" VerticalAlignment="Top" Width="100" SelectionMode="Multiple"/>
+        <TextBox x:Name="txtDer" HorizontalAlignment="Left" Height="23" Margin="585,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btnIzq" Content="Borrar lista" HorizontalAlignment="Left" Margin="76,87,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="btnBorr_Click"/>
+        <Button x:Name="btnDer" Content="Borrar lista" HorizontalAlignment="Left" Margin="585,87,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="btnBorr_Click"/>
+        <Button x:Name="btnCen" Content="Borrar lista" HorizontalAlignment="Left" Margin="341,87,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="btnBorr_Click"/>
+        <Button x:Name="btnEnviar" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="243,158,0,0" VerticalAlignment="Top" Width="29"/>
+        <Button x:Name="btnRecibir" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="243,201,0,0" VerticalAlignment="Top" Width="29"/>
+        <Button x:Name="btnEnviar2" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="500,158,0,0" VerticalAlignment="Top" Width="29"/>
+        <Button x:Name="btnRecibir2" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="500,201,0,0" VerticalAlignment="Top" Width="29"/>
+
+
+    </Grid>
+</Window>
