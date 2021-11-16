@@ -1,0 +1,13 @@
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica11UserControl\Practica11UserControl\bin\Debug\Practica11UserControl.exe.config
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica11UserControl\Practica11UserControl\bin\Debug\Practica11UserControl.exe
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica11UserControl\Practica11UserControl\bin\Debug\Practica11UserControl.pdb
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica11UserControl\Practica11UserControl\bin\Debug\Practica11UserControl.xml
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica11UserControl\Practica11UserControl\obj\Debug\Practica11UserControl.vbproj.AssemblyReference.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica11UserControl\Practica11UserControl\obj\Debug\Practica11UserControl.ControlUsuario.resources
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica11UserControl\Practica11UserControl\obj\Debug\Practica11UserControl.Resources.resources
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica11UserControl\Practica11UserControl\obj\Debug\Practica11UserControl.vbproj.GenerateResource.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica11UserControl\Practica11UserControl\obj\Debug\Practica11UserControl.vbproj.CoreCompileInputs.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica11UserControl\Practica11UserControl\obj\Debug\Practica11UserControl.exe
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica11UserControl\Practica11UserControl\obj\Debug\Practica11UserControl.xml
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica11UserControl\Practica11UserControl\obj\Debug\Practica11UserControl.pdb
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Practica11UserControl\Practica11UserControl\obj\Debug\Practica11UserControl.Form1.resources
