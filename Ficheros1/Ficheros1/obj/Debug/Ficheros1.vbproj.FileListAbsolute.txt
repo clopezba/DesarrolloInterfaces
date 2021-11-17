@@ -1,0 +1,12 @@
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Ficheros1\Ficheros1\bin\Debug\Ficheros1.exe.config
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Ficheros1\Ficheros1\bin\Debug\Ficheros1.exe
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Ficheros1\Ficheros1\bin\Debug\Ficheros1.pdb
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Ficheros1\Ficheros1\bin\Debug\Ficheros1.xml
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Ficheros1\Ficheros1\obj\Debug\Ficheros1.vbproj.AssemblyReference.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Ficheros1\Ficheros1\obj\Debug\Ficheros1.Form1.resources
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Ficheros1\Ficheros1\obj\Debug\Ficheros1.Resources.resources
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Ficheros1\Ficheros1\obj\Debug\Ficheros1.vbproj.GenerateResource.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Ficheros1\Ficheros1\obj\Debug\Ficheros1.vbproj.CoreCompileInputs.cache
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Ficheros1\Ficheros1\obj\Debug\Ficheros1.exe
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Ficheros1\Ficheros1\obj\Debug\Ficheros1.xml
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\Ficheros1\Ficheros1\obj\Debug\Ficheros1.pdb
