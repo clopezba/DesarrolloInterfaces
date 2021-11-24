@@ -1,0 +1,22 @@
+C:\Users\pablo\OneDrive\Escritorio\Visual Basic Ficheros\Ejercicio18B\Ejercicio18B\bin\Debug\Ejercicio18B.exe
+C:\Users\pablo\OneDrive\Escritorio\Visual Basic Ficheros\Ejercicio18B\Ejercicio18B\bin\Debug\Ejercicio18B.pdb
+C:\Users\pablo\OneDrive\Escritorio\Visual Basic Ficheros\Ejercicio18B\Ejercicio18B\bin\Debug\Ejercicio18B.xml
+C:\Users\pablo\OneDrive\Escritorio\Visual Basic Ficheros\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.vbproj.AssemblyReference.cache
+C:\Users\pablo\OneDrive\Escritorio\Visual Basic Ficheros\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.Ficheros_Random.resources
+C:\Users\pablo\OneDrive\Escritorio\Visual Basic Ficheros\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.Resources.resources
+C:\Users\pablo\OneDrive\Escritorio\Visual Basic Ficheros\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.vbproj.GenerateResource.cache
+C:\Users\pablo\OneDrive\Escritorio\Visual Basic Ficheros\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.vbproj.CoreCompileInputs.cache
+C:\Users\pablo\OneDrive\Escritorio\Visual Basic Ficheros\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.exe
+C:\Users\pablo\OneDrive\Escritorio\Visual Basic Ficheros\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.xml
+C:\Users\pablo\OneDrive\Escritorio\Visual Basic Ficheros\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.pdb
+C:\Users\DAM2Alu10\Documents\DI\Ficheros Secuenciales y Directos  VB\Ejercicio18B\Ejercicio18B\bin\Debug\Ejercicio18B.exe
+C:\Users\DAM2Alu10\Documents\DI\Ficheros Secuenciales y Directos  VB\Ejercicio18B\Ejercicio18B\bin\Debug\Ejercicio18B.pdb
+C:\Users\DAM2Alu10\Documents\DI\Ficheros Secuenciales y Directos  VB\Ejercicio18B\Ejercicio18B\bin\Debug\Ejercicio18B.xml
+C:\Users\DAM2Alu10\Documents\DI\Ficheros Secuenciales y Directos  VB\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.vbproj.AssemblyReference.cache
+C:\Users\DAM2Alu10\Documents\DI\Ficheros Secuenciales y Directos  VB\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.Ficheros_Random.resources
+C:\Users\DAM2Alu10\Documents\DI\Ficheros Secuenciales y Directos  VB\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.Resources.resources
+C:\Users\DAM2Alu10\Documents\DI\Ficheros Secuenciales y Directos  VB\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.vbproj.GenerateResource.cache
+C:\Users\DAM2Alu10\Documents\DI\Ficheros Secuenciales y Directos  VB\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.vbproj.CoreCompileInputs.cache
+C:\Users\DAM2Alu10\Documents\DI\Ficheros Secuenciales y Directos  VB\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.exe
+C:\Users\DAM2Alu10\Documents\DI\Ficheros Secuenciales y Directos  VB\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.xml
+C:\Users\DAM2Alu10\Documents\DI\Ficheros Secuenciales y Directos  VB\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.pdb

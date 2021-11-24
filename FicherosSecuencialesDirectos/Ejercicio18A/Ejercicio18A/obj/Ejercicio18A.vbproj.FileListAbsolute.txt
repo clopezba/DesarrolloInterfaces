@@ -1,0 +1,21 @@
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18A\Ejercicio18A\obj\Debug\Ejercicio18A.exe
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18A\Ejercicio18A\obj\Debug\Ejercicio18A.xml
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18A\Ejercicio18A\obj\Debug\Ejercicio18A.pdb
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18A\Ejercicio18A\bin\Debug\Ejercicio18A.exe
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18A\Ejercicio18A\bin\Debug\Ejercicio18A.pdb
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18A\Ejercicio18A\bin\Debug\Ejercicio18A.xml
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18A\Ejercicio18A\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18A\Ejercicio18A\obj\Debug\Ejercicio18A.Resources.resources
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18A\Ejercicio18A\obj\Debug\Ejercicio18A.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18A\Ejercicio18A\obj\Debug\Ejercicio18A.exe
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18A\Ejercicio18A\obj\Debug\Ejercicio18A.xml
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18A\Ejercicio18A\obj\Debug\Ejercicio18A.pdb
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18A\Ejercicio18A\bin\Debug\Ejercicio18A.exe
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18A\Ejercicio18A\bin\Debug\Ejercicio18A.pdb
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18A\Ejercicio18A\bin\Debug\Ejercicio18A.xml
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18A\Ejercicio18A\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18A\Ejercicio18A\obj\Debug\Ejercicio18A.Resources.resources
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18A\Ejercicio18A\obj\Debug\Ejercicio18A.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18A\Ejercicio18A\obj\Debug\Ejercicio18A.Secuenciales.resources
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18A\Ejercicio18A\obj\Debug\Ejercicio18A.Secuenciales.resources
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18A\Ejercicio18A\obj\Debug\Ejercicio18A.Registrar.resources

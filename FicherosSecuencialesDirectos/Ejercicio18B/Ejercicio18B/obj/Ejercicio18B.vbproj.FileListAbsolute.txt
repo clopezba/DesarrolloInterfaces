@@ -1,0 +1,33 @@
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18B\Ejercicio18B\bin\Debug\Ejercicio18B.exe
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18B\Ejercicio18B\bin\Debug\Ejercicio18B.pdb
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18B\Ejercicio18B\bin\Debug\Ejercicio18B.xml
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18B\Ejercicio18B\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.Ficheros_Random.resources
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.Resources.resources
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.vbproj.GenerateResource.Cache
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.exe
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.xml
+C:\Documents and Settings\alumno\Mis documentos\Visual Studio 2005\Projects\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.pdb
+F:\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.exe
+F:\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.xml
+F:\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.pdb
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.exe
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.xml
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.pdb
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18B\Ejercicio18B\bin\Debug\Ejercicio18B.exe
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18B\Ejercicio18B\bin\Debug\Ejercicio18B.pdb
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18B\Ejercicio18B\bin\Debug\Ejercicio18B.xml
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18B\Ejercicio18B\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.Ficheros_Random.resources
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.Resources.resources
+C:\Documents and Settings\Pablo\Escritorio\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.vbproj.GenerateResource.Cache
+C:\Users\usuario\Desktop\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.exe
+C:\Users\usuario\Desktop\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.xml
+C:\Users\usuario\Desktop\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.pdb
+C:\Users\usuario\Desktop\Ejercicio18B\Ejercicio18B\bin\Debug\Ejercicio18B.exe
+C:\Users\usuario\Desktop\Ejercicio18B\Ejercicio18B\bin\Debug\Ejercicio18B.pdb
+C:\Users\usuario\Desktop\Ejercicio18B\Ejercicio18B\bin\Debug\Ejercicio18B.xml
+C:\Users\usuario\Desktop\Ejercicio18B\Ejercicio18B\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.Ficheros_Random.resources
+C:\Users\usuario\Desktop\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.Resources.resources
+C:\Users\usuario\Desktop\Ejercicio18B\Ejercicio18B\obj\Debug\Ejercicio18B.vbproj.GenerateResource.Cache
