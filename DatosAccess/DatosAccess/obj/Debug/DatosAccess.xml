@@ -1,0 +1,551 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DatosAccess
+</name>
+</assembly>
+<members>
+<member name="T:DatosAccess.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:DatosAccess.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:DatosAccess.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.CategoríasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.ClientesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Compañías_de_envíosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Detalles_de_pedidosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.EmpleadosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.PedidosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.ProductosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.ProveedoresDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Consulta_de_pedidosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Detalle_de_pedidos_con_descuentoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.FacturasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Lista_alfabética_de_productosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Lista_de_productos_actualDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Los_diez_productos_más_carosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Pedidos_trimestralesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Productos_por_categoríaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Productos_sobre_el_precio_medioDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Resumen_de_ventas_por_añoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Resumen_de_ventas_por_trimestreDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Subtotales_por_pedidoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Totales_de_ventas_por_cantidadDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Ventas_de_productos_para_1997DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Ventas_por_categoríaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Ventas_por_categoría_para_1997DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.CategoríasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.ClientesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Compañías_de_envíosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Detalles_de_pedidosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.EmpleadosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.PedidosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.ProductosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.ProveedoresRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Consulta_de_pedidosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Detalle_de_pedidos_con_descuentoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.FacturasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Lista_alfabética_de_productosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Lista_de_productos_actualRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Los_diez_productos_más_carosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Pedidos_trimestralesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Productos_por_categoríaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Productos_sobre_el_precio_medioRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Resumen_de_ventas_por_añoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Resumen_de_ventas_por_trimestreRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Subtotales_por_pedidoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Totales_de_ventas_por_cantidadRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Ventas_de_productos_para_1997Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Ventas_por_categoríaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Ventas_por_categoría_para_1997Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.CategoríasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.ClientesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Compañías_de_envíosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Detalles_de_pedidosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.EmpleadosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.PedidosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.ProductosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.ProveedoresRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Consulta_de_pedidosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Detalle_de_pedidos_con_descuentoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.FacturasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Lista_alfabética_de_productosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Lista_de_productos_actualRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Los_diez_productos_más_carosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Pedidos_trimestralesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Productos_por_categoríaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Productos_sobre_el_precio_medioRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Resumen_de_ventas_por_añoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Resumen_de_ventas_por_trimestreRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Subtotales_por_pedidoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Totales_de_ventas_por_cantidadRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Ventas_de_productos_para_1997RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Ventas_por_categoríaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSet.Ventas_por_categoría_para_1997RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.CategoríasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.ClientesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Compañías_de_envíosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Detalles_de_pedidosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.EmpleadosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.PedidosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.ProductosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.ProveedoresTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Consulta_de_pedidosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Detalle_de_pedidos_con_descuentoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.FacturasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Lista_alfabética_de_productosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Lista_de_productos_actualTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Los_diez_productos_más_carosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Pedidos_trimestralesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Productos_por_categoríaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Productos_sobre_el_precio_medioTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Resumen_de_ventas_por_añoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Resumen_de_ventas_por_trimestreTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Subtotales_por_pedidoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Totales_de_ventas_por_cantidadTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Ventas_de_productos_para_1997TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Ventas_por_categoríaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.Ventas_por_categoría_para_1997TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:DatosAccess.NeptunoDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(DatosAccess.NeptunoDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:DatosAccess.NeptunoDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(DatosAccess.NeptunoDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:DatosAccess.NeptunoDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(DatosAccess.NeptunoDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:DatosAccess.NeptunoDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:DatosAccess.NeptunoDataSetTableAdapters.TableAdapterManager.UpdateAll(DatosAccess.NeptunoDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:DatosAccess.NeptunoDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
