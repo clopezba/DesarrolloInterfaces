@@ -5,24 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Practica10"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Loaded="MainWindow_Load">
+        Title="Pactica10_Listas" Height="450" Width="800" Loaded="MainWindow_Load">
     <Grid>
-        <ListBox x:Name="listaIzq" HorizontalAlignment="Left" Height="100" Margin="76,136,0,0" VerticalAlignment="Top" Width="100" SelectionMode="Multiple">
-            <ListBoxItem Content="Audi"/>
-            <ListBoxItem Content="Ford"/>
-        </ListBox>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF34949D" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <ListBox x:Name="listaIzq" HorizontalAlignment="Left" Height="100" Margin="76,136,0,0" VerticalAlignment="Top" Width="100" SelectionMode="Multiple" AllowDrop="True"/>
         <TextBox x:Name="txtIzq" HorizontalAlignment="Left" Height="23" Margin="76,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" KeyDown="txtIzq_KeyPress"/>
-        <ListBox x:Name="listaCen" HorizontalAlignment="Left" Height="100" Margin="341,136,0,0" VerticalAlignment="Top" Width="100" SelectionMode="Multiple"/>
-        <TextBox x:Name="txtCen" HorizontalAlignment="Left" Height="23" Margin="341,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-        <ListBox x:Name="listaDer" HorizontalAlignment="Left" Height="100" Margin="585,136,0,0" VerticalAlignment="Top" Width="100" SelectionMode="Multiple"/>
-        <TextBox x:Name="txtDer" HorizontalAlignment="Left" Height="23" Margin="585,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-        <Button x:Name="btnIzq" Content="Borrar lista" HorizontalAlignment="Left" Margin="76,87,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="btnBorr_Click"/>
-        <Button x:Name="btnDer" Content="Borrar lista" HorizontalAlignment="Left" Margin="585,87,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="btnBorr_Click"/>
-        <Button x:Name="btnCen" Content="Borrar lista" HorizontalAlignment="Left" Margin="341,87,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="btnBorr_Click"/>
-        <Button x:Name="btnEnviar" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="243,158,0,0" VerticalAlignment="Top" Width="29"/>
-        <Button x:Name="btnRecibir" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="243,201,0,0" VerticalAlignment="Top" Width="29"/>
-        <Button x:Name="btnEnviar2" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="500,158,0,0" VerticalAlignment="Top" Width="29"/>
-        <Button x:Name="btnRecibir2" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="500,201,0,0" VerticalAlignment="Top" Width="29"/>
+        <ListBox x:Name="listaCen" HorizontalAlignment="Left" Height="100" Margin="341,136,0,0" VerticalAlignment="Top" Width="100" SelectionMode="Multiple" AllowDrop="True"/>
+        <TextBox x:Name="txtCen" HorizontalAlignment="Left" Height="23" Margin="341,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" KeyDown="txtIzq_KeyPress"/>
+        <ListBox x:Name="listaDer" Height="100" Margin="585,136,108.6,0" VerticalAlignment="Top" SelectionMode="Multiple" AllowDrop="True"/>
+        <TextBox x:Name="txtDer" HorizontalAlignment="Left" Height="23" Margin="585,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" KeyDown="txtIzq_KeyPress"/>
+        <Button x:Name="btnIzq" Content="Borrar lista" HorizontalAlignment="Left" Margin="76,87,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="btnBorr_Click" Background="#FFEB2727" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="25"/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnDer" Content="Borrar lista" HorizontalAlignment="Left" Margin="585,87,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="btnBorr_Click" RenderTransformOrigin="0.5,0.5" Background="#FFF1CC18">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-31.397"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="7.63"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnCen" Content="Borrar lista" HorizontalAlignment="Left" Margin="341,87,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="btnBorr_Click" RenderTransformOrigin="0.76,0.717" Background="#FFF05212"/>
+        <Button x:Name="btnEnviar" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="243,158,0,0" VerticalAlignment="Top" Width="29" FontWeight="Bold" FontSize="14" Background="#FF297AE0"/>
+        <Button x:Name="btnRecibir" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="243,201,0,0" VerticalAlignment="Top" Width="29" FontWeight="Bold" FontSize="14" Background="#FF1FC75D"/>
+        <Button x:Name="btnEnviar2" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="500,158,0,0" VerticalAlignment="Top" Width="29" FontWeight="Bold" FontSize="14" Background="#FF6017D6"/>
+        <Button x:Name="btnRecibir2" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="500,201,0,0" VerticalAlignment="Top" Width="29" FontWeight="Bold" FontSize="14" Background="#FF9F9898"/>
 
 
     </Grid>
