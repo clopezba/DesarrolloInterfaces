@@ -105,10 +105,10 @@
             Case "ltbxDcha"
                 MiListaDestino = ltbxIzq
         End Select
-        If e.Clicks = 2 Then
-            IntercambioListas()
-            Exit Sub
-        End If
+        'If e.Clicks = 2 Then
+        '    IntercambioListas()
+        '    Exit Sub
+        'End If
         MiListaOrigen.DoDragDrop(MiListaOrigen.Text, DragDropEffects.Move)
     End Sub
 
