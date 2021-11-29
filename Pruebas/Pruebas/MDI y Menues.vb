@@ -17,8 +17,9 @@
 
 
     Private Sub ImágenesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImágenesToolStripMenuItem.Click
-        If Me.MdiChildren.Length >= 0 Then
 
+
+        If Me.MdiChildren.Length > 0 Then
             If ActiveMdiChild.Text <> "Imagen" Then
                 Dim MiImagen As New PictureBox
                 MiImagen.Dock = DockStyle.Fill
@@ -31,14 +32,15 @@
 
                 ImágenesToolStripMenuItem.Enabled = False
             End If
-
         End If
+
+
     End Sub
 
     Private Sub TextosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TextosToolStripMenuItem.Click
 
-        If Me.MdiChildren.Length >= 0 Then
-            If ActiveMdiChild.Text <> "Texto" Then
+
+        If ActiveMdiChild.Text <> "Texto" Then
                 Dim MiCaja As New RichTextBox
                 MiCaja.Multiline = True
                 MiCaja.Dock = DockStyle.Fill
@@ -50,7 +52,7 @@
                 cuadroTexto.Show()
                 TextosToolStripMenuItem.Enabled = False
             End If
-        End If
+
 
     End Sub
     Private Sub CerrarPizarraActivaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarPizarraActivaToolStripMenuItem.Click
