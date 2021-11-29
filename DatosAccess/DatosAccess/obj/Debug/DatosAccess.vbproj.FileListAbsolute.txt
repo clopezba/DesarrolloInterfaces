@@ -11,3 +11,16 @@ C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\DatosAccess\DatosAccess\obj
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\DatosAccess\DatosAccess\obj\Debug\DatosAccess.exe
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\DatosAccess\DatosAccess\obj\Debug\DatosAccess.xml
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\DatosAccess\DatosAccess\obj\Debug\DatosAccess.pdb
+C:\Users\clopb\source\repos\DatosAccess\DatosAccess\bin\Debug\Neptuno.mdb
+C:\Users\clopb\source\repos\DatosAccess\DatosAccess\bin\Debug\DatosAccess.exe.config
+C:\Users\clopb\source\repos\DatosAccess\DatosAccess\bin\Debug\DatosAccess.exe
+C:\Users\clopb\source\repos\DatosAccess\DatosAccess\bin\Debug\DatosAccess.pdb
+C:\Users\clopb\source\repos\DatosAccess\DatosAccess\bin\Debug\DatosAccess.xml
+C:\Users\clopb\source\repos\DatosAccess\DatosAccess\obj\Debug\DatosAccess.vbproj.AssemblyReference.cache
+C:\Users\clopb\source\repos\DatosAccess\DatosAccess\obj\Debug\DatosAccess.Form1.resources
+C:\Users\clopb\source\repos\DatosAccess\DatosAccess\obj\Debug\DatosAccess.Resources.resources
+C:\Users\clopb\source\repos\DatosAccess\DatosAccess\obj\Debug\DatosAccess.vbproj.GenerateResource.cache
+C:\Users\clopb\source\repos\DatosAccess\DatosAccess\obj\Debug\DatosAccess.vbproj.CoreCompileInputs.cache
+C:\Users\clopb\source\repos\DatosAccess\DatosAccess\obj\Debug\DatosAccess.exe
+C:\Users\clopb\source\repos\DatosAccess\DatosAccess\obj\Debug\DatosAccess.xml
+C:\Users\clopb\source\repos\DatosAccess\DatosAccess\obj\Debug\DatosAccess.pdb
