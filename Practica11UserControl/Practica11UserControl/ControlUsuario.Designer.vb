@@ -29,37 +29,43 @@ Partial Class ControlUsuario
         '
         'MiLista
         '
+        Me.MiLista.AllowDrop = True
         Me.MiLista.FormattingEnabled = True
-        Me.MiLista.Location = New System.Drawing.Point(17, 16)
+        Me.MiLista.ItemHeight = 16
+        Me.MiLista.Location = New System.Drawing.Point(23, 20)
+        Me.MiLista.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MiLista.Name = "MiLista"
-        Me.MiLista.Size = New System.Drawing.Size(120, 95)
+        Me.MiLista.Size = New System.Drawing.Size(159, 116)
         Me.MiLista.TabIndex = 0
         '
         'MiTexto
         '
-        Me.MiTexto.Location = New System.Drawing.Point(17, 118)
+        Me.MiTexto.Location = New System.Drawing.Point(23, 145)
+        Me.MiTexto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MiTexto.Name = "MiTexto"
-        Me.MiTexto.Size = New System.Drawing.Size(120, 20)
+        Me.MiTexto.Size = New System.Drawing.Size(159, 22)
         Me.MiTexto.TabIndex = 1
         '
         'MiBoton
         '
-        Me.MiBoton.Location = New System.Drawing.Point(17, 145)
+        Me.MiBoton.Location = New System.Drawing.Point(23, 178)
+        Me.MiBoton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MiBoton.Name = "MiBoton"
-        Me.MiBoton.Size = New System.Drawing.Size(120, 23)
+        Me.MiBoton.Size = New System.Drawing.Size(160, 28)
         Me.MiBoton.TabIndex = 2
         Me.MiBoton.Text = "Agregar"
         Me.MiBoton.UseVisualStyleBackColor = True
         '
         'ControlUsuario
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.MiBoton)
         Me.Controls.Add(Me.MiTexto)
         Me.Controls.Add(Me.MiLista)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "ControlUsuario"
-        Me.Size = New System.Drawing.Size(152, 179)
+        Me.Size = New System.Drawing.Size(203, 220)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
