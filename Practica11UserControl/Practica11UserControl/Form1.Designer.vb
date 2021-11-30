@@ -22,24 +22,35 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.MiControl = New Practica11UserControl.ControlUsuario()
+        Me.ControlUsuario1 = New Practica11UserControl.ControlUsuario()
+        Me.ControlUsuario2 = New Practica11UserControl.ControlUsuario()
         Me.SuspendLayout()
         '
-        'MiControl
+        'ControlUsuario1
         '
-        Me.MiControl.Location = New System.Drawing.Point(57, 59)
-        Me.MiControl.Margin = New System.Windows.Forms.Padding(5)
-        Me.MiControl.Name = "MiControl"
-        Me.MiControl.Size = New System.Drawing.Size(203, 220)
-        Me.MiControl.TabIndex = 0
-        Me.MiControl.TextoInicial = "Ejemplo"
+        Me.ControlUsuario1.Location = New System.Drawing.Point(56, 37)
+        Me.ControlUsuario1.Margin = New System.Windows.Forms.Padding(4)
+        Me.ControlUsuario1.Name = "ControlUsuario1"
+        Me.ControlUsuario1.Size = New System.Drawing.Size(214, 283)
+        Me.ControlUsuario1.TabIndex = 0
+        Me.ControlUsuario1.TextoInicial = "Ejemplo"
+        '
+        'ControlUsuario2
+        '
+        Me.ControlUsuario2.Location = New System.Drawing.Point(345, 37)
+        Me.ControlUsuario2.Margin = New System.Windows.Forms.Padding(4)
+        Me.ControlUsuario2.Name = "ControlUsuario2"
+        Me.ControlUsuario2.Size = New System.Drawing.Size(214, 283)
+        Me.ControlUsuario2.TabIndex = 0
+        Me.ControlUsuario2.TextoInicial = "Ejemplo"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1067, 554)
-        Me.Controls.Add(Me.MiControl)
+        Me.Controls.Add(Me.ControlUsuario2)
+        Me.Controls.Add(Me.ControlUsuario1)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -47,5 +58,6 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents MiControl As ControlUsuario
+    Friend WithEvents ControlUsuario1 As ControlUsuario
+    Friend WithEvents ControlUsuario2 As ControlUsuario
 End Class
