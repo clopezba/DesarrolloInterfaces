@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\clopb\\.nuget\\packages\\": {}
+    "C:\\Users\\DAM2Alu10\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\clopb\\source\\repos\\Practica04\\Practica4\\Practica4.vbproj",
+      "projectUniqueName": "C:\\Users\\DAM2Alu10\\source\\repos\\DesarrolloInterfaces\\Practica04\\Practica4\\Practica4.vbproj",
       "projectName": "Practica4",
-      "projectPath": "C:\\Users\\clopb\\source\\repos\\Practica04\\Practica4\\Practica4.vbproj",
-      "packagesPath": "C:\\Users\\clopb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\clopb\\source\\repos\\Practica04\\Practica4\\obj\\",
+      "projectPath": "C:\\Users\\DAM2Alu10\\source\\repos\\DesarrolloInterfaces\\Practica04\\Practica4\\Practica4.vbproj",
+      "packagesPath": "C:\\Users\\DAM2Alu10\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DAM2Alu10\\source\\repos\\DesarrolloInterfaces\\Practica04\\Practica4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\clopb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DAM2Alu10\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
