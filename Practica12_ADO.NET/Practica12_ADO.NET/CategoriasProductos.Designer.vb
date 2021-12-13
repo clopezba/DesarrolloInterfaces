@@ -23,28 +23,32 @@ Partial Class CategoriasProductos
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CategoriasProductos))
         Dim IdCategoríaLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CategoriasProductos))
+        Dim IdCategoríaLabel1 As System.Windows.Forms.Label
         Me.NeptunoDataSet1 = New Practica12_ADO.NET.NeptunoDataSet()
         Me.CategoríasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CategoríasTableAdapter = New Practica12_ADO.NET.NeptunoDataSetTableAdapters.CategoríasTableAdapter()
         Me.TableAdapterManager = New Practica12_ADO.NET.NeptunoDataSetTableAdapters.TableAdapterManager()
+        Me.ProductosTableAdapter = New Practica12_ADO.NET.NeptunoDataSetTableAdapters.ProductosTableAdapter()
         Me.CategoríasBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
-        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.CategoríasDataGridView = New System.Windows.Forms.DataGridView()
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
+        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.CategoríasBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
+        Me.CategoríasDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.ProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ProductosTableAdapter = New Practica12_ADO.NET.NeptunoDataSetTableAdapters.ProductosTableAdapter()
         Me.ProductosDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -57,12 +61,11 @@ Partial Class CategoriasProductos
         Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewCheckBoxColumn1 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.IdCategoríaTextBox = New System.Windows.Forms.TextBox()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.IdCategoríaComboBox = New System.Windows.Forms.ComboBox()
         IdCategoríaLabel = New System.Windows.Forms.Label()
+        IdCategoríaLabel1 = New System.Windows.Forms.Label()
         CType(Me.NeptunoDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CategoríasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CategoríasBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,6 +74,16 @@ Partial Class CategoriasProductos
         CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'IdCategoríaLabel
+        '
+        IdCategoríaLabel.AutoSize = True
+        IdCategoríaLabel.Location = New System.Drawing.Point(76, 105)
+        IdCategoríaLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        IdCategoríaLabel.Name = "IdCategoríaLabel"
+        IdCategoríaLabel.Size = New System.Drawing.Size(69, 13)
+        IdCategoríaLabel.TabIndex = 3
+        IdCategoríaLabel.Text = "Id Categoría:"
         '
         'NeptunoDataSet1
         '
@@ -99,6 +112,10 @@ Partial Class CategoriasProductos
         Me.TableAdapterManager.ProveedoresTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Practica12_ADO.NET.NeptunoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
+        'ProductosTableAdapter
+        '
+        Me.ProductosTableAdapter.ClearBeforeFill = True
+        '
         'CategoríasBindingNavigator
         '
         Me.CategoríasBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
@@ -114,9 +131,52 @@ Partial Class CategoriasProductos
         Me.CategoríasBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.CategoríasBindingNavigator.Name = "CategoríasBindingNavigator"
         Me.CategoríasBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.CategoríasBindingNavigator.Size = New System.Drawing.Size(1080, 31)
+        Me.CategoríasBindingNavigator.Size = New System.Drawing.Size(810, 27)
         Me.CategoríasBindingNavigator.TabIndex = 0
         Me.CategoríasBindingNavigator.Text = "BindingNavigator1"
+        '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 24)
+        Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
+        '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 24)
+        Me.BindingNavigatorCountItem.Text = "de {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 24)
+        Me.BindingNavigatorDeleteItem.Text = "Eliminar"
+        '
+        'BindingNavigatorMoveFirstItem
+        '
+        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
+        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 24)
+        Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
+        '
+        'BindingNavigatorMovePreviousItem
+        '
+        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
+        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 24)
+        Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
         'BindingNavigatorSeparator
         '
@@ -127,76 +187,16 @@ Partial Class CategoriasProductos
         '
         Me.BindingNavigatorPositionItem.AccessibleName = "Posición"
         Me.BindingNavigatorPositionItem.AutoSize = False
+        Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 27)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(38, 23)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
         '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 24)
-        Me.BindingNavigatorCountItem.Text = "de {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
-        '
         'BindingNavigatorSeparator1
         '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
         Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
-        '
-        'BindingNavigatorSeparator2
-        '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
-        '
-        'CategoríasDataGridView
-        '
-        Me.CategoríasDataGridView.AutoGenerateColumns = False
-        Me.CategoríasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.CategoríasDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewImageColumn1})
-        Me.CategoríasDataGridView.DataSource = Me.CategoríasBindingSource
-        Me.CategoríasDataGridView.Location = New System.Drawing.Point(374, 66)
-        Me.CategoríasDataGridView.Name = "CategoríasDataGridView"
-        Me.CategoríasDataGridView.RowHeadersWidth = 51
-        Me.CategoríasDataGridView.RowTemplate.Height = 24
-        Me.CategoríasDataGridView.Size = New System.Drawing.Size(554, 220)
-        Me.CategoríasDataGridView.TabIndex = 1
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 28)
-        Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
-        Me.BindingNavigatorDeleteItem.Text = "Eliminar"
-        '
-        'BindingNavigatorMoveFirstItem
-        '
-        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
-        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
-        Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
-        '
-        'BindingNavigatorMovePreviousItem
-        '
-        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
-        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
-        Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
         'BindingNavigatorMoveNextItem
         '
@@ -204,7 +204,7 @@ Partial Class CategoriasProductos
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 24)
         Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
         '
         'BindingNavigatorMoveLastItem
@@ -213,25 +213,64 @@ Partial Class CategoriasProductos
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 24)
         Me.BindingNavigatorMoveLastItem.Text = "Mover último"
+        '
+        'BindingNavigatorSeparator2
+        '
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
         '
         'CategoríasBindingNavigatorSaveItem
         '
         Me.CategoríasBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.CategoríasBindingNavigatorSaveItem.Image = CType(resources.GetObject("CategoríasBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.CategoríasBindingNavigatorSaveItem.Name = "CategoríasBindingNavigatorSaveItem"
-        Me.CategoríasBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
+        Me.CategoríasBindingNavigatorSaveItem.Size = New System.Drawing.Size(24, 24)
         Me.CategoríasBindingNavigatorSaveItem.Text = "Guardar datos"
+        '
+        'CategoríasDataGridView
+        '
+        Me.CategoríasDataGridView.AutoGenerateColumns = False
+        Me.CategoríasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.CategoríasDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewImageColumn1})
+        Me.CategoríasDataGridView.DataSource = Me.CategoríasBindingSource
+        Me.CategoríasDataGridView.Location = New System.Drawing.Point(280, 54)
+        Me.CategoríasDataGridView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CategoríasDataGridView.Name = "CategoríasDataGridView"
+        Me.CategoríasDataGridView.RowHeadersWidth = 51
+        Me.CategoríasDataGridView.RowTemplate.Height = 24
+        Me.CategoríasDataGridView.Size = New System.Drawing.Size(416, 179)
+        Me.CategoríasDataGridView.TabIndex = 1
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "NombreCategoría"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "NombreCategoría"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.Width = 125
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Descripción"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Descripción"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.Width = 125
+        '
+        'DataGridViewImageColumn1
+        '
+        Me.DataGridViewImageColumn1.DataPropertyName = "Imagen"
+        Me.DataGridViewImageColumn1.HeaderText = "Imagen"
+        Me.DataGridViewImageColumn1.MinimumWidth = 6
+        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
+        Me.DataGridViewImageColumn1.Width = 125
         '
         'ProductosBindingSource
         '
         Me.ProductosBindingSource.DataMember = "CategoríasProductos"
         Me.ProductosBindingSource.DataSource = Me.CategoríasBindingSource
-        '
-        'ProductosTableAdapter
-        '
-        Me.ProductosTableAdapter.ClearBeforeFill = True
         '
         'ProductosDataGridView
         '
@@ -239,11 +278,12 @@ Partial Class CategoriasProductos
         Me.ProductosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProductosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewCheckBoxColumn1})
         Me.ProductosDataGridView.DataSource = Me.ProductosBindingSource
-        Me.ProductosDataGridView.Location = New System.Drawing.Point(57, 338)
+        Me.ProductosDataGridView.Location = New System.Drawing.Point(43, 275)
+        Me.ProductosDataGridView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ProductosDataGridView.Name = "ProductosDataGridView"
         Me.ProductosDataGridView.RowHeadersWidth = 51
         Me.ProductosDataGridView.RowTemplate.Height = 24
-        Me.ProductosDataGridView.Size = New System.Drawing.Size(991, 220)
+        Me.ProductosDataGridView.Size = New System.Drawing.Size(743, 179)
         Me.ProductosDataGridView.TabIndex = 2
         '
         'DataGridViewTextBoxColumn4
@@ -326,54 +366,23 @@ Partial Class CategoriasProductos
         Me.DataGridViewCheckBoxColumn1.Name = "DataGridViewCheckBoxColumn1"
         Me.DataGridViewCheckBoxColumn1.Width = 125
         '
-        'IdCategoríaLabel
-        '
-        IdCategoríaLabel.AutoSize = True
-        IdCategoríaLabel.Location = New System.Drawing.Point(102, 129)
-        IdCategoríaLabel.Name = "IdCategoríaLabel"
-        IdCategoríaLabel.Size = New System.Drawing.Size(88, 17)
-        IdCategoríaLabel.TabIndex = 3
-        IdCategoríaLabel.Text = "Id Categoría:"
-        '
         'IdCategoríaTextBox
         '
         Me.IdCategoríaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CategoríasBindingSource, "IdCategoría", True))
-        Me.IdCategoríaTextBox.Location = New System.Drawing.Point(196, 126)
+        Me.IdCategoríaTextBox.Location = New System.Drawing.Point(147, 102)
+        Me.IdCategoríaTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.IdCategoríaTextBox.Name = "IdCategoríaTextBox"
-        Me.IdCategoríaTextBox.Size = New System.Drawing.Size(100, 22)
+        Me.IdCategoríaTextBox.Size = New System.Drawing.Size(76, 20)
         Me.IdCategoríaTextBox.TabIndex = 4
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "NombreCategoría"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "NombreCategoría"
-        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Width = 125
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Descripción"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Descripción"
-        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.Width = 125
-        '
-        'DataGridViewImageColumn1
-        '
-        Me.DataGridViewImageColumn1.DataPropertyName = "Imagen"
-        Me.DataGridViewImageColumn1.HeaderText = "Imagen"
-        Me.DataGridViewImageColumn1.MinimumWidth = 6
-        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
-        Me.DataGridViewImageColumn1.Width = 125
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(100, 75)
+        Me.Label1.Location = New System.Drawing.Point(75, 61)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 25)
+        Me.Label1.Size = New System.Drawing.Size(86, 20)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Categorías"
         '
@@ -381,19 +390,40 @@ Partial Class CategoriasProductos
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(52, 291)
+        Me.Label2.Location = New System.Drawing.Point(39, 236)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(100, 25)
+        Me.Label2.Size = New System.Drawing.Size(81, 20)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Productos"
         '
+        'IdCategoríaLabel1
+        '
+        IdCategoríaLabel1.AutoSize = True
+        IdCategoríaLabel1.Location = New System.Drawing.Point(51, 153)
+        IdCategoríaLabel1.Name = "IdCategoríaLabel1"
+        IdCategoríaLabel1.Size = New System.Drawing.Size(69, 13)
+        IdCategoríaLabel1.TabIndex = 7
+        IdCategoríaLabel1.Text = "Id Categoría:"
+        '
+        'IdCategoríaComboBox
+        '
+        Me.IdCategoríaComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductosBindingSource, "IdCategoría", True))
+        Me.IdCategoríaComboBox.FormattingEnabled = True
+        Me.IdCategoríaComboBox.Location = New System.Drawing.Point(126, 150)
+        Me.IdCategoríaComboBox.Name = "IdCategoríaComboBox"
+        Me.IdCategoríaComboBox.Size = New System.Drawing.Size(121, 21)
+        Me.IdCategoríaComboBox.TabIndex = 8
+        '
         'CategoriasProductos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FloralWhite
-        Me.ClientSize = New System.Drawing.Size(1080, 619)
+        Me.ClientSize = New System.Drawing.Size(810, 503)
+        Me.Controls.Add(IdCategoríaLabel1)
+        Me.Controls.Add(Me.IdCategoríaComboBox)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(IdCategoríaLabel)
@@ -401,6 +431,7 @@ Partial Class CategoriasProductos
         Me.Controls.Add(Me.ProductosDataGridView)
         Me.Controls.Add(Me.CategoríasDataGridView)
         Me.Controls.Add(Me.CategoríasBindingNavigator)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "CategoriasProductos"
         Me.Text = "Categorias y Productos"
         CType(Me.NeptunoDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -453,4 +484,5 @@ Partial Class CategoriasProductos
     Friend WithEvents IdCategoríaTextBox As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents IdCategoríaComboBox As ComboBox
 End Class
