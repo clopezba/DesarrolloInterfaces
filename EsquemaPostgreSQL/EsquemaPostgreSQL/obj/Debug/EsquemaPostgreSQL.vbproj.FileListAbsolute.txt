@@ -1,0 +1,13 @@
+C:\Users\clopb\source\repos\EsquemaPostgreSQL\EsquemaPostgreSQL\bin\Debug\EsquemaPostgreSQL.exe.config
+C:\Users\clopb\source\repos\EsquemaPostgreSQL\EsquemaPostgreSQL\bin\Debug\EsquemaPostgreSQL.exe
+C:\Users\clopb\source\repos\EsquemaPostgreSQL\EsquemaPostgreSQL\bin\Debug\EsquemaPostgreSQL.pdb
+C:\Users\clopb\source\repos\EsquemaPostgreSQL\EsquemaPostgreSQL\bin\Debug\EsquemaPostgreSQL.xml
+C:\Users\clopb\source\repos\EsquemaPostgreSQL\EsquemaPostgreSQL\obj\Debug\EsquemaPostgreSQL.vbproj.AssemblyReference.cache
+C:\Users\clopb\source\repos\EsquemaPostgreSQL\EsquemaPostgreSQL\obj\Debug\EsquemaPostgreSQL.Explorador.resources
+C:\Users\clopb\source\repos\EsquemaPostgreSQL\EsquemaPostgreSQL\obj\Debug\EsquemaPostgreSQL.Login.resources
+C:\Users\clopb\source\repos\EsquemaPostgreSQL\EsquemaPostgreSQL\obj\Debug\EsquemaPostgreSQL.Resources.resources
+C:\Users\clopb\source\repos\EsquemaPostgreSQL\EsquemaPostgreSQL\obj\Debug\EsquemaPostgreSQL.vbproj.GenerateResource.cache
+C:\Users\clopb\source\repos\EsquemaPostgreSQL\EsquemaPostgreSQL\obj\Debug\EsquemaPostgreSQL.vbproj.CoreCompileInputs.cache
+C:\Users\clopb\source\repos\EsquemaPostgreSQL\EsquemaPostgreSQL\obj\Debug\EsquemaPostgreSQL.exe
+C:\Users\clopb\source\repos\EsquemaPostgreSQL\EsquemaPostgreSQL\obj\Debug\EsquemaPostgreSQL.xml
+C:\Users\clopb\source\repos\EsquemaPostgreSQL\EsquemaPostgreSQL\obj\Debug\EsquemaPostgreSQL.pdb
