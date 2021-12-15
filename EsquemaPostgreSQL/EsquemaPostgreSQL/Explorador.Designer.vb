@@ -120,6 +120,7 @@ Partial Class Explorador
         'Tablas
         '
         Me.Tablas.FormattingEnabled = True
+        Me.Tablas.ItemHeight = 16
         Me.Tablas.Location = New System.Drawing.Point(21, 119)
         Me.Tablas.Name = "Tablas"
         Me.Tablas.Size = New System.Drawing.Size(313, 24)
@@ -164,6 +165,7 @@ Partial Class Explorador
         Me.btnFormulario.TabIndex = 5
         Me.btnFormulario.Text = "Formulario Datos"
         Me.btnFormulario.UseVisualStyleBackColor = False
+        Me.btnFormulario.Visible = False
         '
         'InformacionTabla
         '

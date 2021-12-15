@@ -65,6 +65,7 @@ Partial Class Login
         Me.TServidor.Name = "TServidor"
         Me.TServidor.Size = New System.Drawing.Size(298, 22)
         Me.TServidor.TabIndex = 1
+        Me.TServidor.Text = "192.168.0.20"
         '
         'TUsuario
         '
@@ -72,6 +73,7 @@ Partial Class Login
         Me.TUsuario.Name = "TUsuario"
         Me.TUsuario.Size = New System.Drawing.Size(298, 22)
         Me.TUsuario.TabIndex = 1
+        Me.TUsuario.Text = "postgres"
         '
         'TPassword
         '
@@ -80,6 +82,7 @@ Partial Class Login
         Me.TPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TPassword.Size = New System.Drawing.Size(298, 22)
         Me.TPassword.TabIndex = 1
+        Me.TPassword.Text = "postgres"
         '
         'BAceptar
         '
