@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblSaludo = New System.Windows.Forms.Label()
         Me.cmbxFuentes = New System.Windows.Forms.ComboBox()
@@ -64,6 +64,7 @@ Partial Class Form1
         Me.Controls.Add(Me.trckSize)
         Me.Controls.Add(Me.cmbxFuentes)
         Me.Controls.Add(Me.lblSaludo)
+        Me.HelpButton = True
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.trckSize, System.ComponentModel.ISupportInitialize).EndInit()

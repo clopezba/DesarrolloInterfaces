@@ -1,6 +1,8 @@
 ﻿Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
         cargaFuentes()
+        Dim toolTip As New ToolTip
+        toolTip.SetToolTip(trckSize, Nothing)
     End Sub
     ''' <summary>
     ''' Carga todas las fuentes del sistema en un ComboBox

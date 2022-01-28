@@ -22,3 +22,4 @@ C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.
 C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.exe
 C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.xml
 C:\Users\clopb\source\repos\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.pdb
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\MenuesToolbar\MenuesToolbar\obj\Debug\MenuesToolbar.Hijo.resources
