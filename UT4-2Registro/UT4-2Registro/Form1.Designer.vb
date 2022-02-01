@@ -45,9 +45,10 @@ Partial Class Form1
         Me.errApe = New System.Windows.Forms.Label()
         Me.errNom = New System.Windows.Forms.Label()
         Me.grTrabajo = New System.Windows.Forms.GroupBox()
-        Me.errAcc = New System.Windows.Forms.Label()
+        Me.lblAsterico = New System.Windows.Forms.Label()
         Me.lblAcceso = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.errAcc = New System.Windows.Forms.Label()
         Me.rbPanel.SuspendLayout()
         Me.grPersona.SuspendLayout()
         Me.grTrabajo.SuspendLayout()
@@ -81,7 +82,7 @@ Partial Class Form1
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(183, 24)
         Me.txtNombre.TabIndex = 1
-        Me.txtNombre.Tag = "errNom"
+        Me.txtNombre.Tag = ""
         Me.ToolTip.SetToolTip(Me.txtNombre, "Nombre del empleado")
         '
         'txtApellidos
@@ -91,7 +92,7 @@ Partial Class Form1
         Me.txtApellidos.Name = "txtApellidos"
         Me.txtApellidos.Size = New System.Drawing.Size(183, 24)
         Me.txtApellidos.TabIndex = 2
-        Me.txtApellidos.Tag = "errApe"
+        Me.txtApellidos.Tag = ""
         Me.ToolTip.SetToolTip(Me.txtApellidos, "Apellidos del empleado")
         '
         'txtDNI
@@ -101,7 +102,7 @@ Partial Class Form1
         Me.txtDNI.Name = "txtDNI"
         Me.txtDNI.Size = New System.Drawing.Size(183, 24)
         Me.txtDNI.TabIndex = 3
-        Me.txtDNI.Tag = "errDNI"
+        Me.txtDNI.Tag = ""
         Me.ToolTip.SetToolTip(Me.txtDNI, "DNI del empleado")
         '
         'fecha
@@ -170,7 +171,7 @@ Partial Class Form1
         Me.cmbAcceso.Name = "cmbAcceso"
         Me.cmbAcceso.Size = New System.Drawing.Size(190, 26)
         Me.cmbAcceso.TabIndex = 6
-        Me.cmbAcceso.Tag = "errAcc"
+        Me.cmbAcceso.Tag = ""
         Me.ToolTip.SetToolTip(Me.cmbAcceso, "Periodo de acceso al centro")
         '
         'btnEnviar
@@ -281,6 +282,7 @@ Partial Class Form1
         'grTrabajo
         '
         Me.grTrabajo.Controls.Add(Me.errAcc)
+        Me.grTrabajo.Controls.Add(Me.lblAsterico)
         Me.grTrabajo.Controls.Add(Me.cmbAcceso)
         Me.grTrabajo.Controls.Add(Me.lblAcceso)
         Me.grTrabajo.Controls.Add(Me.rbPanel)
@@ -293,16 +295,16 @@ Partial Class Form1
         Me.grTrabajo.TabStop = False
         Me.grTrabajo.Text = "Datos laborales"
         '
-        'errAcc
+        'lblAsterico
         '
-        Me.errAcc.AutoSize = True
-        Me.errAcc.Font = New System.Drawing.Font("Arial Unicode MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.errAcc.ForeColor = System.Drawing.Color.Red
-        Me.errAcc.Location = New System.Drawing.Point(159, 174)
-        Me.errAcc.Name = "errAcc"
-        Me.errAcc.Size = New System.Drawing.Size(16, 21)
-        Me.errAcc.TabIndex = 0
-        Me.errAcc.Text = "*"
+        Me.lblAsterico.AutoSize = True
+        Me.lblAsterico.Font = New System.Drawing.Font("Arial Unicode MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAsterico.ForeColor = System.Drawing.Color.Red
+        Me.lblAsterico.Location = New System.Drawing.Point(159, 174)
+        Me.lblAsterico.Name = "lblAsterico"
+        Me.lblAsterico.Size = New System.Drawing.Size(16, 21)
+        Me.lblAsterico.TabIndex = 0
+        Me.lblAsterico.Text = "*"
         '
         'lblAcceso
         '
@@ -323,6 +325,15 @@ Partial Class Form1
         Me.Label7.Size = New System.Drawing.Size(153, 20)
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "* Campos obligatorios"
+        '
+        'errAcc
+        '
+        Me.errAcc.AutoSize = True
+        Me.errAcc.ForeColor = System.Drawing.Color.Red
+        Me.errAcc.Location = New System.Drawing.Point(25, 192)
+        Me.errAcc.Name = "errAcc"
+        Me.errAcc.Size = New System.Drawing.Size(0, 18)
+        Me.errAcc.TabIndex = 7
         '
         'Form1
         '
@@ -373,6 +384,7 @@ Partial Class Form1
     Friend WithEvents errApe As Label
     Friend WithEvents errNom As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents errAcc As Label
+    Friend WithEvents lblAsterico As Label
     Friend WithEvents btnEnviar As Button
+    Friend WithEvents errAcc As Label
 End Class
