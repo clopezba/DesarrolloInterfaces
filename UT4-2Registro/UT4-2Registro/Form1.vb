@@ -8,25 +8,24 @@
         txtDNI.Tag = errDNI
         cmbAcceso.Tag = errAcc
     End Sub
-    Function comprobacion()
-        Dim txtRellenados As Boolean = False
+    Sub comprobacion()
+        Dim txtRellenados As Integer = 0
         Dim cmbRellenado As Boolean = False
-        Dim correcto As Boolean = False
+        'Dim correcto As Boolean = False
 
-        For Each control In grPersona.Controls 'Cambiar esto
+        For Each control In grPersona.Controls
             Dim tipo As Type = control.GetType()
             If tipo.FullName.Contains("TextBox") Then
                 If control.Text.Trim = "" Then
                     control.Tag.Text = "* Este campo es obligatorio"
-                    txtRellenados = False
-                    Exit For
+                    txtRellenados += 1
                 Else
                     control.Tag.Text = "*"
-                    txtRellenados = True
                 End If
 
             End If
         Next
+
         If cmbAcceso.SelectedItem() Is Nothing Then
             lblAsterico.Text = ""
             cmbAcceso.Tag.Text = "* Este campo es obligatorio"
@@ -35,17 +34,15 @@
             cmbAcceso.Tag.Text = ""
             cmbRellenado = True
         End If
-        If txtRellenados And cmbRellenado Then
-            correcto = True
-        End If
-        Return correcto
-    End Function
-
-    Private Sub btnEnviar_Click(sender As Object, e As EventArgs) Handles btnEnviar.Click
-        If comprobacion() Then
+        If txtRellenados = 0 And cmbRellenado Then
             MessageBox.Show("Registro creado", "Enviado", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
-        
+
+    End Sub
+
+    Private Sub btnEnviar_Click(sender As Object, e As EventArgs) Handles btnEnviar.Click
+        comprobacion()
+
     End Sub
 
 
