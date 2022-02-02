@@ -1,7 +1,15 @@
-﻿Public Class Form1
+﻿Imports System.Data.SqlClient
+
+Public Class Form1
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Dim conexionString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BDRegistro.mdf;Integrated Security=True"
+        Dim conexion As New SqlConnection(conexionString)
+
         AsignarTags()
     End Sub
+
+
     Sub AsignarTags()
         txtNombre.Tag = errNom
         txtApellidos.Tag = errApe
@@ -39,6 +47,8 @@
         End If
 
     End Sub
+
+
 
     Private Sub btnEnviar_Click(sender As Object, e As EventArgs) Handles btnEnviar.Click
         comprobacion()

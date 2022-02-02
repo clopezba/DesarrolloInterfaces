@@ -10,3 +10,5 @@ C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\UT4-2Registro\UT4-2Registro
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\UT4-2Registro\UT4-2Registro\obj\Debug\UT4-2Registro.exe
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\UT4-2Registro\UT4-2Registro\obj\Debug\UT4-2Registro.xml
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\UT4-2Registro\UT4-2Registro\obj\Debug\UT4-2Registro.pdb
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\UT4-2Registro\UT4-2Registro\bin\Debug\BDRegistro.mdf
+C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\UT4-2Registro\UT4-2Registro\bin\Debug\BDRegistro_log.ldf

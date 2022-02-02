@@ -45,10 +45,12 @@ Partial Class Form1
         Me.errApe = New System.Windows.Forms.Label()
         Me.errNom = New System.Windows.Forms.Label()
         Me.grTrabajo = New System.Windows.Forms.GroupBox()
+        Me.errAcc = New System.Windows.Forms.Label()
         Me.lblAsterico = New System.Windows.Forms.Label()
         Me.lblAcceso = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.errAcc = New System.Windows.Forms.Label()
+        Me.lblNum = New System.Windows.Forms.Label()
+        Me.txtNumReg = New System.Windows.Forms.TextBox()
         Me.rbPanel.SuspendLayout()
         Me.grPersona.SuspendLayout()
         Me.grTrabajo.SuspendLayout()
@@ -295,6 +297,15 @@ Partial Class Form1
         Me.grTrabajo.TabStop = False
         Me.grTrabajo.Text = "Datos laborales"
         '
+        'errAcc
+        '
+        Me.errAcc.AutoSize = True
+        Me.errAcc.ForeColor = System.Drawing.Color.Red
+        Me.errAcc.Location = New System.Drawing.Point(25, 192)
+        Me.errAcc.Name = "errAcc"
+        Me.errAcc.Size = New System.Drawing.Size(0, 18)
+        Me.errAcc.TabIndex = 7
+        '
         'lblAsterico
         '
         Me.lblAsterico.AutoSize = True
@@ -326,14 +337,27 @@ Partial Class Form1
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "* Campos obligatorios"
         '
-        'errAcc
+        'lblNum
         '
-        Me.errAcc.AutoSize = True
-        Me.errAcc.ForeColor = System.Drawing.Color.Red
-        Me.errAcc.Location = New System.Drawing.Point(25, 192)
-        Me.errAcc.Name = "errAcc"
-        Me.errAcc.Size = New System.Drawing.Size(0, 18)
-        Me.errAcc.TabIndex = 7
+        Me.lblNum.AutoSize = True
+        Me.lblNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNum.Location = New System.Drawing.Point(36, 33)
+        Me.lblNum.Name = "lblNum"
+        Me.lblNum.Size = New System.Drawing.Size(76, 20)
+        Me.lblNum.TabIndex = 8
+        Me.lblNum.Text = "Nº Reg.:"
+        Me.ToolTip.SetToolTip(Me.lblNum, "Número de registro del empleado")
+        '
+        'txtNumReg
+        '
+        Me.txtNumReg.Enabled = False
+        Me.txtNumReg.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNumReg.Location = New System.Drawing.Point(118, 33)
+        Me.txtNumReg.Name = "txtNumReg"
+        Me.txtNumReg.Size = New System.Drawing.Size(73, 24)
+        Me.txtNumReg.TabIndex = 5
+        Me.txtNumReg.Tag = ""
+        Me.ToolTip.SetToolTip(Me.txtNumReg, "Nombre del empleado")
         '
         'Form1
         '
@@ -342,6 +366,8 @@ Partial Class Form1
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.AliceBlue
         Me.ClientSize = New System.Drawing.Size(722, 509)
+        Me.Controls.Add(Me.txtNumReg)
+        Me.Controls.Add(Me.lblNum)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.btnEnviar)
         Me.Controls.Add(Me.grTrabajo)
@@ -387,4 +413,6 @@ Partial Class Form1
     Friend WithEvents lblAsterico As Label
     Friend WithEvents btnEnviar As Button
     Friend WithEvents errAcc As Label
+    Friend WithEvents lblNum As Label
+    Friend WithEvents txtNumReg As TextBox
 End Class
