@@ -88,11 +88,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BDRegistroDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BDRegistroDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="BDRegistroDataSet1.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -133,17 +128,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="BDRegistroDataSet.xsc">
-      <DependentUpon>BDRegistroDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BDRegistroDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BDRegistroDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BDRegistroDataSet.xss">
-      <DependentUpon>BDRegistroDataSet.xsd</DependentUpon>
-    </None>
     <None Include="BDRegistroDataSet1.xsc">
       <DependentUpon>BDRegistroDataSet1.xsd</DependentUpon>
     </None>
@@ -171,8 +155,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="BDRegistro_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>BDRegistro.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>

@@ -22,11 +22,6 @@ UT4-2Registro
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="T:UT4_2Registro.BDRegistroDataSet">
-<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member>
 <member name="T:UT4_2Registro.BDRegistroDataSet1">
 <summary>
 Represents a strongly typed in-memory cache of data.
