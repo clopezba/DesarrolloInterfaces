@@ -12,3 +12,17 @@ C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\UT4-2Registro\UT4-2Registro
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\UT4-2Registro\UT4-2Registro\obj\Debug\UT4-2Registro.pdb
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\UT4-2Registro\UT4-2Registro\bin\Debug\BDRegistro.mdf
 C:\Users\DAM2Alu10\source\repos\DesarrolloInterfaces\UT4-2Registro\UT4-2Registro\bin\Debug\BDRegistro_log.ldf
+C:\Users\clopb\source\repos\UT4-2Registro\UT4-2Registro\bin\Debug\BDRegistro.mdf
+C:\Users\clopb\source\repos\UT4-2Registro\UT4-2Registro\bin\Debug\BDRegistro_log.ldf
+C:\Users\clopb\source\repos\UT4-2Registro\UT4-2Registro\bin\Debug\UT4-2Registro.exe.config
+C:\Users\clopb\source\repos\UT4-2Registro\UT4-2Registro\bin\Debug\UT4-2Registro.exe
+C:\Users\clopb\source\repos\UT4-2Registro\UT4-2Registro\bin\Debug\UT4-2Registro.pdb
+C:\Users\clopb\source\repos\UT4-2Registro\UT4-2Registro\bin\Debug\UT4-2Registro.xml
+C:\Users\clopb\source\repos\UT4-2Registro\UT4-2Registro\obj\Debug\UT4-2Registro.vbproj.AssemblyReference.cache
+C:\Users\clopb\source\repos\UT4-2Registro\UT4-2Registro\obj\Debug\UT4_2Registro.Form1.resources
+C:\Users\clopb\source\repos\UT4-2Registro\UT4-2Registro\obj\Debug\UT4_2Registro.Resources.resources
+C:\Users\clopb\source\repos\UT4-2Registro\UT4-2Registro\obj\Debug\UT4-2Registro.vbproj.GenerateResource.cache
+C:\Users\clopb\source\repos\UT4-2Registro\UT4-2Registro\obj\Debug\UT4-2Registro.vbproj.CoreCompileInputs.cache
+C:\Users\clopb\source\repos\UT4-2Registro\UT4-2Registro\obj\Debug\UT4-2Registro.exe
+C:\Users\clopb\source\repos\UT4-2Registro\UT4-2Registro\obj\Debug\UT4-2Registro.xml
+C:\Users\clopb\source\repos\UT4-2Registro\UT4-2Registro\obj\Debug\UT4-2Registro.pdb
