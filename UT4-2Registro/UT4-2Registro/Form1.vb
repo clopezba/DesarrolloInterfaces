@@ -6,11 +6,12 @@ Public Class Form1
     Dim conexion As SqlConnection
     'Al cargar el formulario, se abre la conexión a la base de datos
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Dim conexionString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BDRegistro.mdf;Integrated Security=True;"
-        'Dim conexionString As String = "Server=(LocalDB)\MSSQLLocalDB;Database=BDRegistro.mdf;Integrated Security=True;"
+
+        Dim conexionString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=BDRegistro.mdf;Integrated Security=True;"
+        'Dim conexionString As String = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BDRegistro;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
         conexion = New SqlConnection(conexionString)
         Try
-            conexion.Open()
+        conexion.Open()
             Console.WriteLine("Conexión establecida")
         Catch ex As Exception
             Console.WriteLine("No se ha podido conectar. Error: " + ex.Message)
