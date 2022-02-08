@@ -1,11 +1,13 @@
 ﻿Imports System.ComponentModel
 Imports System.Data.SqlClient
+Imports System.IO
 
 Public Class Form1
     Dim conexion As SqlConnection
     'Al cargar el formulario, se abre la conexión a la base de datos
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Dim conexionString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\clopb\source\repos\UT4-2Registro\UT4-2Registro\BDRegistro.mdf;Integrated Security=True"
+        Dim conexionString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BDRegistro.mdf;Integrated Security=True;"
+        'Dim conexionString As String = "Server=(LocalDB)\MSSQLLocalDB;Database=BDRegistro.mdf;Integrated Security=True;"
         conexion = New SqlConnection(conexionString)
         Try
             conexion.Open()
