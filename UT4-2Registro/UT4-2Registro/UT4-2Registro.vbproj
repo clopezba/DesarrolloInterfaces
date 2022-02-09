@@ -99,11 +99,17 @@
     <Compile Include="DatosPersonal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="PersonalTecnoHuesca.Designer.vb">
+      <DependentUpon>PersonalTecnoHuesca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalTecnoHuesca.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="RegistroPersonal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroPersonal.Designer.vb">
+      <DependentUpon>RegistroPersonal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -128,8 +134,11 @@
     <EmbeddedResource Include="DatosPersonal.resx">
       <DependentUpon>DatosPersonal.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="PersonalTecnoHuesca.resx">
+      <DependentUpon>PersonalTecnoHuesca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroPersonal.resx">
+      <DependentUpon>RegistroPersonal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -174,10 +183,14 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BDRegistro.mdf" />
+    <Content Include="BDRegistro.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="BDRegistro_log.ldf">
       <DependentUpon>BDRegistro.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
