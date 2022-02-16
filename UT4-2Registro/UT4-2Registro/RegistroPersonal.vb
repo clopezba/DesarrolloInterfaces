@@ -5,7 +5,7 @@ Imports System.IO
 Public Class RegistroPersonal
     Dim conexion As SqlConnection
     'Al cargar el formulario, se abre la conexión a la base de datos
-    Private Sub RegistroPersonal_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub registroPersonal_Load(sender As Object, e As EventArgs) Handles Me.Load
         Dim direcActual As String = Directory.GetCurrentDirectory()
         Dim directorio As String = Directory.GetParent(Directory.GetParent(direcActual).ToString()).ToString()
 
@@ -18,16 +18,17 @@ Public Class RegistroPersonal
             Console.WriteLine("No se ha podido conectar. Error: " + ex.Message)
         End Try
 
-        AsignarTags()
+        asignarTags()
         recibirNumeroRegistro()
     End Sub
 
     'Asigna en tiempo de ejecución etiquetas a controles
-    Private Sub AsignarTags()
+    Private Sub asignarTags()
         txtNombre.Tag = errNom
         txtApellidos.Tag = errApe
         txtDNI.Tag = errDNI
         cmbAcceso.Tag = errAcc
+
         rdbtFinanzas.Tag = 0
         rdbtRRHH.Tag = 1
         rdbtLogistica.Tag = 2
@@ -91,7 +92,7 @@ Public Class RegistroPersonal
         End If
     End Function
 
-    'Recoge todos los datos escritos en los controles y los graba en la base de datos
+    'Recoge todos los datos escritos en los controles y los inserta en la base de datos
     Private Sub enviarDatos()
         Dim nombre As String = txtNombre.Text
         Dim apellidos As String = txtApellidos.Text
@@ -106,10 +107,8 @@ Public Class RegistroPersonal
             End If
         Next
 
-        'Dim consulta As String = "insert into RegPersonal values ('" & nombre & "', '" & apellidos & "', '" & dni & "', '" & fechaNac & "'," & dept & ", '" & acceso & "')"
         Dim consulta As String = "insert into RegPersonal values (@nombre, @apellidos, @dni, @fechaNac, @dept, @acceso)"
 
-        'MessageBox.Show(consulta)
         Dim command As SqlCommand
         command = New SqlCommand(consulta, conexion)
         With command.Parameters
@@ -150,7 +149,7 @@ Public Class RegistroPersonal
     End Sub
 
     'Al cerrar el formulario, se cierra la conexión con la base de datos
-    Private Sub RegistroPersonal_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub registroPersonal_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Try
             conexion.Close()
             Console.WriteLine("Desconectado")
