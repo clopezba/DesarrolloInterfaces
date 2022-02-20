@@ -93,11 +93,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AlmacenMaterialesDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="CrearMaterial.Designer.vb">
+      <DependentUpon>CrearMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrearMaterial.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="EliminarMaterial.Designer.vb">
+      <DependentUpon>EliminarMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarMateriales.Designer.vb">
+      <DependentUpon>ListarMateriales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListarMateriales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarMaterial.Designer.vb">
+      <DependentUpon>ModificarMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarMaterial.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -117,8 +141,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="CrearMaterial.resx">
+      <DependentUpon>CrearMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarMaterial.resx">
+      <DependentUpon>EliminarMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarMateriales.resx">
+      <DependentUpon>ListarMateriales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarMaterial.resx">
+      <DependentUpon>ModificarMaterial.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -158,6 +194,13 @@
       <DependentUpon>AlmacenMaterialesDB.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\icons8-communication-85.png" />
+    <None Include="Resources\regreso.png" />
+    <None Include="Resources\listar.png" />
+    <None Include="Resources\guardar.png" />
+    <None Include="Resources\eliminar.png" />
+    <None Include="Resources\editar.png" />
+    <None Include="Resources\crear.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
