@@ -24,7 +24,7 @@ Partial Class inicio
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(inicio))
-        Me.menu_inicio = New System.Windows.Forms.MenuStrip()
+        Me.menu_inicioMateriales = New System.Windows.Forms.MenuStrip()
         Me.OpcionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.menu_crear = New System.Windows.Forms.ToolStripMenuItem()
         Me.menu_modif = New System.Windows.Forms.ToolStripMenuItem()
@@ -42,21 +42,21 @@ Partial Class inicio
         Me.btn_crear = New System.Windows.Forms.Button()
         Me.btn_modif = New System.Windows.Forms.Button()
         Me.btn_eliminar = New System.Windows.Forms.Button()
-        Me.menu_inicio.SuspendLayout()
+        Me.menu_inicioMateriales.SuspendLayout()
         Me.barra_iconos.SuspendLayout()
         CType(Me.img_icono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'menu_inicio
+        'menu_inicioMateriales
         '
-        Me.menu_inicio.BackColor = System.Drawing.Color.White
-        Me.menu_inicio.ImageScalingSize = New System.Drawing.Size(25, 25)
-        Me.menu_inicio.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpcionesToolStripMenuItem})
-        Me.menu_inicio.Location = New System.Drawing.Point(0, 0)
-        Me.menu_inicio.Name = "menu_inicio"
-        Me.menu_inicio.Size = New System.Drawing.Size(1067, 28)
-        Me.menu_inicio.TabIndex = 0
-        Me.menu_inicio.Text = "MenuStrip1"
+        Me.menu_inicioMateriales.BackColor = System.Drawing.Color.White
+        Me.menu_inicioMateriales.ImageScalingSize = New System.Drawing.Size(25, 25)
+        Me.menu_inicioMateriales.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpcionesToolStripMenuItem})
+        Me.menu_inicioMateriales.Location = New System.Drawing.Point(0, 0)
+        Me.menu_inicioMateriales.Name = "menu_inicioMateriales"
+        Me.menu_inicioMateriales.Size = New System.Drawing.Size(1067, 28)
+        Me.menu_inicioMateriales.TabIndex = 0
+        Me.menu_inicioMateriales.Text = "MenuStrip1"
         '
         'OpcionesToolStripMenuItem
         '
@@ -232,15 +232,15 @@ Partial Class inicio
         Me.Controls.Add(Me.lblPantalla)
         Me.Controls.Add(Me.img_icono)
         Me.Controls.Add(Me.barra_iconos)
-        Me.Controls.Add(Me.menu_inicio)
+        Me.Controls.Add(Me.menu_inicioMateriales)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MainMenuStrip = Me.menu_inicio
+        Me.MainMenuStrip = Me.menu_inicioMateriales
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "inicio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Almacén de Materiales"
-        Me.menu_inicio.ResumeLayout(False)
-        Me.menu_inicio.PerformLayout()
+        Me.menu_inicioMateriales.ResumeLayout(False)
+        Me.menu_inicioMateriales.PerformLayout()
         Me.barra_iconos.ResumeLayout(False)
         Me.barra_iconos.PerformLayout()
         CType(Me.img_icono, System.ComponentModel.ISupportInitialize).EndInit()
@@ -249,7 +249,7 @@ Partial Class inicio
 
     End Sub
 
-    Friend WithEvents menu_inicio As MenuStrip
+    Friend WithEvents menu_inicioMateriales As MenuStrip
     Friend WithEvents OpcionesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents menu_crear As ToolStripMenuItem
     Friend WithEvents menu_modif As ToolStripMenuItem

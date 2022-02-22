@@ -33,6 +33,7 @@ Partial Class eliminarMaterial
         Me.icon_guardar = New System.Windows.Forms.ToolStripButton()
         Me.menu_eliminarMaterial = New System.Windows.Forms.MenuStrip()
         Me.OpcionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menu_inicio = New System.Windows.Forms.ToolStripMenuItem()
         Me.menu_crear = New System.Windows.Forms.ToolStripMenuItem()
         Me.menu_modif = New System.Windows.Forms.ToolStripMenuItem()
         Me.menu_listar = New System.Windows.Forms.ToolStripMenuItem()
@@ -123,32 +124,38 @@ Partial Class eliminarMaterial
         '
         'OpcionesToolStripMenuItem
         '
-        Me.OpcionesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menu_crear, Me.menu_modif, Me.menu_listar, Me.menu_eliminar})
+        Me.OpcionesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menu_inicio, Me.menu_crear, Me.menu_modif, Me.menu_listar, Me.menu_eliminar})
         Me.OpcionesToolStripMenuItem.Name = "OpcionesToolStripMenuItem"
         Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(85, 24)
         Me.OpcionesToolStripMenuItem.Text = "&Opciones"
         Me.OpcionesToolStripMenuItem.ToolTipText = "Menú de opciones"
         '
+        'menu_inicio
+        '
+        Me.menu_inicio.Image = CType(resources.GetObject("menu_inicio.Image"), System.Drawing.Image)
+        Me.menu_inicio.Name = "menu_inicio"
+        Me.menu_inicio.Size = New System.Drawing.Size(229, 32)
+        Me.menu_inicio.Text = "&Inicio"
+        '
         'menu_crear
         '
         Me.menu_crear.Image = CType(resources.GetObject("menu_crear.Image"), System.Drawing.Image)
         Me.menu_crear.Name = "menu_crear"
-        Me.menu_crear.Size = New System.Drawing.Size(215, 26)
+        Me.menu_crear.Size = New System.Drawing.Size(229, 32)
         Me.menu_crear.Text = "&Crear material"
-        Me.menu_crear.ToolTipText = "Ventana actual"
         '
         'menu_modif
         '
         Me.menu_modif.Image = CType(resources.GetObject("menu_modif.Image"), System.Drawing.Image)
         Me.menu_modif.Name = "menu_modif"
-        Me.menu_modif.Size = New System.Drawing.Size(215, 26)
+        Me.menu_modif.Size = New System.Drawing.Size(229, 32)
         Me.menu_modif.Text = "&Modificar Material"
         '
         'menu_listar
         '
         Me.menu_listar.Image = CType(resources.GetObject("menu_listar.Image"), System.Drawing.Image)
         Me.menu_listar.Name = "menu_listar"
-        Me.menu_listar.Size = New System.Drawing.Size(215, 26)
+        Me.menu_listar.Size = New System.Drawing.Size(229, 32)
         Me.menu_listar.Text = "&Listar Materiales"
         '
         'menu_eliminar
@@ -156,8 +163,9 @@ Partial Class eliminarMaterial
         Me.menu_eliminar.Enabled = False
         Me.menu_eliminar.Image = CType(resources.GetObject("menu_eliminar.Image"), System.Drawing.Image)
         Me.menu_eliminar.Name = "menu_eliminar"
-        Me.menu_eliminar.Size = New System.Drawing.Size(215, 26)
+        Me.menu_eliminar.Size = New System.Drawing.Size(229, 32)
         Me.menu_eliminar.Text = "&Eliminar Material"
+        Me.menu_eliminar.ToolTipText = "Ventana actual"
         '
         'lblPantalla
         '
@@ -221,4 +229,5 @@ Partial Class eliminarMaterial
     Friend WithEvents txtnum_mat As TextBox
     Friend WithEvents lblnum_mat As Label
     Friend WithEvents btn_eliminar As Button
+    Friend WithEvents menu_inicio As ToolStripMenuItem
 End Class
