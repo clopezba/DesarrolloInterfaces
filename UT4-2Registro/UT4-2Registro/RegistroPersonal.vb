@@ -37,7 +37,7 @@ Public Class RegistroPersonal
     'Recibe desde la base de datos el último número de registro realizado
     Private Sub recibirNumeroRegistro()
         Dim total As Integer = 0
-        Dim consultaNum As String = "select IDENT_CURRENT('RegPersonal') as ultimoReg"
+        Dim consultaNum As String = "select @@IDENTITY as ultimoReg"
         Dim comando As SqlCommand
         comando = New SqlCommand(consultaNum, conexion)
         Dim registro As SqlDataReader
