@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class DatosPersonal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,18 @@ Partial Class DatosPersonal
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.RejillaDatos = New System.Windows.Forms.DataGridView()
         Me.cmbFiltrarAcceso = New System.Windows.Forms.ComboBox()
         Me.lblFiltrarAcceso = New System.Windows.Forms.Label()
+        Me.BDRegistroDataSet1 = New UT4_2Registro.BDRegistroDataSet1()
+        Me.RegPersonalBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.RegPersonalTableAdapter = New UT4_2Registro.BDRegistroDataSet1TableAdapters.RegPersonalTableAdapter()
         CType(Me.RejillaDatos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BDRegistroDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RegPersonalBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RejillaDatos
@@ -56,6 +62,20 @@ Partial Class DatosPersonal
         Me.lblFiltrarAcceso.TabIndex = 0
         Me.lblFiltrarAcceso.Text = "Filtrar por periodo de acceso"
         '
+        'BDRegistroDataSet1
+        '
+        Me.BDRegistroDataSet1.DataSetName = "BDRegistroDataSet1"
+        Me.BDRegistroDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'RegPersonalBindingSource
+        '
+        Me.RegPersonalBindingSource.DataMember = "RegPersonal"
+        Me.RegPersonalBindingSource.DataSource = Me.BDRegistroDataSet1
+        '
+        'RegPersonalTableAdapter
+        '
+        Me.RegPersonalTableAdapter.ClearBeforeFill = True
+        '
         'DatosPersonal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -68,6 +88,8 @@ Partial Class DatosPersonal
         Me.Name = "DatosPersonal"
         Me.Text = "DatosPersonal"
         CType(Me.RejillaDatos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BDRegistroDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RegPersonalBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -76,4 +98,7 @@ Partial Class DatosPersonal
     Friend WithEvents RejillaDatos As DataGridView
     Friend WithEvents cmbFiltrarAcceso As ComboBox
     Friend WithEvents lblFiltrarAcceso As Label
+    Friend WithEvents BDRegistroDataSet1 As BDRegistroDataSet1
+    Friend WithEvents RegPersonalBindingSource As BindingSource
+    Friend WithEvents RegPersonalTableAdapter As BDRegistroDataSet1TableAdapters.RegPersonalTableAdapter
 End Class

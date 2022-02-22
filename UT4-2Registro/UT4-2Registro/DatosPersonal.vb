@@ -5,6 +5,8 @@ Public Class DatosPersonal
     Dim con As SqlConnection
     Dim rejilla As New DataView
     Private Sub DatosPersonal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'BDRegistroDataSet1.RegPersonal' Puede moverla o quitarla según sea necesario.
+        Me.RegPersonalTableAdapter.Fill(Me.BDRegistroDataSet1.RegPersonal)
         con = New SqlConnection
         Dim direcActual As String = Directory.GetCurrentDirectory()
         Dim directorio As String = Directory.GetParent(Directory.GetParent(direcActual).ToString()).ToString()
@@ -34,5 +36,9 @@ Public Class DatosPersonal
         Catch ex As Exception
             Console.WriteLine("No se ha podido desconectar. Error: " + ex.Message)
         End Try
+    End Sub
+
+    Private Sub RejillaDatos_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles RejillaDatos.CellContentClick
+
     End Sub
 End Class
