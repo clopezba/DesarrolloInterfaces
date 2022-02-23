@@ -22,10 +22,7 @@ Public Class crearMaterial
         Catch ex As Exception
             Console.WriteLine("No se ha podido conectar. Error: " + ex.Message)
         End Try
-
         obtenerNumeroMaterial()
-
-
     End Sub
 
     'Recibe de la BD el número del último material registrado
@@ -75,6 +72,7 @@ Public Class crearMaterial
                 cmbsub_cat.Items.AddRange(New String() {"Antivirus", "Servicio"})
                 impVenta = 1.7
         End Select
+        calcularPrecio()
     End Sub
 
     'Comprobar campos obligatorios
@@ -165,24 +163,36 @@ Public Class crearMaterial
         Catch ex As Exception
             Console.WriteLine(ex.Message)
         End Try
+    End Sub
 
-
-
+    Private Sub limpiarCampos()
+        For Each control As Control In pnlCampos.Controls
+            control.ResetText()
+        Next
+        cmbcat.SelectedItem = Nothing
+        cmbsub_cat.SelectedItem = Nothing
+        cmbpasillo.SelectedItem = Nothing
+        For Each radio As RadioButton In pnlsec.Controls
+            radio.Checked = False
+        Next
+        obtenerNumeroMaterial()
     End Sub
 
 
+    '+++++++++[ FUNCIONES MENÚ E ICONOS ]+++++++++++
     Private Sub icon_guardar_Click(sender As Object, e As EventArgs) Handles icon_guardar.Click
         If comprobarObligatorios() Then
             Try
                 enviarDatos()
+                limpiarCampos()
+
+                MessageBox.Show("Material registrado correctamente", "Registro correcto", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Catch ex As Exception
-                MessageBox.Show("Error al insertar los datos")
+                MessageBox.Show("Error al insertar los datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
-
         End If
-    End Sub
 
-    '+++++++++[ FUNCIONES MENÚ E ICONOS ]+++++++++++
+    End Sub
     Private Sub icon_inicio_Click(sender As Object, e As EventArgs) Handles icon_inicio.Click, menu_inicio.Click
         Dim inicio As New inicio
         inicio.Show()
@@ -208,11 +218,14 @@ Public Class crearMaterial
 
     '++++++++[ FORMATEAR IMPORTES ]++++++++++
     Private Sub txtimp_com_LostFocus(sender As Object, e As EventArgs) Handles txtimp_com.LostFocus
-        txtimp_com.Text = String.Format("{0:C2}", CDec(txtimp_com.Text))
-
+        If Not txtimp_com.Text = Nothing Then
+            txtimp_com.Text = String.Format("{0:C2}", CDec(txtimp_com.Text))
+            txtimp_ven.Text = String.Format("{0:C2}", CDec(txtimp_com.Text) * impVenta)
+            contComas = 0
+        End If
     End Sub
 
-    '+++++++++[ RECALCULAR IMPORTE VENTA ]+++++++++
+    '+++++++++[ CALCULAR IMPORTE VENTA ]+++++++++
     Private Sub calcularPrecio()
         If Not txtimp_com.Text = Nothing Then
             txtimp_ven.Text = String.Format("{0:C2}", CDec(txtimp_com.Text) * impVenta)
@@ -230,7 +243,7 @@ Public Class crearMaterial
             e.Handled = True
         End If
     End Sub
-    '+++++++++[ IMPORTES SOLO NUMEROS NATURALES ]++++++++
+    '+++++++++[ IMPORTES SOLO NUMEROS NATURALES & UNA SOLA COMA ]++++++++
     Private Sub txtimp_com_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtimp_com.KeyPress
         If Char.IsNumber(e.KeyChar) Then
             e.Handled = False

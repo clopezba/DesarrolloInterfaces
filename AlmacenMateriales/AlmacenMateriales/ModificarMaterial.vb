@@ -1,6 +1,23 @@
 ﻿Imports System.ComponentModel
 Public Class modificarMaterial
 
+
+
+    Private Sub limpiarCampos()
+        For Each control As Control In pnlCampos.Controls
+            control.ResetText()
+        Next
+        cmbcat.SelectedItem = Nothing
+        cmbsub_cat.SelectedItem = Nothing
+        cmbpasillo.SelectedItem = Nothing
+        For Each radio As RadioButton In pnlsec.Controls
+            radio.Checked = False
+        Next
+        'obtenerNumeroMaterial()
+    End Sub
+
+
+
     Private Sub icon_inicio_Click(sender As Object, e As EventArgs) Handles icon_inicio.Click, menu_inicio.Click
         Dim inicio As New inicio
         inicio.Show()
