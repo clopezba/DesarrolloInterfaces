@@ -6,6 +6,7 @@ Public Class crearMaterial
 
     Dim conexion As SqlConnection
     Dim impVenta As Single
+    Dim contComas As Integer = 0
 
     Private Sub crearMaterial_Load(sender As Object, e As EventArgs) Handles Me.Load
         fechafe_reg.Value = Date.Today
@@ -145,9 +146,10 @@ Public Class crearMaterial
                 .AddWithValue("@impVen", impVen)
             End With
 
-            Dim consultaGest As String = "insert into Gest_Materiales values (@pasillo, @seccion, @stock)"
+            Dim consultaGest As String = "insert into Gest_Materiales values (@num_mat, @pasillo, @seccion, @stock)"
             Dim commandGest As SqlCommand = New SqlCommand(consultaGest, conexion)
             With commandGest.Parameters
+                .AddWithValue("@num_mat", CInt(txtnum_mat.Text))
                 .AddWithValue("@pasillo", pasillo)
                 .AddWithValue("@seccion", seccion)
                 .AddWithValue("@stock", stock)
@@ -207,7 +209,15 @@ Public Class crearMaterial
     '++++++++[ FORMATEAR IMPORTES ]++++++++++
     Private Sub txtimp_com_LostFocus(sender As Object, e As EventArgs) Handles txtimp_com.LostFocus
         txtimp_com.Text = String.Format("{0:C2}", CDec(txtimp_com.Text))
-        txtimp_ven.Text = String.Format("{0:C2}", CDec(txtimp_com.Text) * impVenta)
+
+    End Sub
+
+    '+++++++++[ RECALCULAR IMPORTE VENTA ]+++++++++
+    Private Sub calcularPrecio()
+        If Not txtimp_com.Text = Nothing Then
+            txtimp_ven.Text = String.Format("{0:C2}", CDec(txtimp_com.Text) * impVenta)
+        End If
+
     End Sub
 
     '+++++++++[ STOCK SOLO NUMEROS NATURALES ]++++++++
@@ -222,7 +232,10 @@ Public Class crearMaterial
     End Sub
     '+++++++++[ IMPORTES SOLO NUMEROS NATURALES ]++++++++
     Private Sub txtimp_com_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtimp_com.KeyPress
-        If Char.IsNumber(e.KeyChar) Or Asc(e.KeyChar) = 44 Then
+        If Char.IsNumber(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Asc(e.KeyChar) = 44 And contComas = 0 Then
+            contComas += 1
             e.Handled = False
         ElseIf Char.IsControl(e.KeyChar) Then
             e.Handled = False
