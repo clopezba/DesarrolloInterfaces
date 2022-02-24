@@ -178,6 +178,15 @@ Public Class crearMaterial
         obtenerNumeroMaterial()
     End Sub
 
+    Private Sub crearMaterial_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        Try
+            conexion.Close()
+            Console.WriteLine("Desconectado de la base de datos")
+        Catch ex As Exception
+            Console.WriteLine("No se ha podido desconectar. Error: " + ex.Message)
+        End Try
+    End Sub
+
 
     '+++++++++[ FUNCIONES MENÚ E ICONOS ]+++++++++++
     Private Sub icon_guardar_Click(sender As Object, e As EventArgs) Handles icon_guardar.Click
@@ -256,4 +265,5 @@ Public Class crearMaterial
             e.Handled = True
         End If
     End Sub
+
 End Class
