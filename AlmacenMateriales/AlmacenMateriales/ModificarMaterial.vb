@@ -5,7 +5,7 @@ Imports System.IO
 Public Class modificarMaterial
     Dim conexion As SqlConnection
     Dim impVenta As Single
-    Dim contComas As Integer = 0
+
     Private Sub modificarMaterial_Load(sender As Object, e As EventArgs) Handles Me.Load
         Dim direcActual As String = Directory.GetCurrentDirectory()
         Dim directorio As String = Directory.GetParent(Directory.GetParent(direcActual).ToString()).ToString()
@@ -21,9 +21,29 @@ Public Class modificarMaterial
         End Try
     End Sub
 
+    Private Function numValido()
+        Dim existe As Boolean = False
+        If Not txtmat_buscar.Text.Trim = Nothing Then
+            Dim consultaNum As String = "select mat FROM Materiales where num_mat = @nummat"
+            Dim comando As SqlCommand = New SqlCommand(consultaNum, conexion)
+            comando.Parameters.AddWithValue("@nummat", txtmat_buscar.Text.Trim)
+
+            Dim num As SqlDataReader = comando.ExecuteReader()
+
+            If Not num.Read = Nothing Then
+                Dim material As String = num("mat")
+                existe = True
+                Console.WriteLine(material)
+            End If
+            num.Close()
+        End If
+
+        Return existe
+    End Function
+
     Private Sub buscarMaterial()
         limpiarCampos()
-        If Not txtmat_buscar.Text.Trim = Nothing Then
+        If Not txtmat_buscar.Text.Trim = Nothing And numValido() Then
             Try
                 Dim consulta As String = "select * from Materiales where num_mat = @nummat"
                 Dim comando As SqlCommand = New SqlCommand(consulta, conexion)
@@ -64,8 +84,10 @@ Public Class modificarMaterial
             Catch ex As Exception
                 Console.WriteLine("Error en la consulta gest_materiales: " + ex.Message)
             End Try
-
+        Else
+            MessageBox.Show("No existe ese número")
         End If
+
     End Sub
 
     Private Sub limpiarCampos()
@@ -234,16 +256,16 @@ Public Class modificarMaterial
     End Sub
 
     Private Sub txtimp_com_LostFocus(sender As Object, e As EventArgs) Handles txtimp_com.LostFocus
-        If Not txtimp_com.Text = Nothing Then
+        If Not txtimp_com.Text = Nothing And Not txtimp_com.Text.Trim = "€" And Not txtimp_com.Text.Trim = "," Then
             txtimp_com.Text = String.Format("{0:C2}", CDec(txtimp_com.Text))
             txtimp_ven.Text = String.Format("{0:C2}", CDec(txtimp_com.Text) * impVenta)
-            contComas = 0
+
         End If
     End Sub
 
     '+++++++++[ CALCULAR IMPORTE VENTA ]+++++++++
     Private Sub calcularPrecio()
-        If Not txtimp_com.Text = Nothing Then
+        If Not txtimp_com.Text = Nothing And Not txtimp_com.Text.Trim = "€" And Not txtimp_com.Text.Trim = "," Then
             txtimp_ven.Text = String.Format("{0:C2}", CDec(txtimp_com.Text) * impVenta)
         End If
 
@@ -251,9 +273,7 @@ Public Class modificarMaterial
 
     '+++++++++[ STOCK SOLO NUMEROS NATURALES ]++++++++
     Private Sub txtstock_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtstock.KeyPress
-        If Char.IsNumber(e.KeyChar) Then
-            e.Handled = False
-        ElseIf Char.IsControl(e.KeyChar) Then
+        If Char.IsNumber(e.KeyChar) Or Char.IsControl(e.KeyChar) Then
             e.Handled = False
         Else
             e.Handled = True
@@ -261,14 +281,10 @@ Public Class modificarMaterial
     End Sub
     '+++++++++[ IMPORTES SOLO NUMEROS NATURALES & UNA SOLA COMA ]++++++++
     Private Sub txtimp_com_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtimp_com.KeyPress
-        If Char.IsNumber(e.KeyChar) Then
-            e.Handled = False
-        ElseIf Asc(e.KeyChar) = 44 And contComas = 0 Then
-            contComas += 1
-            e.Handled = False
-        ElseIf Char.IsControl(e.KeyChar) Then
-            e.Handled = False
-        Else
+        If Not Char.IsNumber(e.KeyChar) And Not e.KeyChar = "," And Not Char.IsControl(e.KeyChar) Then
+            e.Handled = True
+        End If
+        If e.KeyChar = "," And txtimp_com.Text.Contains(",") Then
             e.Handled = True
         End If
     End Sub
