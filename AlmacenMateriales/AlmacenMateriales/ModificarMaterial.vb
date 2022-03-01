@@ -233,6 +233,7 @@ Public Class modificarMaterial
 
     End Sub
 
+    '++++++[[ ICONOS Y MENÚS ]]++++
     Private Sub icon_inicio_Click(sender As Object, e As EventArgs) Handles icon_inicio.Click, menu_inicio.Click
         Dim inicio As New inicio
         inicio.Show()
