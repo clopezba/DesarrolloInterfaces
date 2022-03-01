@@ -49,7 +49,7 @@ Public Class eliminarMaterial
     Private Sub btn_eliminar_Click(sender As Object, e As EventArgs) Handles btn_eliminar.Click
         If buscarMaterial() Then
             Dim texto As String = "Número de Material: " + txtnum_mat.Text + vbCrLf + "Material: " + material
-            Dim resultado As DialogResult = MessageBox.Show(texto, "¿Está seguro que desea eliminar el Material?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+            Dim resultado As DialogResult = MessageBox.Show(texto, "¿Está seguro que desea eliminar el Material?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
 
             If resultado = DialogResult.Yes Then
                 MessageBox.Show("Bien")
