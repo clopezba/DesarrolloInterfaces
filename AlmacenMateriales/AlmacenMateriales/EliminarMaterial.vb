@@ -24,35 +24,59 @@ Public Class eliminarMaterial
 
 
     Private Function buscarMaterial()
+        Dim materiales As Boolean = False
+        Dim gest_materiales As Boolean = False
+
         Dim consulta As String = "SELECT mat FROM Materiales WHERE num_mat=@num"
         Dim command As SqlCommand = New SqlCommand(consulta, conexion)
         command.Parameters.AddWithValue("@num", txtnum_mat.Text)
-
         Dim resultado As SqlDataReader = command.ExecuteReader()
+
         Try
             If resultado.Read() Then
                 material = resultado("mat")
                 resultado.Close()
-                Return True
+                materiales = True
             Else
                 resultado.Close()
-                Return False
+                materiales = False
             End If
-
         Catch ex As Exception
-            Console.WriteLine("Error: " + ex.Message)
-            Return False
+            Console.WriteLine("Error al leer la tabla Materiales: " + ex.Message)
         End Try
+
+        Dim consultaGest As String = "SELECT pas FROM Gest_Materiales WHERE num_mat=@num"
+        Dim commandGest As SqlCommand = New SqlCommand(consultaGest, conexion)
+        commandGest.Parameters.AddWithValue("@num", txtnum_mat.Text)
+        Dim result As SqlDataReader = commandGest.ExecuteReader()
+
+        Try
+            If result.Read() Then
+                result.Close()
+                gest_materiales = True
+            Else
+                result.Close()
+                gest_materiales = False
+            End If
+        Catch ex As Exception
+            Console.WriteLine("Error al leer la tabla Gest_Materiales: " + ex.Message)
+        End Try
+
+        If materiales And gest_materiales Then
+            Return True
+        Else
+            Return False
+        End If
 
     End Function
 
     Private Sub btn_eliminar_Click(sender As Object, e As EventArgs) Handles btn_eliminar.Click
         If buscarMaterial() Then
-            Dim texto As String = "Número de Material: " + txtnum_mat.Text + vbCrLf + "Material: " + material
-            Dim resultado As DialogResult = MessageBox.Show(texto, "¿Está seguro que desea eliminar el Material?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+            Dim texto As String = "¿Está seguro que desea eliminar el Material?" + vbCrLf + "Número de Material: " + txtnum_mat.Text + vbCrLf + "Material: " + material
+            Dim resultado As DialogResult = MessageBox.Show(texto, "", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation)
 
-            If resultado = DialogResult.Yes Then
-                MessageBox.Show("Bien")
+            If resultado = DialogResult.OK Then
+                eliminarMaterial()
             End If
 
         Else
@@ -61,6 +85,24 @@ Public Class eliminarMaterial
     End Sub
 
     Private Sub eliminarMaterial()
+        Dim eliminarGest As String = "DELETE FROM Gest_Materiales WHERE num_mat = @num"
+        Dim comandoGest As SqlCommand = New SqlCommand(eliminarGest, conexion)
+        comandoGest.Parameters.AddWithValue("@num", txtnum_mat.Text)
+
+        Dim eliminarMat As String = "DELETE FROM Materiales WHERE num_mat = @num"
+        Dim comandoMat As SqlCommand = New SqlCommand(eliminarMat, conexion)
+        comandoMat.Parameters.AddWithValue("@num", txtnum_mat.Text)
+
+        Try
+            comandoGest.ExecuteNonQuery()
+            comandoMat.ExecuteNonQuery()
+
+            MessageBox.Show("Registro eliminado correctamente", "Registro borrado", MessageBoxButtons.OK)
+
+            txtnum_mat.Text = Nothing
+        Catch ex As Exception
+            Console.WriteLine("Error al borrar los datos. Error: " + ex.Message)
+        End Try
 
     End Sub
 
