@@ -8,6 +8,7 @@ Public Class listarMateriales
     Dim rejilla As New DataView
 
     Private Sub listarMaterial_Load(sender As Object, e As EventArgs) Handles Me.Load
+        limpiarCampos()
 
         Dim direcActual As String = Directory.GetCurrentDirectory()
         Dim directorio As String = Directory.GetParent(Directory.GetParent(direcActual).ToString()).ToString()
@@ -21,11 +22,6 @@ Public Class listarMateriales
         Catch ex As Exception
             Console.WriteLine("No se ha podido conectar. Error: " + ex.Message)
         End Try
-        Dim adaptador As New SqlDataAdapter("SELECT m.*, g.pas, g.sec, g.stock FROM Materiales m JOIN Gest_Materiales g ON m.num_mat = g.num_mat", conexion)
-        Dim datos As New DataSet
-        adaptador.Fill(datos)
-        rejilla.Table = datos.Tables(0)
-        rejillaMateriales.DataSource = rejilla
 
     End Sub
 
@@ -46,10 +42,46 @@ Public Class listarMateriales
                 listado &= " AND cat LIKE '%" + cmbcat.SelectedItem.ToString + "%'"
             End If
         End If
+        If Not cmbsub_cat.SelectedItem = Nothing Then
+            If listado = "" Then
+                listado = "sub_cat LIKE '%" + cmbsub_cat.SelectedItem.ToString + "%'"
+            Else
+                listado &= " AND sub_cat LIKE '%" + cmbsub_cat.SelectedItem.ToString + "%'"
+            End If
+        End If
+        If fechafe_reg.Checked = True Then
+            If listado = "" Then
+                listado = "fe_reg = '" + fechafe_reg.Value.Date + "'"
+            Else
+                listado &= " AND fe_reg = '" + fechafe_reg.Value.Date + "'"
+            End If
+        End If
+        If Not cmbPasillo.SelectedItem = Nothing Then
+            If listado = "" Then
+                listado = "pas = " + cmbPasillo.SelectedItem.ToString
+            Else
+                listado &= " AND pas = " + cmbPasillo.SelectedItem.ToString
+            End If
+        End If
+        For Each radio As RadioButton In pnlsec.Controls
+            If radio.Checked = True Then
+                If listado = "" Then
+                    listado = "sec = '" + radio.Text + "'"
+                Else
+                    listado &= " AND sec = '" + radio.Text + "'"
+                End If
+            End If
 
+        Next
+        If Not listado = "" Then
+            Dim adaptador As New SqlDataAdapter("SELECT m.*, g.pas, g.sec, g.stock FROM Materiales m JOIN Gest_Materiales g ON m.num_mat = g.num_mat", conexion)
+            Dim datos As New DataSet
+            adaptador.Fill(datos)
+            rejilla.Table = datos.Tables(0)
+            rejillaMateriales.DataSource = rejilla
+            rejilla.RowFilter = listado
+        End If
 
-
-        rejilla.RowFilter = listado
     End Sub
 
     Private Sub btnlistar_Click(sender As Object, e As EventArgs) Handles btnlistar.Click
@@ -67,20 +99,8 @@ Public Class listarMateriales
         For Each radio As RadioButton In pnlsec.Controls
             radio.Checked = False
         Next
-    End Sub
-
-    'Cambiar combobox de subcategorías según categoría seleccionada
-    Private Sub cmbcat_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbcat.SelectedIndexChanged
-        Select Case cmbcat.SelectedItem
-            Case "Hardware"
-                cmbsub_cat.ResetText()
-                cmbsub_cat.Items.Clear()
-                cmbsub_cat.Items.AddRange(New String() {"Equipo", "Periféricos"})
-            Case "Software"
-                cmbsub_cat.ResetText()
-                cmbsub_cat.Items.Clear()
-                cmbsub_cat.Items.AddRange(New String() {"Antivirus", "Servicio"})
-        End Select
+        fechafe_reg.Value = Date.Today
+        fechafe_reg.Checked = False
     End Sub
 
     '++++++++[[ ICONOS Y MENU ]]++++++++

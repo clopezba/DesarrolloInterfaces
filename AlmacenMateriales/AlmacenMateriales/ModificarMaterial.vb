@@ -51,12 +51,12 @@ Public Class modificarMaterial
 
                 Dim contador As SqlDataReader = comando.ExecuteReader()
                 If contador.Read() Then
-                    txtnum_mat.Text = contador("num_mat")
-                    txtmat.Text = contador("mat").ToString.Trim
-                    cmbcat.SelectedItem = contador("cat").ToString.Trim
-                    cmbsub_cat.Text = contador("sub_cat").ToString.Trim
+                    txtnum_mat.Text = Format(contador("num_mat"), "00000000")
+                    txtmat.Text = contador("mat").ToString
+                    cmbcat.SelectedItem = contador("cat").ToString
+                    cmbsub_cat.Text = contador("sub_cat").ToString
                     fechafe_reg.Value = contador("fe_reg")
-                    txtdesc.Text = contador("desc").ToString.Trim
+                    txtdesc.Text = contador("desc").ToString
                     txtimp_com.Text = String.Format("{0:C2}", contador("imp_com"))
                     txtimp_ven.Text = String.Format("{0:C2}", contador("imp_ven"))
                 End If
