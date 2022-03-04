@@ -39,13 +39,6 @@ Public Class listarMateriales
                 listado &= " AND num_mat = " + txtnum_mat.Text
             End If
         End If
-        If Not txtmat.Text.Trim = Nothing Then
-            If listado = "" Then
-                listado = "mat LIKE '%" + txtmat.Text + "%'"
-            Else
-                listado &= " AND mat LIKE '%" + txtmat.Text + "%'"
-            End If
-        End If
         If Not cmbcat.SelectedItem = Nothing Then
             If listado = "" Then
                 listado = "cat LIKE '%" + cmbcat.SelectedItem.ToString + "%'"
