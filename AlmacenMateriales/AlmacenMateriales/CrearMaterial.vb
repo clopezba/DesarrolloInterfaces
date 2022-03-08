@@ -33,7 +33,6 @@ Public Class crearMaterial
         Dim contador As SqlDataReader = comandoVac.ExecuteReader()
         If contador.Read() Then
             ultimo = contador("cuenta")
-            Console.WriteLine(ultimo)
         End If
         contador.Close()
 
@@ -102,6 +101,11 @@ Public Class crearMaterial
 
         If txtstock.Text.Trim = "" Then
             cadena &= "Debes indicar el stock" & vbCrLf
+        End If
+
+        If txtimp_com.Text.Trim = Nothing Or txtimp_com.Text.Trim = "," Or txtimp_com.Text.Trim = "€" Then
+            txtimp_com.Text = 0
+            txtimp_ven.Text = 0
         End If
 
         If cadena = "" Then
@@ -201,7 +205,7 @@ Public Class crearMaterial
         End If
 
     End Sub
-    Private Sub icon_inicio_Click(sender As Object, e As EventArgs) Handles icon_inicio.Click, menu_inicio.Click
+    Private Sub menu_inicio_Click(sender As Object, e As EventArgs) Handles icon_inicio.Click, menu_inicio.Click
         Dim inicio As New inicio
         inicio.Show()
         Me.Close()
@@ -227,15 +231,13 @@ Public Class crearMaterial
     '++++++++[ FORMATEAR IMPORTES ]++++++++++
     Private Sub txtimp_com_LostFocus(sender As Object, e As EventArgs) Handles txtimp_com.LostFocus
         If Not txtimp_com.Text.Trim = Nothing And Not txtimp_com.Text.Trim = "€" And Not txtimp_com.Text.Trim = "," Then
-
-
             txtimp_com.Text = String.Format("{0:C2}", CDec(txtimp_com.Text))
-
-
-
             txtimp_ven.Text = String.Format("{0:C2}", CDec(txtimp_com.Text) * impVenta)
-
+        Else
+            txtimp_com.Text = 0
+            txtimp_ven.Text = 0
         End If
+
     End Sub
 
     '+++++++++[ CALCULAR IMPORTE VENTA ]+++++++++

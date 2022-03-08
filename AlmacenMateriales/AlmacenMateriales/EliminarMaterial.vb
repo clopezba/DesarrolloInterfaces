@@ -7,7 +7,7 @@ Public Class eliminarMaterial
     Dim conexion As SqlConnection
     Dim material As String
 
-    Private Sub crearMaterial_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub eliminarMaterial_Load(sender As Object, e As EventArgs) Handles Me.Load
         Dim direcActual As String = Directory.GetCurrentDirectory()
         Dim directorio As String = Directory.GetParent(Directory.GetParent(direcActual).ToString()).ToString()
 
@@ -101,14 +101,22 @@ Public Class eliminarMaterial
 
             txtnum_mat.Text = Nothing
         Catch ex As Exception
+            MessageBox.Show("No se ha podido eliminar el registro", "Error en el borrado", MessageBoxButtons.OK)
             Console.WriteLine("Error al borrar los datos. Error: " + ex.Message)
         End Try
 
     End Sub
-
+    Private Sub eliminarMaterial_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        Try
+            conexion.Close()
+            Console.WriteLine("Desconectado de la base de datos")
+        Catch ex As Exception
+            Console.WriteLine("No se ha podido desconectar. Error: " + ex.Message)
+        End Try
+    End Sub
 
     '+++++[[ ICONOS Y MENÚS ]]++++++
-    Private Sub icon_inicio_Click(sender As Object, e As EventArgs) Handles icon_inicio.Click, menu_inicio.Click
+    Private Sub menu_inicio_Click(sender As Object, e As EventArgs) Handles icon_inicio.Click, menu_inicio.Click
         Dim inicio As New inicio
         inicio.Show()
         Me.Close()
@@ -130,5 +138,13 @@ Public Class eliminarMaterial
         Me.Close()
     End Sub
 
+    '+++++++++[ NumMat SOLO NUMEROS NATURALES ]++++++++
+    Private Sub txtnum_mat_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtnum_mat.KeyPress
+        If Char.IsNumber(e.KeyChar) Or Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
 
 End Class

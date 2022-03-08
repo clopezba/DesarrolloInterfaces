@@ -149,6 +149,10 @@ Public Class modificarMaterial
         If txtstock.Text.Trim = "" Then
             cadena &= "Debes indicar el stock" & vbCrLf
         End If
+        If txtimp_com.Text.Trim = Nothing Or txtimp_com.Text.Trim = "," Or txtimp_com.Text.Trim = "€" Then
+            txtimp_com.Text = 0
+            txtimp_ven.Text = 0
+        End If
 
         If cadena = "" Then
             Return True
@@ -219,6 +223,15 @@ Public Class modificarMaterial
         End Try
     End Sub
 
+    Private Sub modificarMaterial_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        Try
+            conexion.Close()
+            Console.WriteLine("Desconectado de la base de datos")
+        Catch ex As Exception
+            Console.WriteLine("No se ha podido desconectar. Error: " + ex.Message)
+        End Try
+    End Sub
+
     Private Sub icon_guardar_Click(sender As Object, e As EventArgs) Handles icon_guardar.Click
         If comprobarObligatorios() Then
             Try
@@ -230,11 +243,10 @@ Public Class modificarMaterial
                 MessageBox.Show("Error al modificar los datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
         End If
-
     End Sub
 
     '++++++[[ ICONOS Y MENÚS ]]++++
-    Private Sub icon_inicio_Click(sender As Object, e As EventArgs) Handles icon_inicio.Click, menu_inicio.Click
+    Private Sub menu_inicio_Click(sender As Object, e As EventArgs) Handles icon_inicio.Click, menu_inicio.Click
         Dim inicio As New inicio
         inicio.Show()
         Me.Close()
@@ -260,7 +272,9 @@ Public Class modificarMaterial
         If Not txtimp_com.Text = Nothing And Not txtimp_com.Text.Trim = "€" And Not txtimp_com.Text.Trim = "," Then
             txtimp_com.Text = String.Format("{0:C2}", CDec(txtimp_com.Text))
             txtimp_ven.Text = String.Format("{0:C2}", CDec(txtimp_com.Text) * impVenta)
-
+        Else
+            txtimp_com.Text = 0
+            txtimp_ven.Text = 0
         End If
     End Sub
 

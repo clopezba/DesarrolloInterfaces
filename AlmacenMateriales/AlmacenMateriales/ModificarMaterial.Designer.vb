@@ -38,23 +38,6 @@ Partial Class modificarMaterial
         Me.img_icono = New System.Windows.Forms.PictureBox()
         Me.txtmat_buscar = New System.Windows.Forms.TextBox()
         Me.btn_buscar = New System.Windows.Forms.Button()
-        Me.lblstock = New System.Windows.Forms.Label()
-        Me.lblimp_ven = New System.Windows.Forms.Label()
-        Me.lblsub_cat = New System.Windows.Forms.Label()
-        Me.lblpas = New System.Windows.Forms.Label()
-        Me.lbldesc = New System.Windows.Forms.Label()
-        Me.lblsec = New System.Windows.Forms.Label()
-        Me.lblmat = New System.Windows.Forms.Label()
-        Me.lblimp_com = New System.Windows.Forms.Label()
-        Me.lblcat = New System.Windows.Forms.Label()
-        Me.lblfe_reg = New System.Windows.Forms.Label()
-        Me.lblnum_mat = New System.Windows.Forms.Label()
-        Me.lblPantalla = New System.Windows.Forms.Label()
-        Me.pnlbuscar = New System.Windows.Forms.Panel()
-        Me.lblmat_buscar = New System.Windows.Forms.Label()
-        Me.pnlCampos = New System.Windows.Forms.Panel()
-        Me.lbleur2 = New System.Windows.Forms.Label()
-        Me.lbleur = New System.Windows.Forms.Label()
         Me.pnlsec = New System.Windows.Forms.Panel()
         Me.rdbtF = New System.Windows.Forms.RadioButton()
         Me.rdbtD = New System.Windows.Forms.RadioButton()
@@ -72,12 +55,27 @@ Partial Class modificarMaterial
         Me.txtimp_ven = New System.Windows.Forms.TextBox()
         Me.txtnum_mat = New System.Windows.Forms.TextBox()
         Me.txtmat = New System.Windows.Forms.TextBox()
+        Me.lblstock = New System.Windows.Forms.Label()
+        Me.lblimp_ven = New System.Windows.Forms.Label()
+        Me.lblsub_cat = New System.Windows.Forms.Label()
+        Me.lblpas = New System.Windows.Forms.Label()
+        Me.lbldesc = New System.Windows.Forms.Label()
+        Me.lblsec = New System.Windows.Forms.Label()
+        Me.lblmat = New System.Windows.Forms.Label()
+        Me.lblimp_com = New System.Windows.Forms.Label()
+        Me.lblcat = New System.Windows.Forms.Label()
+        Me.lblfe_reg = New System.Windows.Forms.Label()
+        Me.lblnum_mat = New System.Windows.Forms.Label()
+        Me.lblPantalla = New System.Windows.Forms.Label()
+        Me.pnlbuscar = New System.Windows.Forms.Panel()
+        Me.lblmat_buscar = New System.Windows.Forms.Label()
+        Me.pnlCampos = New System.Windows.Forms.Panel()
         Me.menu_modificar.SuspendLayout()
         Me.barra_iconos.SuspendLayout()
         CType(Me.img_icono, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlsec.SuspendLayout()
         Me.pnlbuscar.SuspendLayout()
         Me.pnlCampos.SuspendLayout()
-        Me.pnlsec.SuspendLayout()
         Me.SuspendLayout()
         '
         'menu_modificar
@@ -200,187 +198,6 @@ Partial Class modificarMaterial
         Me.btn_buscar.Text = "Buscar"
         Me.ayuda.SetToolTip(Me.btn_buscar, "Buscar material indicado")
         Me.btn_buscar.UseVisualStyleBackColor = True
-        '
-        'lblstock
-        '
-        Me.lblstock.AutoSize = True
-        Me.lblstock.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblstock.Location = New System.Drawing.Point(201, 687)
-        Me.lblstock.Name = "lblstock"
-        Me.lblstock.Size = New System.Drawing.Size(61, 24)
-        Me.lblstock.TabIndex = 24
-        Me.lblstock.Text = "Stock:"
-        '
-        'lblimp_ven
-        '
-        Me.lblimp_ven.AutoSize = True
-        Me.lblimp_ven.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblimp_ven.Location = New System.Drawing.Point(201, 564)
-        Me.lblimp_ven.Name = "lblimp_ven"
-        Me.lblimp_ven.Size = New System.Drawing.Size(159, 24)
-        Me.lblimp_ven.TabIndex = 25
-        Me.lblimp_ven.Text = "Importe de Venta:"
-        '
-        'lblsub_cat
-        '
-        Me.lblsub_cat.AutoSize = True
-        Me.lblsub_cat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblsub_cat.Location = New System.Drawing.Point(201, 352)
-        Me.lblsub_cat.Name = "lblsub_cat"
-        Me.lblsub_cat.Size = New System.Drawing.Size(126, 24)
-        Me.lblsub_cat.TabIndex = 22
-        Me.lblsub_cat.Text = "Subcategoría:"
-        '
-        'lblpas
-        '
-        Me.lblpas.AutoSize = True
-        Me.lblpas.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblpas.Location = New System.Drawing.Point(201, 603)
-        Me.lblpas.Name = "lblpas"
-        Me.lblpas.Size = New System.Drawing.Size(69, 24)
-        Me.lblpas.TabIndex = 21
-        Me.lblpas.Text = "Pasillo:"
-        '
-        'lbldesc
-        '
-        Me.lbldesc.AutoSize = True
-        Me.lbldesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbldesc.Location = New System.Drawing.Point(201, 427)
-        Me.lbldesc.Name = "lbldesc"
-        Me.lbldesc.Size = New System.Drawing.Size(115, 24)
-        Me.lbldesc.TabIndex = 20
-        Me.lbldesc.Text = "Descripción:"
-        '
-        'lblsec
-        '
-        Me.lblsec.AutoSize = True
-        Me.lblsec.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblsec.Location = New System.Drawing.Point(201, 646)
-        Me.lblsec.Name = "lblsec"
-        Me.lblsec.Size = New System.Drawing.Size(84, 24)
-        Me.lblsec.TabIndex = 19
-        Me.lblsec.Text = "Sección:"
-        '
-        'lblmat
-        '
-        Me.lblmat.AutoSize = True
-        Me.lblmat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblmat.Location = New System.Drawing.Point(201, 276)
-        Me.lblmat.Name = "lblmat"
-        Me.lblmat.Size = New System.Drawing.Size(80, 24)
-        Me.lblmat.TabIndex = 18
-        Me.lblmat.Text = "Material:"
-        '
-        'lblimp_com
-        '
-        Me.lblimp_com.AutoSize = True
-        Me.lblimp_com.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblimp_com.Location = New System.Drawing.Point(201, 528)
-        Me.lblimp_com.Name = "lblimp_com"
-        Me.lblimp_com.Size = New System.Drawing.Size(177, 24)
-        Me.lblimp_com.TabIndex = 17
-        Me.lblimp_com.Text = "Importe de Compra:"
-        '
-        'lblcat
-        '
-        Me.lblcat.AutoSize = True
-        Me.lblcat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblcat.Location = New System.Drawing.Point(201, 314)
-        Me.lblcat.Name = "lblcat"
-        Me.lblcat.Size = New System.Drawing.Size(95, 24)
-        Me.lblcat.TabIndex = 16
-        Me.lblcat.Text = "Categoría:"
-        '
-        'lblfe_reg
-        '
-        Me.lblfe_reg.AutoSize = True
-        Me.lblfe_reg.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblfe_reg.Location = New System.Drawing.Point(201, 390)
-        Me.lblfe_reg.Name = "lblfe_reg"
-        Me.lblfe_reg.Size = New System.Drawing.Size(170, 24)
-        Me.lblfe_reg.TabIndex = 15
-        Me.lblfe_reg.Text = "Fecha de Registro:"
-        '
-        'lblnum_mat
-        '
-        Me.lblnum_mat.AutoSize = True
-        Me.lblnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblnum_mat.Location = New System.Drawing.Point(201, 240)
-        Me.lblnum_mat.Name = "lblnum_mat"
-        Me.lblnum_mat.Size = New System.Drawing.Size(181, 24)
-        Me.lblnum_mat.TabIndex = 14
-        Me.lblnum_mat.Text = "Número de Material:"
-        '
-        'lblPantalla
-        '
-        Me.lblPantalla.AutoSize = True
-        Me.lblPantalla.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPantalla.Location = New System.Drawing.Point(179, 88)
-        Me.lblPantalla.Name = "lblPantalla"
-        Me.lblPantalla.Size = New System.Drawing.Size(250, 36)
-        Me.lblPantalla.TabIndex = 23
-        Me.lblPantalla.Text = "Modificar Material"
-        '
-        'pnlbuscar
-        '
-        Me.pnlbuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.pnlbuscar.Controls.Add(Me.btn_buscar)
-        Me.pnlbuscar.Controls.Add(Me.txtmat_buscar)
-        Me.pnlbuscar.Controls.Add(Me.lblmat_buscar)
-        Me.pnlbuscar.Location = New System.Drawing.Point(205, 146)
-        Me.pnlbuscar.Name = "pnlbuscar"
-        Me.pnlbuscar.Size = New System.Drawing.Size(552, 62)
-        Me.pnlbuscar.TabIndex = 38
-        '
-        'lblmat_buscar
-        '
-        Me.lblmat_buscar.AutoSize = True
-        Me.lblmat_buscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblmat_buscar.Location = New System.Drawing.Point(14, 19)
-        Me.lblmat_buscar.Name = "lblmat_buscar"
-        Me.lblmat_buscar.Size = New System.Drawing.Size(181, 24)
-        Me.lblmat_buscar.TabIndex = 15
-        Me.lblmat_buscar.Text = "Número de Material:"
-        '
-        'pnlCampos
-        '
-        Me.pnlCampos.Controls.Add(Me.lbleur2)
-        Me.pnlCampos.Controls.Add(Me.lbleur)
-        Me.pnlCampos.Controls.Add(Me.pnlsec)
-        Me.pnlCampos.Controls.Add(Me.cmbPasillo)
-        Me.pnlCampos.Controls.Add(Me.fechafe_reg)
-        Me.pnlCampos.Controls.Add(Me.cmbsub_cat)
-        Me.pnlCampos.Controls.Add(Me.cmbcat)
-        Me.pnlCampos.Controls.Add(Me.txtdesc)
-        Me.pnlCampos.Controls.Add(Me.txtimp_com)
-        Me.pnlCampos.Controls.Add(Me.txtstock)
-        Me.pnlCampos.Controls.Add(Me.txtimp_ven)
-        Me.pnlCampos.Controls.Add(Me.txtnum_mat)
-        Me.pnlCampos.Controls.Add(Me.txtmat)
-        Me.pnlCampos.Location = New System.Drawing.Point(414, 222)
-        Me.pnlCampos.Name = "pnlCampos"
-        Me.pnlCampos.Size = New System.Drawing.Size(412, 496)
-        Me.pnlCampos.TabIndex = 39
-        '
-        'lbleur2
-        '
-        Me.lbleur2.AutoSize = True
-        Me.lbleur2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbleur2.Location = New System.Drawing.Point(190, 338)
-        Me.lbleur2.Name = "lbleur2"
-        Me.lbleur2.Size = New System.Drawing.Size(20, 24)
-        Me.lbleur2.TabIndex = 23
-        Me.lbleur2.Text = "€"
-        '
-        'lbleur
-        '
-        Me.lbleur.AutoSize = True
-        Me.lbleur.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbleur.Location = New System.Drawing.Point(189, 301)
-        Me.lbleur.Name = "lbleur"
-        Me.lbleur.Size = New System.Drawing.Size(20, 24)
-        Me.lbleur.TabIndex = 25
-        Me.lbleur.Text = "€"
         '
         'pnlsec
         '
@@ -574,6 +391,165 @@ Partial Class modificarMaterial
         Me.txtmat.TabIndex = 15
         Me.ayuda.SetToolTip(Me.txtmat, "Introduce el nombre del material")
         '
+        'lblstock
+        '
+        Me.lblstock.AutoSize = True
+        Me.lblstock.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblstock.Location = New System.Drawing.Point(201, 687)
+        Me.lblstock.Name = "lblstock"
+        Me.lblstock.Size = New System.Drawing.Size(61, 24)
+        Me.lblstock.TabIndex = 24
+        Me.lblstock.Text = "Stock:"
+        '
+        'lblimp_ven
+        '
+        Me.lblimp_ven.AutoSize = True
+        Me.lblimp_ven.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblimp_ven.Location = New System.Drawing.Point(201, 564)
+        Me.lblimp_ven.Name = "lblimp_ven"
+        Me.lblimp_ven.Size = New System.Drawing.Size(159, 24)
+        Me.lblimp_ven.TabIndex = 25
+        Me.lblimp_ven.Text = "Importe de Venta:"
+        '
+        'lblsub_cat
+        '
+        Me.lblsub_cat.AutoSize = True
+        Me.lblsub_cat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsub_cat.Location = New System.Drawing.Point(201, 352)
+        Me.lblsub_cat.Name = "lblsub_cat"
+        Me.lblsub_cat.Size = New System.Drawing.Size(126, 24)
+        Me.lblsub_cat.TabIndex = 22
+        Me.lblsub_cat.Text = "Subcategoría:"
+        '
+        'lblpas
+        '
+        Me.lblpas.AutoSize = True
+        Me.lblpas.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblpas.Location = New System.Drawing.Point(201, 603)
+        Me.lblpas.Name = "lblpas"
+        Me.lblpas.Size = New System.Drawing.Size(69, 24)
+        Me.lblpas.TabIndex = 21
+        Me.lblpas.Text = "Pasillo:"
+        '
+        'lbldesc
+        '
+        Me.lbldesc.AutoSize = True
+        Me.lbldesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbldesc.Location = New System.Drawing.Point(201, 427)
+        Me.lbldesc.Name = "lbldesc"
+        Me.lbldesc.Size = New System.Drawing.Size(115, 24)
+        Me.lbldesc.TabIndex = 20
+        Me.lbldesc.Text = "Descripción:"
+        '
+        'lblsec
+        '
+        Me.lblsec.AutoSize = True
+        Me.lblsec.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsec.Location = New System.Drawing.Point(201, 646)
+        Me.lblsec.Name = "lblsec"
+        Me.lblsec.Size = New System.Drawing.Size(84, 24)
+        Me.lblsec.TabIndex = 19
+        Me.lblsec.Text = "Sección:"
+        '
+        'lblmat
+        '
+        Me.lblmat.AutoSize = True
+        Me.lblmat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblmat.Location = New System.Drawing.Point(201, 276)
+        Me.lblmat.Name = "lblmat"
+        Me.lblmat.Size = New System.Drawing.Size(80, 24)
+        Me.lblmat.TabIndex = 18
+        Me.lblmat.Text = "Material:"
+        '
+        'lblimp_com
+        '
+        Me.lblimp_com.AutoSize = True
+        Me.lblimp_com.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblimp_com.Location = New System.Drawing.Point(201, 528)
+        Me.lblimp_com.Name = "lblimp_com"
+        Me.lblimp_com.Size = New System.Drawing.Size(177, 24)
+        Me.lblimp_com.TabIndex = 17
+        Me.lblimp_com.Text = "Importe de Compra:"
+        '
+        'lblcat
+        '
+        Me.lblcat.AutoSize = True
+        Me.lblcat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblcat.Location = New System.Drawing.Point(201, 314)
+        Me.lblcat.Name = "lblcat"
+        Me.lblcat.Size = New System.Drawing.Size(95, 24)
+        Me.lblcat.TabIndex = 16
+        Me.lblcat.Text = "Categoría:"
+        '
+        'lblfe_reg
+        '
+        Me.lblfe_reg.AutoSize = True
+        Me.lblfe_reg.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblfe_reg.Location = New System.Drawing.Point(201, 390)
+        Me.lblfe_reg.Name = "lblfe_reg"
+        Me.lblfe_reg.Size = New System.Drawing.Size(170, 24)
+        Me.lblfe_reg.TabIndex = 15
+        Me.lblfe_reg.Text = "Fecha de Registro:"
+        '
+        'lblnum_mat
+        '
+        Me.lblnum_mat.AutoSize = True
+        Me.lblnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblnum_mat.Location = New System.Drawing.Point(201, 240)
+        Me.lblnum_mat.Name = "lblnum_mat"
+        Me.lblnum_mat.Size = New System.Drawing.Size(181, 24)
+        Me.lblnum_mat.TabIndex = 14
+        Me.lblnum_mat.Text = "Número de Material:"
+        '
+        'lblPantalla
+        '
+        Me.lblPantalla.AutoSize = True
+        Me.lblPantalla.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPantalla.Location = New System.Drawing.Point(179, 88)
+        Me.lblPantalla.Name = "lblPantalla"
+        Me.lblPantalla.Size = New System.Drawing.Size(250, 36)
+        Me.lblPantalla.TabIndex = 23
+        Me.lblPantalla.Text = "Modificar Material"
+        '
+        'pnlbuscar
+        '
+        Me.pnlbuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.pnlbuscar.Controls.Add(Me.btn_buscar)
+        Me.pnlbuscar.Controls.Add(Me.txtmat_buscar)
+        Me.pnlbuscar.Controls.Add(Me.lblmat_buscar)
+        Me.pnlbuscar.Location = New System.Drawing.Point(205, 146)
+        Me.pnlbuscar.Name = "pnlbuscar"
+        Me.pnlbuscar.Size = New System.Drawing.Size(552, 62)
+        Me.pnlbuscar.TabIndex = 38
+        '
+        'lblmat_buscar
+        '
+        Me.lblmat_buscar.AutoSize = True
+        Me.lblmat_buscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblmat_buscar.Location = New System.Drawing.Point(14, 19)
+        Me.lblmat_buscar.Name = "lblmat_buscar"
+        Me.lblmat_buscar.Size = New System.Drawing.Size(181, 24)
+        Me.lblmat_buscar.TabIndex = 15
+        Me.lblmat_buscar.Text = "Número de Material:"
+        '
+        'pnlCampos
+        '
+        Me.pnlCampos.Controls.Add(Me.pnlsec)
+        Me.pnlCampos.Controls.Add(Me.cmbPasillo)
+        Me.pnlCampos.Controls.Add(Me.fechafe_reg)
+        Me.pnlCampos.Controls.Add(Me.cmbsub_cat)
+        Me.pnlCampos.Controls.Add(Me.cmbcat)
+        Me.pnlCampos.Controls.Add(Me.txtdesc)
+        Me.pnlCampos.Controls.Add(Me.txtimp_com)
+        Me.pnlCampos.Controls.Add(Me.txtstock)
+        Me.pnlCampos.Controls.Add(Me.txtimp_ven)
+        Me.pnlCampos.Controls.Add(Me.txtnum_mat)
+        Me.pnlCampos.Controls.Add(Me.txtmat)
+        Me.pnlCampos.Location = New System.Drawing.Point(414, 222)
+        Me.pnlCampos.Name = "pnlCampos"
+        Me.pnlCampos.Size = New System.Drawing.Size(412, 496)
+        Me.pnlCampos.TabIndex = 39
+        '
         'modificarMaterial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -606,12 +582,12 @@ Partial Class modificarMaterial
         Me.barra_iconos.ResumeLayout(False)
         Me.barra_iconos.PerformLayout()
         CType(Me.img_icono, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlsec.ResumeLayout(False)
+        Me.pnlsec.PerformLayout()
         Me.pnlbuscar.ResumeLayout(False)
         Me.pnlbuscar.PerformLayout()
         Me.pnlCampos.ResumeLayout(False)
         Me.pnlCampos.PerformLayout()
-        Me.pnlsec.ResumeLayout(False)
-        Me.pnlsec.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -646,8 +622,6 @@ Partial Class modificarMaterial
     Friend WithEvents lblmat_buscar As Label
     Friend WithEvents menu_inicio As ToolStripMenuItem
     Friend WithEvents pnlCampos As Panel
-    Friend WithEvents lbleur2 As Label
-    Friend WithEvents lbleur As Label
     Friend WithEvents pnlsec As Panel
     Friend WithEvents rdbtF As RadioButton
     Friend WithEvents rdbtD As RadioButton

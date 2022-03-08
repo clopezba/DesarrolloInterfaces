@@ -84,6 +84,15 @@ Public Class listarMateriales
 
     End Sub
 
+    Private Sub listarMateriales_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        Try
+            conexion.Close()
+            Console.WriteLine("Desconectado de la base de datos")
+        Catch ex As Exception
+            Console.WriteLine("No se ha podido desconectar. Error: " + ex.Message)
+        End Try
+    End Sub
+
     Private Sub btnlistar_Click(sender As Object, e As EventArgs) Handles btnlistar.Click
         filtrarRegistros()
         limpiarCampos()
@@ -104,7 +113,7 @@ Public Class listarMateriales
     End Sub
 
     '++++++++[[ ICONOS Y MENU ]]++++++++
-    Private Sub icon_inicio_Click(sender As Object, e As EventArgs) Handles icon_inicio.Click, menu_inicio.Click
+    Private Sub menu_inicio_Click(sender As Object, e As EventArgs) Handles icon_inicio.Click, menu_inicio.Click
         Dim inicio As New inicio
         inicio.Show()
         Me.Close()
@@ -134,6 +143,4 @@ Public Class listarMateriales
             e.Handled = True
         End If
     End Sub
-
-
 End Class
