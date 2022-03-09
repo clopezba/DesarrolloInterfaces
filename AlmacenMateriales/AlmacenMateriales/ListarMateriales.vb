@@ -5,7 +5,7 @@ Imports System.IO
 Public Class listarMateriales
 
     Dim conexion As SqlConnection
-    Dim rejilla As New DataView
+
 
     Private Sub listarMaterial_Load(sender As Object, e As EventArgs) Handles Me.Load
         limpiarCampos()
@@ -37,16 +37,16 @@ Public Class listarMateriales
         End If
         If Not cmbcat.SelectedItem = Nothing Then
             If listado = "" Then
-                listado = "cat LIKE '%" + cmbcat.SelectedItem.ToString + "%'"
+                listado = "cat = '" + cmbcat.SelectedItem.ToString + "'"
             Else
-                listado &= " AND cat LIKE '%" + cmbcat.SelectedItem.ToString + "%'"
+                listado &= " AND cat = '" + cmbcat.SelectedItem.ToString + "'"
             End If
         End If
         If Not cmbsub_cat.SelectedItem = Nothing Then
             If listado = "" Then
-                listado = "sub_cat LIKE '%" + cmbsub_cat.SelectedItem.ToString + "%'"
+                listado = "sub_cat = '" + cmbsub_cat.SelectedItem.ToString + "'"
             Else
-                listado &= " AND sub_cat LIKE '%" + cmbsub_cat.SelectedItem.ToString + "%'"
+                listado &= " AND sub_cat = '" + cmbsub_cat.SelectedItem.ToString + "'"
             End If
         End If
         If fechafe_reg.Checked = True Then
@@ -77,6 +77,7 @@ Public Class listarMateriales
             Dim adaptador As New SqlDataAdapter("SELECT m.*, g.pas, g.sec, g.stock FROM Materiales m JOIN Gest_Materiales g ON m.num_mat = g.num_mat", conexion)
             Dim datos As New DataSet
             adaptador.Fill(datos)
+            Dim rejilla As New DataView
             rejilla.Table = datos.Tables(0)
             rejillaMateriales.DataSource = rejilla
             rejilla.RowFilter = listado
