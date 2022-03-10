@@ -24,6 +24,7 @@ Partial Class listarMateriales
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(listarMateriales))
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ayuda = New System.Windows.Forms.ToolTip(Me.components)
         Me.img_icono = New System.Windows.Forms.PictureBox()
         Me.pnlsec = New System.Windows.Forms.Panel()
@@ -34,11 +35,6 @@ Partial Class listarMateriales
         Me.rdbtC = New System.Windows.Forms.RadioButton()
         Me.rdbtA = New System.Windows.Forms.RadioButton()
         Me.btnlistar = New System.Windows.Forms.Button()
-        Me.cmbPasillo = New System.Windows.Forms.ComboBox()
-        Me.fechafe_reg = New System.Windows.Forms.DateTimePicker()
-        Me.cmbsub_cat = New System.Windows.Forms.ComboBox()
-        Me.cmbcat = New System.Windows.Forms.ComboBox()
-        Me.txtnum_mat = New System.Windows.Forms.TextBox()
         Me.menu_listarMaterial = New System.Windows.Forms.MenuStrip()
         Me.OpcionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.menu_inicio = New System.Windows.Forms.ToolStripMenuItem()
@@ -68,14 +64,17 @@ Partial Class listarMateriales
         Me.sec = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.stock = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AlmacenMaterialesDBDataSet = New AlmacenMateriales.AlmacenMaterialesDBDataSet()
-        Me.pnlFiltros = New System.Windows.Forms.Panel()
+        Me.cmbPasillo = New System.Windows.Forms.ComboBox()
+        Me.fechafe_reg = New System.Windows.Forms.DateTimePicker()
+        Me.cmbsub_cat = New System.Windows.Forms.ComboBox()
+        Me.cmbcat = New System.Windows.Forms.ComboBox()
+        Me.txtnum_mat = New System.Windows.Forms.TextBox()
         CType(Me.img_icono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlsec.SuspendLayout()
         Me.menu_listarMaterial.SuspendLayout()
         Me.barra_iconos.SuspendLayout()
         CType(Me.rejillaMateriales, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AlmacenMaterialesDBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlFiltros.SuspendLayout()
         Me.SuspendLayout()
         '
         'img_icono
@@ -98,21 +97,21 @@ Partial Class listarMateriales
         Me.pnlsec.Controls.Add(Me.rdbtE)
         Me.pnlsec.Controls.Add(Me.rdbtC)
         Me.pnlsec.Controls.Add(Me.rdbtA)
-        Me.pnlsec.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlsec.Location = New System.Drawing.Point(511, 348)
+        Me.pnlsec.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlsec.Location = New System.Drawing.Point(616, 464)
         Me.pnlsec.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlsec.Name = "pnlsec"
-        Me.pnlsec.Size = New System.Drawing.Size(307, 32)
+        Me.pnlsec.Size = New System.Drawing.Size(327, 32)
         Me.pnlsec.TabIndex = 7
         Me.ayuda.SetToolTip(Me.pnlsec, "Indicar sección donde se encuentra")
         '
         'rdbtF
         '
         Me.rdbtF.AutoSize = True
-        Me.rdbtF.Location = New System.Drawing.Point(253, 2)
+        Me.rdbtF.Location = New System.Drawing.Point(274, 2)
         Me.rdbtF.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdbtF.Name = "rdbtF"
-        Me.rdbtF.Size = New System.Drawing.Size(43, 28)
+        Me.rdbtF.Size = New System.Drawing.Size(45, 29)
         Me.rdbtF.TabIndex = 0
         Me.rdbtF.TabStop = True
         Me.rdbtF.Text = "F"
@@ -121,10 +120,10 @@ Partial Class listarMateriales
         'rdbtD
         '
         Me.rdbtD.AutoSize = True
-        Me.rdbtD.Location = New System.Drawing.Point(155, 2)
+        Me.rdbtD.Location = New System.Drawing.Point(166, 2)
         Me.rdbtD.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdbtD.Name = "rdbtD"
-        Me.rdbtD.Size = New System.Drawing.Size(44, 28)
+        Me.rdbtD.Size = New System.Drawing.Size(47, 29)
         Me.rdbtD.TabIndex = 0
         Me.rdbtD.Text = "D"
         Me.rdbtD.UseVisualStyleBackColor = True
@@ -132,10 +131,10 @@ Partial Class listarMateriales
         'rdbtB
         '
         Me.rdbtB.AutoSize = True
-        Me.rdbtB.Location = New System.Drawing.Point(53, 1)
+        Me.rdbtB.Location = New System.Drawing.Point(56, 1)
         Me.rdbtB.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdbtB.Name = "rdbtB"
-        Me.rdbtB.Size = New System.Drawing.Size(43, 28)
+        Me.rdbtB.Size = New System.Drawing.Size(46, 29)
         Me.rdbtB.TabIndex = 0
         Me.rdbtB.TabStop = True
         Me.rdbtB.Text = "B"
@@ -144,10 +143,10 @@ Partial Class listarMateriales
         'rdbtE
         '
         Me.rdbtE.AutoSize = True
-        Me.rdbtE.Location = New System.Drawing.Point(204, 2)
+        Me.rdbtE.Location = New System.Drawing.Point(220, 2)
         Me.rdbtE.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdbtE.Name = "rdbtE"
-        Me.rdbtE.Size = New System.Drawing.Size(44, 28)
+        Me.rdbtE.Size = New System.Drawing.Size(46, 29)
         Me.rdbtE.TabIndex = 0
         Me.rdbtE.TabStop = True
         Me.rdbtE.Text = "E"
@@ -156,10 +155,10 @@ Partial Class listarMateriales
         'rdbtC
         '
         Me.rdbtC.AutoSize = True
-        Me.rdbtC.Location = New System.Drawing.Point(104, 2)
+        Me.rdbtC.Location = New System.Drawing.Point(110, 2)
         Me.rdbtC.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdbtC.Name = "rdbtC"
-        Me.rdbtC.Size = New System.Drawing.Size(44, 28)
+        Me.rdbtC.Size = New System.Drawing.Size(48, 29)
         Me.rdbtC.TabIndex = 0
         Me.rdbtC.TabStop = True
         Me.rdbtC.Text = "C"
@@ -172,7 +171,7 @@ Partial Class listarMateriales
         Me.rdbtA.Location = New System.Drawing.Point(4, 1)
         Me.rdbtA.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdbtA.Name = "rdbtA"
-        Me.rdbtA.Size = New System.Drawing.Size(44, 28)
+        Me.rdbtA.Size = New System.Drawing.Size(47, 29)
         Me.rdbtA.TabIndex = 0
         Me.rdbtA.TabStop = True
         Me.rdbtA.Text = "A"
@@ -180,94 +179,26 @@ Partial Class listarMateriales
         '
         'btnlistar
         '
-        Me.btnlistar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnlistar.Location = New System.Drawing.Point(885, 153)
+        Me.btnlistar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnlistar.Location = New System.Drawing.Point(1013, 182)
         Me.btnlistar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnlistar.Name = "btnlistar"
-        Me.btnlistar.Size = New System.Drawing.Size(119, 37)
+        Me.btnlistar.Size = New System.Drawing.Size(123, 45)
         Me.btnlistar.TabIndex = 8
         Me.btnlistar.Text = "Listar"
         Me.ayuda.SetToolTip(Me.btnlistar, "Listar según los filtros indicados")
         Me.btnlistar.UseVisualStyleBackColor = True
         '
-        'cmbPasillo
-        '
-        Me.cmbPasillo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbPasillo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbPasillo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbPasillo.FormattingEnabled = True
-        Me.cmbPasillo.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8"})
-        Me.cmbPasillo.Location = New System.Drawing.Point(21, 153)
-        Me.cmbPasillo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.cmbPasillo.Name = "cmbPasillo"
-        Me.cmbPasillo.Size = New System.Drawing.Size(83, 30)
-        Me.cmbPasillo.TabIndex = 12
-        Me.ayuda.SetToolTip(Me.cmbPasillo, "Indicar pasillo en que se encuentra")
-        '
-        'fechafe_reg
-        '
-        Me.fechafe_reg.Checked = False
-        Me.fechafe_reg.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fechafe_reg.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.fechafe_reg.Location = New System.Drawing.Point(21, 116)
-        Me.fechafe_reg.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.fechafe_reg.Name = "fechafe_reg"
-        Me.fechafe_reg.ShowCheckBox = True
-        Me.fechafe_reg.Size = New System.Drawing.Size(159, 28)
-        Me.fechafe_reg.TabIndex = 11
-        Me.ayuda.SetToolTip(Me.fechafe_reg, "Indica la fecha de registro")
-        Me.fechafe_reg.Value = New Date(2022, 2, 16, 0, 0, 0, 0)
-        '
-        'cmbsub_cat
-        '
-        Me.cmbsub_cat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbsub_cat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbsub_cat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbsub_cat.FormattingEnabled = True
-        Me.cmbsub_cat.Items.AddRange(New Object() {"Equipo", "Periféricos", "Antivirus", "Servicio"})
-        Me.cmbsub_cat.Location = New System.Drawing.Point(21, 80)
-        Me.cmbsub_cat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.cmbsub_cat.MaxLength = 50
-        Me.cmbsub_cat.Name = "cmbsub_cat"
-        Me.cmbsub_cat.Size = New System.Drawing.Size(159, 30)
-        Me.cmbsub_cat.TabIndex = 10
-        Me.ayuda.SetToolTip(Me.cmbsub_cat, "Selecciona una subcategoría")
-        '
-        'cmbcat
-        '
-        Me.cmbcat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbcat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbcat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbcat.FormattingEnabled = True
-        Me.cmbcat.Items.AddRange(New Object() {"Hardware", "Software"})
-        Me.cmbcat.Location = New System.Drawing.Point(21, 42)
-        Me.cmbcat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.cmbcat.MaxLength = 50
-        Me.cmbcat.Name = "cmbcat"
-        Me.cmbcat.Size = New System.Drawing.Size(159, 30)
-        Me.cmbcat.TabIndex = 9
-        Me.ayuda.SetToolTip(Me.cmbcat, "Selecciona una categoría")
-        '
-        'txtnum_mat
-        '
-        Me.txtnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtnum_mat.Location = New System.Drawing.Point(21, 2)
-        Me.txtnum_mat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtnum_mat.MaxLength = 8
-        Me.txtnum_mat.Name = "txtnum_mat"
-        Me.txtnum_mat.Size = New System.Drawing.Size(111, 28)
-        Me.txtnum_mat.TabIndex = 7
-        Me.ayuda.SetToolTip(Me.txtnum_mat, "Número de material")
-        '
         'menu_listarMaterial
         '
         Me.menu_listarMaterial.BackColor = System.Drawing.Color.White
+        Me.menu_listarMaterial.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.menu_listarMaterial.ImageScalingSize = New System.Drawing.Size(25, 25)
         Me.menu_listarMaterial.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpcionesToolStripMenuItem})
         Me.menu_listarMaterial.Location = New System.Drawing.Point(0, 0)
         Me.menu_listarMaterial.Name = "menu_listarMaterial"
         Me.menu_listarMaterial.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.menu_listarMaterial.Size = New System.Drawing.Size(1537, 28)
+        Me.menu_listarMaterial.Size = New System.Drawing.Size(1382, 33)
         Me.menu_listarMaterial.TabIndex = 1
         Me.menu_listarMaterial.Text = "MenuStrip1"
         '
@@ -275,7 +206,7 @@ Partial Class listarMateriales
         '
         Me.OpcionesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menu_inicio, Me.menu_crear, Me.menu_modif, Me.menu_listar, Me.menu_eliminar})
         Me.OpcionesToolStripMenuItem.Name = "OpcionesToolStripMenuItem"
-        Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(85, 24)
+        Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(105, 29)
         Me.OpcionesToolStripMenuItem.Text = "&Opciones"
         Me.OpcionesToolStripMenuItem.ToolTipText = "Menú de opciones"
         '
@@ -283,21 +214,21 @@ Partial Class listarMateriales
         '
         Me.menu_inicio.Image = CType(resources.GetObject("menu_inicio.Image"), System.Drawing.Image)
         Me.menu_inicio.Name = "menu_inicio"
-        Me.menu_inicio.Size = New System.Drawing.Size(229, 32)
+        Me.menu_inicio.Size = New System.Drawing.Size(259, 32)
         Me.menu_inicio.Text = "&Inicio"
         '
         'menu_crear
         '
         Me.menu_crear.Image = CType(resources.GetObject("menu_crear.Image"), System.Drawing.Image)
         Me.menu_crear.Name = "menu_crear"
-        Me.menu_crear.Size = New System.Drawing.Size(229, 32)
+        Me.menu_crear.Size = New System.Drawing.Size(259, 32)
         Me.menu_crear.Text = "&Crear material"
         '
         'menu_modif
         '
         Me.menu_modif.Image = CType(resources.GetObject("menu_modif.Image"), System.Drawing.Image)
         Me.menu_modif.Name = "menu_modif"
-        Me.menu_modif.Size = New System.Drawing.Size(229, 32)
+        Me.menu_modif.Size = New System.Drawing.Size(259, 32)
         Me.menu_modif.Text = "&Modificar Material"
         '
         'menu_listar
@@ -305,7 +236,7 @@ Partial Class listarMateriales
         Me.menu_listar.Enabled = False
         Me.menu_listar.Image = CType(resources.GetObject("menu_listar.Image"), System.Drawing.Image)
         Me.menu_listar.Name = "menu_listar"
-        Me.menu_listar.Size = New System.Drawing.Size(229, 32)
+        Me.menu_listar.Size = New System.Drawing.Size(259, 32)
         Me.menu_listar.Text = "&Listar Materiales"
         Me.menu_listar.ToolTipText = "Ventana actual"
         '
@@ -313,7 +244,7 @@ Partial Class listarMateriales
         '
         Me.menu_eliminar.Image = CType(resources.GetObject("menu_eliminar.Image"), System.Drawing.Image)
         Me.menu_eliminar.Name = "menu_eliminar"
-        Me.menu_eliminar.Size = New System.Drawing.Size(229, 32)
+        Me.menu_eliminar.Size = New System.Drawing.Size(259, 32)
         Me.menu_eliminar.Text = "&Eliminar Material"
         '
         'barra_iconos
@@ -321,9 +252,9 @@ Partial Class listarMateriales
         Me.barra_iconos.BackColor = System.Drawing.Color.WhiteSmoke
         Me.barra_iconos.ImageScalingSize = New System.Drawing.Size(25, 25)
         Me.barra_iconos.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.icon_inicio})
-        Me.barra_iconos.Location = New System.Drawing.Point(0, 28)
+        Me.barra_iconos.Location = New System.Drawing.Point(0, 33)
         Me.barra_iconos.Name = "barra_iconos"
-        Me.barra_iconos.Size = New System.Drawing.Size(1537, 32)
+        Me.barra_iconos.Size = New System.Drawing.Size(1382, 32)
         Me.barra_iconos.TabIndex = 2
         Me.barra_iconos.Text = "ToolStrip1"
         '
@@ -341,40 +272,40 @@ Partial Class listarMateriales
         'lblsub_cat
         '
         Me.lblsub_cat.AutoSize = True
-        Me.lblsub_cat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblsub_cat.Location = New System.Drawing.Point(217, 235)
+        Me.lblsub_cat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsub_cat.Location = New System.Drawing.Point(285, 295)
         Me.lblsub_cat.Name = "lblsub_cat"
-        Me.lblsub_cat.Size = New System.Drawing.Size(126, 24)
+        Me.lblsub_cat.Size = New System.Drawing.Size(134, 25)
         Me.lblsub_cat.TabIndex = 6
         Me.lblsub_cat.Text = "Subcategoría:"
         '
         'lblcat
         '
         Me.lblcat.AutoSize = True
-        Me.lblcat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblcat.Location = New System.Drawing.Point(217, 197)
+        Me.lblcat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblcat.Location = New System.Drawing.Point(285, 239)
         Me.lblcat.Name = "lblcat"
-        Me.lblcat.Size = New System.Drawing.Size(95, 24)
+        Me.lblcat.Size = New System.Drawing.Size(103, 25)
         Me.lblcat.TabIndex = 8
         Me.lblcat.Text = "Categoría:"
         '
         'lblfe_reg
         '
         Me.lblfe_reg.AutoSize = True
-        Me.lblfe_reg.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblfe_reg.Location = New System.Drawing.Point(217, 272)
+        Me.lblfe_reg.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblfe_reg.Location = New System.Drawing.Point(285, 351)
         Me.lblfe_reg.Name = "lblfe_reg"
-        Me.lblfe_reg.Size = New System.Drawing.Size(170, 24)
+        Me.lblfe_reg.Size = New System.Drawing.Size(176, 25)
         Me.lblfe_reg.TabIndex = 9
         Me.lblfe_reg.Text = "Fecha de Registro:"
         '
         'lblnum_mat
         '
         Me.lblnum_mat.AutoSize = True
-        Me.lblnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblnum_mat.Location = New System.Drawing.Point(217, 158)
+        Me.lblnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblnum_mat.Location = New System.Drawing.Point(285, 182)
         Me.lblnum_mat.Name = "lblnum_mat"
-        Me.lblnum_mat.Size = New System.Drawing.Size(181, 24)
+        Me.lblnum_mat.Size = New System.Drawing.Size(188, 25)
         Me.lblnum_mat.TabIndex = 10
         Me.lblnum_mat.Text = "Número de Material:"
         '
@@ -391,38 +322,48 @@ Partial Class listarMateriales
         'lblpas
         '
         Me.lblpas.AutoSize = True
-        Me.lblpas.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblpas.Location = New System.Drawing.Point(217, 306)
+        Me.lblpas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblpas.Location = New System.Drawing.Point(285, 410)
         Me.lblpas.Name = "lblpas"
-        Me.lblpas.Size = New System.Drawing.Size(69, 24)
+        Me.lblpas.Size = New System.Drawing.Size(75, 25)
         Me.lblpas.TabIndex = 18
         Me.lblpas.Text = "Pasillo:"
         '
         'lblsec
         '
         Me.lblsec.AutoSize = True
-        Me.lblsec.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblsec.Location = New System.Drawing.Point(217, 347)
+        Me.lblsec.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsec.Location = New System.Drawing.Point(285, 471)
         Me.lblsec.Name = "lblsec"
-        Me.lblsec.Size = New System.Drawing.Size(84, 24)
+        Me.lblsec.Size = New System.Drawing.Size(89, 25)
         Me.lblsec.TabIndex = 19
         Me.lblsec.Text = "Sección:"
         '
         'rejillaMateriales
         '
         Me.rejillaMateriales.AutoGenerateColumns = False
+        Me.rejillaMateriales.BackgroundColor = System.Drawing.Color.AliceBlue
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.rejillaMateriales.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.rejillaMateriales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.rejillaMateriales.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.num_mat, Me.mat, Me.cat, Me.subcat, Me.fe_reg, Me.desc, Me.imp_com, Me.imp_ven, Me.pas, Me.sec, Me.stock})
         Me.rejillaMateriales.DataSource = Me.AlmacenMaterialesDBDataSet
         Me.rejillaMateriales.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.rejillaMateriales.Location = New System.Drawing.Point(0, 462)
+        Me.rejillaMateriales.Location = New System.Drawing.Point(0, 657)
         Me.rejillaMateriales.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rejillaMateriales.Name = "rejillaMateriales"
+        Me.rejillaMateriales.ReadOnly = True
         Me.rejillaMateriales.RowHeadersWidth = 51
-        Me.rejillaMateriales.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rejillaMateriales.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rejillaMateriales.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.CadetBlue
         Me.rejillaMateriales.RowTemplate.Height = 24
-        Me.rejillaMateriales.Size = New System.Drawing.Size(1537, 281)
+        Me.rejillaMateriales.Size = New System.Drawing.Size(1382, 376)
         Me.rejillaMateriales.TabIndex = 20
         '
         'num_mat
@@ -431,6 +372,7 @@ Partial Class listarMateriales
         Me.num_mat.HeaderText = "Nº Material"
         Me.num_mat.MinimumWidth = 6
         Me.num_mat.Name = "num_mat"
+        Me.num_mat.ReadOnly = True
         Me.num_mat.Width = 125
         '
         'mat
@@ -439,6 +381,7 @@ Partial Class listarMateriales
         Me.mat.HeaderText = "Material"
         Me.mat.MinimumWidth = 6
         Me.mat.Name = "mat"
+        Me.mat.ReadOnly = True
         Me.mat.Width = 125
         '
         'cat
@@ -447,6 +390,7 @@ Partial Class listarMateriales
         Me.cat.HeaderText = "Categoría"
         Me.cat.MinimumWidth = 6
         Me.cat.Name = "cat"
+        Me.cat.ReadOnly = True
         Me.cat.Width = 125
         '
         'subcat
@@ -455,6 +399,7 @@ Partial Class listarMateriales
         Me.subcat.HeaderText = "Subcategoría"
         Me.subcat.MinimumWidth = 6
         Me.subcat.Name = "subcat"
+        Me.subcat.ReadOnly = True
         Me.subcat.Width = 125
         '
         'fe_reg
@@ -463,6 +408,7 @@ Partial Class listarMateriales
         Me.fe_reg.HeaderText = "Fecha Registro"
         Me.fe_reg.MinimumWidth = 6
         Me.fe_reg.Name = "fe_reg"
+        Me.fe_reg.ReadOnly = True
         Me.fe_reg.Width = 125
         '
         'desc
@@ -471,6 +417,7 @@ Partial Class listarMateriales
         Me.desc.HeaderText = "Descripción"
         Me.desc.MinimumWidth = 6
         Me.desc.Name = "desc"
+        Me.desc.ReadOnly = True
         Me.desc.Width = 125
         '
         'imp_com
@@ -479,6 +426,7 @@ Partial Class listarMateriales
         Me.imp_com.HeaderText = "Importe Compra"
         Me.imp_com.MinimumWidth = 6
         Me.imp_com.Name = "imp_com"
+        Me.imp_com.ReadOnly = True
         Me.imp_com.Width = 125
         '
         'imp_ven
@@ -487,6 +435,7 @@ Partial Class listarMateriales
         Me.imp_ven.HeaderText = "Importe Venta"
         Me.imp_ven.MinimumWidth = 6
         Me.imp_ven.Name = "imp_ven"
+        Me.imp_ven.ReadOnly = True
         Me.imp_ven.Width = 125
         '
         'pas
@@ -495,6 +444,7 @@ Partial Class listarMateriales
         Me.pas.HeaderText = "Pasillo"
         Me.pas.MinimumWidth = 6
         Me.pas.Name = "pas"
+        Me.pas.ReadOnly = True
         Me.pas.Width = 125
         '
         'sec
@@ -503,6 +453,7 @@ Partial Class listarMateriales
         Me.sec.HeaderText = "Sección"
         Me.sec.MinimumWidth = 6
         Me.sec.Name = "sec"
+        Me.sec.ReadOnly = True
         Me.sec.Width = 125
         '
         'stock
@@ -511,6 +462,7 @@ Partial Class listarMateriales
         Me.stock.HeaderText = "Stock"
         Me.stock.MinimumWidth = 6
         Me.stock.Name = "stock"
+        Me.stock.ReadOnly = True
         Me.stock.Width = 125
         '
         'AlmacenMaterialesDBDataSet
@@ -518,26 +470,87 @@ Partial Class listarMateriales
         Me.AlmacenMaterialesDBDataSet.DataSetName = "AlmacenMaterialesDBDataSet"
         Me.AlmacenMaterialesDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'pnlFiltros
+        'cmbPasillo
         '
-        Me.pnlFiltros.Controls.Add(Me.cmbPasillo)
-        Me.pnlFiltros.Controls.Add(Me.fechafe_reg)
-        Me.pnlFiltros.Controls.Add(Me.cmbsub_cat)
-        Me.pnlFiltros.Controls.Add(Me.cmbcat)
-        Me.pnlFiltros.Controls.Add(Me.txtnum_mat)
-        Me.pnlFiltros.Location = New System.Drawing.Point(489, 155)
-        Me.pnlFiltros.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.pnlFiltros.Name = "pnlFiltros"
-        Me.pnlFiltros.Size = New System.Drawing.Size(369, 187)
-        Me.pnlFiltros.TabIndex = 21
+        Me.cmbPasillo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbPasillo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbPasillo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbPasillo.FormattingEnabled = True
+        Me.cmbPasillo.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8"})
+        Me.cmbPasillo.Location = New System.Drawing.Point(620, 402)
+        Me.cmbPasillo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cmbPasillo.Name = "cmbPasillo"
+        Me.cmbPasillo.Size = New System.Drawing.Size(83, 33)
+        Me.cmbPasillo.TabIndex = 25
+        Me.ayuda.SetToolTip(Me.cmbPasillo, "Indicar pasillo en que se encuentra")
+        '
+        'fechafe_reg
+        '
+        Me.fechafe_reg.Checked = False
+        Me.fechafe_reg.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fechafe_reg.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.fechafe_reg.Location = New System.Drawing.Point(616, 346)
+        Me.fechafe_reg.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.fechafe_reg.Name = "fechafe_reg"
+        Me.fechafe_reg.ShowCheckBox = True
+        Me.fechafe_reg.Size = New System.Drawing.Size(175, 30)
+        Me.fechafe_reg.TabIndex = 24
+        Me.ayuda.SetToolTip(Me.fechafe_reg, "Indica la fecha de registro")
+        Me.fechafe_reg.Value = New Date(2022, 2, 16, 0, 0, 0, 0)
+        '
+        'cmbsub_cat
+        '
+        Me.cmbsub_cat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbsub_cat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbsub_cat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbsub_cat.FormattingEnabled = True
+        Me.cmbsub_cat.Items.AddRange(New Object() {"Equipo", "Periféricos", "Antivirus", "Servicio"})
+        Me.cmbsub_cat.Location = New System.Drawing.Point(616, 287)
+        Me.cmbsub_cat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cmbsub_cat.MaxLength = 50
+        Me.cmbsub_cat.Name = "cmbsub_cat"
+        Me.cmbsub_cat.Size = New System.Drawing.Size(175, 33)
+        Me.cmbsub_cat.TabIndex = 23
+        Me.ayuda.SetToolTip(Me.cmbsub_cat, "Selecciona una subcategoría")
+        '
+        'cmbcat
+        '
+        Me.cmbcat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbcat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbcat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbcat.FormattingEnabled = True
+        Me.cmbcat.Items.AddRange(New Object() {"Hardware", "Software"})
+        Me.cmbcat.Location = New System.Drawing.Point(616, 231)
+        Me.cmbcat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cmbcat.MaxLength = 50
+        Me.cmbcat.Name = "cmbcat"
+        Me.cmbcat.Size = New System.Drawing.Size(175, 33)
+        Me.cmbcat.TabIndex = 22
+        Me.ayuda.SetToolTip(Me.cmbcat, "Selecciona una categoría")
+        '
+        'txtnum_mat
+        '
+        Me.txtnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtnum_mat.Location = New System.Drawing.Point(616, 177)
+        Me.txtnum_mat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtnum_mat.MaxLength = 8
+        Me.txtnum_mat.Name = "txtnum_mat"
+        Me.txtnum_mat.Size = New System.Drawing.Size(111, 30)
+        Me.txtnum_mat.TabIndex = 21
+        Me.ayuda.SetToolTip(Me.txtnum_mat, "Número de material")
         '
         'listarMateriales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.AliceBlue
-        Me.ClientSize = New System.Drawing.Size(1537, 743)
-        Me.Controls.Add(Me.pnlFiltros)
+        Me.ClientSize = New System.Drawing.Size(1382, 1033)
+        Me.Controls.Add(Me.cmbPasillo)
+        Me.Controls.Add(Me.fechafe_reg)
+        Me.Controls.Add(Me.cmbsub_cat)
+        Me.Controls.Add(Me.cmbcat)
+        Me.Controls.Add(Me.txtnum_mat)
         Me.Controls.Add(Me.rejillaMateriales)
         Me.Controls.Add(Me.btnlistar)
         Me.Controls.Add(Me.pnlsec)
@@ -556,6 +569,7 @@ Partial Class listarMateriales
         Me.Name = "listarMateriales"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Almacén de Materiales"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.img_icono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlsec.ResumeLayout(False)
         Me.pnlsec.PerformLayout()
@@ -565,8 +579,6 @@ Partial Class listarMateriales
         Me.barra_iconos.PerformLayout()
         CType(Me.rejillaMateriales, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AlmacenMaterialesDBDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlFiltros.ResumeLayout(False)
-        Me.pnlFiltros.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -599,12 +611,6 @@ Partial Class listarMateriales
     Friend WithEvents btnlistar As Button
     Friend WithEvents rejillaMateriales As DataGridView
     Friend WithEvents menu_inicio As ToolStripMenuItem
-    Friend WithEvents pnlFiltros As Panel
-    Friend WithEvents cmbPasillo As ComboBox
-    Friend WithEvents fechafe_reg As DateTimePicker
-    Friend WithEvents cmbsub_cat As ComboBox
-    Friend WithEvents cmbcat As ComboBox
-    Friend WithEvents txtnum_mat As TextBox
     Friend WithEvents AlmacenMaterialesDBDataSet As AlmacenMaterialesDBDataSet
     Friend WithEvents num_mat As DataGridViewTextBoxColumn
     Friend WithEvents mat As DataGridViewTextBoxColumn
@@ -617,4 +623,9 @@ Partial Class listarMateriales
     Friend WithEvents pas As DataGridViewTextBoxColumn
     Friend WithEvents sec As DataGridViewTextBoxColumn
     Friend WithEvents stock As DataGridViewTextBoxColumn
+    Friend WithEvents cmbPasillo As ComboBox
+    Friend WithEvents fechafe_reg As DateTimePicker
+    Friend WithEvents cmbsub_cat As ComboBox
+    Friend WithEvents cmbcat As ComboBox
+    Friend WithEvents txtnum_mat As TextBox
 End Class

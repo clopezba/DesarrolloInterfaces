@@ -76,12 +76,13 @@ Partial Class crearMaterial
         'menu_crearMaterial
         '
         Me.menu_crearMaterial.BackColor = System.Drawing.Color.White
+        Me.menu_crearMaterial.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.menu_crearMaterial.ImageScalingSize = New System.Drawing.Size(25, 25)
         Me.menu_crearMaterial.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpcionesToolStripMenuItem})
         Me.menu_crearMaterial.Location = New System.Drawing.Point(0, 0)
         Me.menu_crearMaterial.Name = "menu_crearMaterial"
         Me.menu_crearMaterial.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.menu_crearMaterial.Size = New System.Drawing.Size(1067, 28)
+        Me.menu_crearMaterial.Size = New System.Drawing.Size(1382, 33)
         Me.menu_crearMaterial.TabIndex = 0
         Me.menu_crearMaterial.Text = "MenuStrip1"
         '
@@ -89,7 +90,7 @@ Partial Class crearMaterial
         '
         Me.OpcionesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menu_inicio, Me.menu_crear, Me.menu_modif, Me.menu_listar, Me.menu_eliminar})
         Me.OpcionesToolStripMenuItem.Name = "OpcionesToolStripMenuItem"
-        Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(85, 24)
+        Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(105, 29)
         Me.OpcionesToolStripMenuItem.Text = "&Opciones"
         Me.OpcionesToolStripMenuItem.ToolTipText = "Menú de opciones"
         '
@@ -97,7 +98,7 @@ Partial Class crearMaterial
         '
         Me.menu_inicio.Image = CType(resources.GetObject("menu_inicio.Image"), System.Drawing.Image)
         Me.menu_inicio.Name = "menu_inicio"
-        Me.menu_inicio.Size = New System.Drawing.Size(215, 26)
+        Me.menu_inicio.Size = New System.Drawing.Size(259, 32)
         Me.menu_inicio.Text = "&Inicio"
         '
         'menu_crear
@@ -105,7 +106,7 @@ Partial Class crearMaterial
         Me.menu_crear.Enabled = False
         Me.menu_crear.Image = CType(resources.GetObject("menu_crear.Image"), System.Drawing.Image)
         Me.menu_crear.Name = "menu_crear"
-        Me.menu_crear.Size = New System.Drawing.Size(215, 26)
+        Me.menu_crear.Size = New System.Drawing.Size(259, 32)
         Me.menu_crear.Text = "&Crear material"
         Me.menu_crear.ToolTipText = "Ventana actual"
         '
@@ -113,31 +114,31 @@ Partial Class crearMaterial
         '
         Me.menu_modif.Image = CType(resources.GetObject("menu_modif.Image"), System.Drawing.Image)
         Me.menu_modif.Name = "menu_modif"
-        Me.menu_modif.Size = New System.Drawing.Size(215, 26)
+        Me.menu_modif.Size = New System.Drawing.Size(259, 32)
         Me.menu_modif.Text = "&Modificar Material"
         '
         'menu_listar
         '
         Me.menu_listar.Image = CType(resources.GetObject("menu_listar.Image"), System.Drawing.Image)
         Me.menu_listar.Name = "menu_listar"
-        Me.menu_listar.Size = New System.Drawing.Size(215, 26)
+        Me.menu_listar.Size = New System.Drawing.Size(259, 32)
         Me.menu_listar.Text = "&Listar Materiales"
         '
         'menu_eliminar
         '
         Me.menu_eliminar.Image = CType(resources.GetObject("menu_eliminar.Image"), System.Drawing.Image)
         Me.menu_eliminar.Name = "menu_eliminar"
-        Me.menu_eliminar.Size = New System.Drawing.Size(215, 26)
+        Me.menu_eliminar.Size = New System.Drawing.Size(259, 32)
         Me.menu_eliminar.Text = "&Eliminar Material"
         '
         'barra_iconos
         '
         Me.barra_iconos.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.barra_iconos.ImageScalingSize = New System.Drawing.Size(25, 25)
+        Me.barra_iconos.ImageScalingSize = New System.Drawing.Size(28, 28)
         Me.barra_iconos.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.icon_inicio, Me.icon_guardar})
-        Me.barra_iconos.Location = New System.Drawing.Point(0, 28)
+        Me.barra_iconos.Location = New System.Drawing.Point(0, 33)
         Me.barra_iconos.Name = "barra_iconos"
-        Me.barra_iconos.Size = New System.Drawing.Size(1067, 32)
+        Me.barra_iconos.Size = New System.Drawing.Size(1382, 35)
         Me.barra_iconos.TabIndex = 1
         Me.barra_iconos.Text = "ToolStrip1"
         '
@@ -148,7 +149,7 @@ Partial Class crearMaterial
         Me.icon_inicio.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.icon_inicio.Margin = New System.Windows.Forms.Padding(0, 1, 8, 2)
         Me.icon_inicio.Name = "icon_inicio"
-        Me.icon_inicio.Size = New System.Drawing.Size(29, 29)
+        Me.icon_inicio.Size = New System.Drawing.Size(32, 32)
         Me.icon_inicio.Text = "Inicio"
         Me.icon_inicio.ToolTipText = "Pulsar para volver a inicio"
         '
@@ -159,7 +160,7 @@ Partial Class crearMaterial
         Me.icon_guardar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.icon_guardar.Margin = New System.Windows.Forms.Padding(0, 1, 8, 2)
         Me.icon_guardar.Name = "icon_guardar"
-        Me.icon_guardar.Size = New System.Drawing.Size(29, 29)
+        Me.icon_guardar.Size = New System.Drawing.Size(32, 32)
         Me.icon_guardar.Text = "Guardar cambios"
         Me.icon_guardar.ToolTipText = "Guardar cambios realizados"
         '
@@ -183,21 +184,21 @@ Partial Class crearMaterial
         Me.pnlsec.Controls.Add(Me.rdbtE)
         Me.pnlsec.Controls.Add(Me.rdbtC)
         Me.pnlsec.Controls.Add(Me.rdbtA)
-        Me.pnlsec.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlsec.Location = New System.Drawing.Point(59, 439)
+        Me.pnlsec.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlsec.Location = New System.Drawing.Point(59, 543)
         Me.pnlsec.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlsec.Name = "pnlsec"
-        Me.pnlsec.Size = New System.Drawing.Size(307, 32)
+        Me.pnlsec.Size = New System.Drawing.Size(322, 32)
         Me.pnlsec.TabIndex = 21
         Me.ayuda.SetToolTip(Me.pnlsec, "Indicar sección donde se encuentra")
         '
         'rdbtF
         '
         Me.rdbtF.AutoSize = True
-        Me.rdbtF.Location = New System.Drawing.Point(253, 2)
+        Me.rdbtF.Location = New System.Drawing.Point(272, 2)
         Me.rdbtF.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdbtF.Name = "rdbtF"
-        Me.rdbtF.Size = New System.Drawing.Size(43, 28)
+        Me.rdbtF.Size = New System.Drawing.Size(45, 29)
         Me.rdbtF.TabIndex = 0
         Me.rdbtF.TabStop = True
         Me.rdbtF.Tag = ""
@@ -207,10 +208,10 @@ Partial Class crearMaterial
         'rdbtD
         '
         Me.rdbtD.AutoSize = True
-        Me.rdbtD.Location = New System.Drawing.Point(155, 2)
+        Me.rdbtD.Location = New System.Drawing.Point(164, 2)
         Me.rdbtD.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdbtD.Name = "rdbtD"
-        Me.rdbtD.Size = New System.Drawing.Size(44, 28)
+        Me.rdbtD.Size = New System.Drawing.Size(47, 29)
         Me.rdbtD.TabIndex = 0
         Me.rdbtD.TabStop = True
         Me.rdbtD.Tag = ""
@@ -220,10 +221,10 @@ Partial Class crearMaterial
         'rdbtB
         '
         Me.rdbtB.AutoSize = True
-        Me.rdbtB.Location = New System.Drawing.Point(53, 1)
+        Me.rdbtB.Location = New System.Drawing.Point(58, 1)
         Me.rdbtB.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdbtB.Name = "rdbtB"
-        Me.rdbtB.Size = New System.Drawing.Size(43, 28)
+        Me.rdbtB.Size = New System.Drawing.Size(46, 29)
         Me.rdbtB.TabIndex = 0
         Me.rdbtB.TabStop = True
         Me.rdbtB.Tag = ""
@@ -233,10 +234,10 @@ Partial Class crearMaterial
         'rdbtE
         '
         Me.rdbtE.AutoSize = True
-        Me.rdbtE.Location = New System.Drawing.Point(204, 2)
+        Me.rdbtE.Location = New System.Drawing.Point(218, 2)
         Me.rdbtE.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdbtE.Name = "rdbtE"
-        Me.rdbtE.Size = New System.Drawing.Size(44, 28)
+        Me.rdbtE.Size = New System.Drawing.Size(46, 29)
         Me.rdbtE.TabIndex = 0
         Me.rdbtE.TabStop = True
         Me.rdbtE.Tag = ""
@@ -246,10 +247,10 @@ Partial Class crearMaterial
         'rdbtC
         '
         Me.rdbtC.AutoSize = True
-        Me.rdbtC.Location = New System.Drawing.Point(104, 1)
+        Me.rdbtC.Location = New System.Drawing.Point(109, 1)
         Me.rdbtC.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdbtC.Name = "rdbtC"
-        Me.rdbtC.Size = New System.Drawing.Size(44, 28)
+        Me.rdbtC.Size = New System.Drawing.Size(48, 29)
         Me.rdbtC.TabIndex = 0
         Me.rdbtC.TabStop = True
         Me.rdbtC.Tag = ""
@@ -262,7 +263,7 @@ Partial Class crearMaterial
         Me.rdbtA.Location = New System.Drawing.Point(4, 2)
         Me.rdbtA.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdbtA.Name = "rdbtA"
-        Me.rdbtA.Size = New System.Drawing.Size(44, 28)
+        Me.rdbtA.Size = New System.Drawing.Size(47, 29)
         Me.rdbtA.TabIndex = 0
         Me.rdbtA.TabStop = True
         Me.rdbtA.Tag = ""
@@ -273,24 +274,24 @@ Partial Class crearMaterial
         '
         Me.cmbpasillo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbpasillo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbpasillo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbpasillo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbpasillo.FormattingEnabled = True
         Me.cmbpasillo.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8"})
-        Me.cmbpasillo.Location = New System.Drawing.Point(59, 400)
+        Me.cmbpasillo.Location = New System.Drawing.Point(59, 484)
         Me.cmbpasillo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmbpasillo.Name = "cmbpasillo"
-        Me.cmbpasillo.Size = New System.Drawing.Size(83, 30)
+        Me.cmbpasillo.Size = New System.Drawing.Size(83, 33)
         Me.cmbpasillo.TabIndex = 20
         Me.ayuda.SetToolTip(Me.cmbpasillo, "Indicar pasillo en que se encuentra")
         '
         'fechafe_reg
         '
-        Me.fechafe_reg.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fechafe_reg.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fechafe_reg.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.fechafe_reg.Location = New System.Drawing.Point(59, 185)
+        Me.fechafe_reg.Location = New System.Drawing.Point(59, 222)
         Me.fechafe_reg.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.fechafe_reg.Name = "fechafe_reg"
-        Me.fechafe_reg.Size = New System.Drawing.Size(159, 28)
+        Me.fechafe_reg.Size = New System.Drawing.Size(159, 30)
         Me.fechafe_reg.TabIndex = 16
         Me.ayuda.SetToolTip(Me.fechafe_reg, "Indica la fecha de registro")
         Me.fechafe_reg.Value = New Date(2022, 2, 16, 20, 1, 5, 0)
@@ -299,13 +300,13 @@ Partial Class crearMaterial
         '
         Me.cmbsub_cat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbsub_cat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbsub_cat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbsub_cat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbsub_cat.FormattingEnabled = True
-        Me.cmbsub_cat.Location = New System.Drawing.Point(59, 149)
+        Me.cmbsub_cat.Location = New System.Drawing.Point(59, 165)
         Me.cmbsub_cat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmbsub_cat.MaxLength = 50
         Me.cmbsub_cat.Name = "cmbsub_cat"
-        Me.cmbsub_cat.Size = New System.Drawing.Size(159, 30)
+        Me.cmbsub_cat.Size = New System.Drawing.Size(159, 33)
         Me.cmbsub_cat.TabIndex = 15
         Me.ayuda.SetToolTip(Me.cmbsub_cat, "Selecciona una subcategoría")
         '
@@ -314,21 +315,21 @@ Partial Class crearMaterial
         Me.cmbcat.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.cmbcat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbcat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbcat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbcat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbcat.FormattingEnabled = True
         Me.cmbcat.Items.AddRange(New Object() {"Hardware", "Software"})
         Me.cmbcat.Location = New System.Drawing.Point(59, 111)
         Me.cmbcat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmbcat.MaxLength = 50
         Me.cmbcat.Name = "cmbcat"
-        Me.cmbcat.Size = New System.Drawing.Size(159, 30)
+        Me.cmbcat.Size = New System.Drawing.Size(159, 33)
         Me.cmbcat.TabIndex = 14
         Me.ayuda.SetToolTip(Me.cmbcat, "Selecciona una categoría")
         '
         'txtdesc
         '
-        Me.txtdesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtdesc.Location = New System.Drawing.Point(59, 224)
+        Me.txtdesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtdesc.Location = New System.Drawing.Point(59, 274)
         Me.txtdesc.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtdesc.MaxLength = 250
         Me.txtdesc.Multiline = True
@@ -340,36 +341,36 @@ Partial Class crearMaterial
         '
         'txtimp_com
         '
-        Me.txtimp_com.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtimp_com.Location = New System.Drawing.Point(59, 320)
+        Me.txtimp_com.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtimp_com.Location = New System.Drawing.Point(59, 383)
         Me.txtimp_com.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtimp_com.MaxLength = 11
         Me.txtimp_com.Name = "txtimp_com"
-        Me.txtimp_com.Size = New System.Drawing.Size(127, 28)
+        Me.txtimp_com.Size = New System.Drawing.Size(127, 30)
         Me.txtimp_com.TabIndex = 18
         Me.txtimp_com.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.ayuda.SetToolTip(Me.txtimp_com, "Introduce el importe de compra")
         '
         'txtstock
         '
-        Me.txtstock.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtstock.Location = New System.Drawing.Point(59, 479)
+        Me.txtstock.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtstock.Location = New System.Drawing.Point(59, 599)
         Me.txtstock.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtstock.MaxLength = 8
         Me.txtstock.Name = "txtstock"
-        Me.txtstock.Size = New System.Drawing.Size(111, 28)
+        Me.txtstock.Size = New System.Drawing.Size(111, 30)
         Me.txtstock.TabIndex = 22
         Me.ayuda.SetToolTip(Me.txtstock, "Introduce la cantidad de stock del material")
         '
         'txtimp_ven
         '
         Me.txtimp_ven.Enabled = False
-        Me.txtimp_ven.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtimp_ven.Location = New System.Drawing.Point(59, 356)
+        Me.txtimp_ven.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtimp_ven.Location = New System.Drawing.Point(59, 431)
         Me.txtimp_ven.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtimp_ven.MaxLength = 11
         Me.txtimp_ven.Name = "txtimp_ven"
-        Me.txtimp_ven.Size = New System.Drawing.Size(127, 28)
+        Me.txtimp_ven.Size = New System.Drawing.Size(127, 30)
         Me.txtimp_ven.TabIndex = 19
         Me.txtimp_ven.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.ayuda.SetToolTip(Me.txtimp_ven, "Importe de venta del material")
@@ -377,23 +378,23 @@ Partial Class crearMaterial
         'txtnum_mat
         '
         Me.txtnum_mat.Enabled = False
-        Me.txtnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtnum_mat.Location = New System.Drawing.Point(59, 31)
+        Me.txtnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtnum_mat.Location = New System.Drawing.Point(59, 15)
         Me.txtnum_mat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtnum_mat.MaxLength = 8
         Me.txtnum_mat.Name = "txtnum_mat"
-        Me.txtnum_mat.Size = New System.Drawing.Size(111, 28)
+        Me.txtnum_mat.Size = New System.Drawing.Size(111, 30)
         Me.txtnum_mat.TabIndex = 12
         Me.ayuda.SetToolTip(Me.txtnum_mat, "Número de material")
         '
         'txtmat
         '
-        Me.txtmat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtmat.Location = New System.Drawing.Point(59, 74)
+        Me.txtmat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtmat.Location = New System.Drawing.Point(59, 61)
         Me.txtmat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtmat.MaxLength = 50
         Me.txtmat.Name = "txtmat"
-        Me.txtmat.Size = New System.Drawing.Size(253, 28)
+        Me.txtmat.Size = New System.Drawing.Size(253, 30)
         Me.txtmat.TabIndex = 13
         Me.ayuda.SetToolTip(Me.txtmat, "Introduce el nombre del material")
         '
@@ -410,110 +411,110 @@ Partial Class crearMaterial
         'lblnum_mat
         '
         Me.lblnum_mat.AutoSize = True
-        Me.lblnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblnum_mat.Location = New System.Drawing.Point(203, 190)
+        Me.lblnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblnum_mat.Location = New System.Drawing.Point(304, 188)
         Me.lblnum_mat.Name = "lblnum_mat"
-        Me.lblnum_mat.Size = New System.Drawing.Size(181, 24)
+        Me.lblnum_mat.Size = New System.Drawing.Size(188, 25)
         Me.lblnum_mat.TabIndex = 0
         Me.lblnum_mat.Text = "Número de Material:"
         '
         'lblmat
         '
         Me.lblmat.AutoSize = True
-        Me.lblmat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblmat.Location = New System.Drawing.Point(203, 226)
+        Me.lblmat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblmat.Location = New System.Drawing.Point(304, 234)
         Me.lblmat.Name = "lblmat"
-        Me.lblmat.Size = New System.Drawing.Size(80, 24)
+        Me.lblmat.Size = New System.Drawing.Size(87, 25)
         Me.lblmat.TabIndex = 0
         Me.lblmat.Text = "Material:"
         '
         'lblcat
         '
         Me.lblcat.AutoSize = True
-        Me.lblcat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblcat.Location = New System.Drawing.Point(203, 263)
+        Me.lblcat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblcat.Location = New System.Drawing.Point(300, 286)
         Me.lblcat.Name = "lblcat"
-        Me.lblcat.Size = New System.Drawing.Size(95, 24)
+        Me.lblcat.Size = New System.Drawing.Size(103, 25)
         Me.lblcat.TabIndex = 0
         Me.lblcat.Text = "Categoría:"
         '
         'lblsub_cat
         '
         Me.lblsub_cat.AutoSize = True
-        Me.lblsub_cat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblsub_cat.Location = New System.Drawing.Point(203, 302)
+        Me.lblsub_cat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsub_cat.Location = New System.Drawing.Point(300, 340)
         Me.lblsub_cat.Name = "lblsub_cat"
-        Me.lblsub_cat.Size = New System.Drawing.Size(126, 24)
+        Me.lblsub_cat.Size = New System.Drawing.Size(134, 25)
         Me.lblsub_cat.TabIndex = 0
         Me.lblsub_cat.Text = "Subcategoría:"
         '
         'lblfe_reg
         '
         Me.lblfe_reg.AutoSize = True
-        Me.lblfe_reg.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblfe_reg.Location = New System.Drawing.Point(203, 340)
+        Me.lblfe_reg.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblfe_reg.Location = New System.Drawing.Point(300, 396)
         Me.lblfe_reg.Name = "lblfe_reg"
-        Me.lblfe_reg.Size = New System.Drawing.Size(170, 24)
+        Me.lblfe_reg.Size = New System.Drawing.Size(176, 25)
         Me.lblfe_reg.TabIndex = 0
         Me.lblfe_reg.Text = "Fecha de Registro:"
         '
         'lblimp_com
         '
         Me.lblimp_com.AutoSize = True
-        Me.lblimp_com.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblimp_com.Location = New System.Drawing.Point(203, 478)
+        Me.lblimp_com.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblimp_com.Location = New System.Drawing.Point(300, 556)
         Me.lblimp_com.Name = "lblimp_com"
-        Me.lblimp_com.Size = New System.Drawing.Size(177, 24)
+        Me.lblimp_com.Size = New System.Drawing.Size(185, 25)
         Me.lblimp_com.TabIndex = 0
         Me.lblimp_com.Text = "Importe de Compra:"
         '
         'lbldesc
         '
         Me.lbldesc.AutoSize = True
-        Me.lbldesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbldesc.Location = New System.Drawing.Point(203, 377)
+        Me.lbldesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbldesc.Location = New System.Drawing.Point(300, 443)
         Me.lbldesc.Name = "lbldesc"
-        Me.lbldesc.Size = New System.Drawing.Size(115, 24)
+        Me.lbldesc.Size = New System.Drawing.Size(120, 25)
         Me.lbldesc.TabIndex = 0
         Me.lbldesc.Text = "Descripción:"
         '
         'lblimp_ven
         '
         Me.lblimp_ven.AutoSize = True
-        Me.lblimp_ven.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblimp_ven.Location = New System.Drawing.Point(203, 514)
+        Me.lblimp_ven.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblimp_ven.Location = New System.Drawing.Point(300, 604)
         Me.lblimp_ven.Name = "lblimp_ven"
-        Me.lblimp_ven.Size = New System.Drawing.Size(159, 24)
+        Me.lblimp_ven.Size = New System.Drawing.Size(167, 25)
         Me.lblimp_ven.TabIndex = 0
         Me.lblimp_ven.Text = "Importe de Venta:"
         '
         'lblsec
         '
         Me.lblsec.AutoSize = True
-        Me.lblsec.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblsec.Location = New System.Drawing.Point(203, 596)
+        Me.lblsec.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsec.Location = New System.Drawing.Point(300, 720)
         Me.lblsec.Name = "lblsec"
-        Me.lblsec.Size = New System.Drawing.Size(84, 24)
+        Me.lblsec.Size = New System.Drawing.Size(89, 25)
         Me.lblsec.TabIndex = 0
         Me.lblsec.Text = "Sección:"
         '
         'lblpas
         '
         Me.lblpas.AutoSize = True
-        Me.lblpas.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblpas.Location = New System.Drawing.Point(203, 553)
+        Me.lblpas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblpas.Location = New System.Drawing.Point(304, 659)
         Me.lblpas.Name = "lblpas"
-        Me.lblpas.Size = New System.Drawing.Size(69, 24)
+        Me.lblpas.Size = New System.Drawing.Size(75, 25)
         Me.lblpas.TabIndex = 0
         Me.lblpas.Text = "Pasillo:"
         '
         'lblstock
         '
         Me.lblstock.AutoSize = True
-        Me.lblstock.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblstock.Location = New System.Drawing.Point(203, 638)
+        Me.lblstock.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblstock.Location = New System.Drawing.Point(304, 772)
         Me.lblstock.Name = "lblstock"
-        Me.lblstock.Size = New System.Drawing.Size(61, 24)
+        Me.lblstock.Size = New System.Drawing.Size(68, 25)
         Me.lblstock.TabIndex = 0
         Me.lblstock.Text = "Stock:"
         '
@@ -530,17 +531,19 @@ Partial Class crearMaterial
         Me.pnlCampos.Controls.Add(Me.txtimp_ven)
         Me.pnlCampos.Controls.Add(Me.txtnum_mat)
         Me.pnlCampos.Controls.Add(Me.txtmat)
-        Me.pnlCampos.Location = New System.Drawing.Point(449, 155)
+        Me.pnlCampos.Location = New System.Drawing.Point(632, 169)
         Me.pnlCampos.Name = "pnlCampos"
-        Me.pnlCampos.Size = New System.Drawing.Size(446, 545)
+        Me.pnlCampos.Size = New System.Drawing.Size(446, 661)
         Me.pnlCampos.TabIndex = 0
         '
         'crearMaterial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
+        Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.AliceBlue
-        Me.ClientSize = New System.Drawing.Size(1067, 743)
+        Me.ClientSize = New System.Drawing.Size(1382, 1033)
         Me.Controls.Add(Me.pnlCampos)
         Me.Controls.Add(Me.lblstock)
         Me.Controls.Add(Me.lblimp_ven)

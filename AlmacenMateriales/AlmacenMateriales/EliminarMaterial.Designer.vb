@@ -58,22 +58,22 @@ Partial Class eliminarMaterial
         '
         'txtnum_mat
         '
-        Me.txtnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtnum_mat.Location = New System.Drawing.Point(545, 175)
+        Me.txtnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtnum_mat.Location = New System.Drawing.Point(703, 267)
         Me.txtnum_mat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtnum_mat.MaxLength = 8
         Me.txtnum_mat.Name = "txtnum_mat"
-        Me.txtnum_mat.Size = New System.Drawing.Size(111, 28)
+        Me.txtnum_mat.Size = New System.Drawing.Size(111, 30)
         Me.txtnum_mat.TabIndex = 34
         Me.ayuda.SetToolTip(Me.txtnum_mat, "Número de material")
         '
         'btn_eliminar
         '
-        Me.btn_eliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_eliminar.Location = New System.Drawing.Point(459, 246)
+        Me.btn_eliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_eliminar.Location = New System.Drawing.Point(615, 370)
         Me.btn_eliminar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_eliminar.Name = "btn_eliminar"
-        Me.btn_eliminar.Size = New System.Drawing.Size(109, 30)
+        Me.btn_eliminar.Size = New System.Drawing.Size(116, 39)
         Me.btn_eliminar.TabIndex = 35
         Me.btn_eliminar.Text = "Eliminar"
         Me.ayuda.SetToolTip(Me.btn_eliminar, "Eliminar el material indicado")
@@ -82,11 +82,12 @@ Partial Class eliminarMaterial
         'barra_iconos
         '
         Me.barra_iconos.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.barra_iconos.ImageScalingSize = New System.Drawing.Size(25, 25)
+        Me.barra_iconos.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.barra_iconos.ImageScalingSize = New System.Drawing.Size(28, 28)
         Me.barra_iconos.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.icon_inicio})
-        Me.barra_iconos.Location = New System.Drawing.Point(0, 28)
+        Me.barra_iconos.Location = New System.Drawing.Point(0, 33)
         Me.barra_iconos.Name = "barra_iconos"
-        Me.barra_iconos.Size = New System.Drawing.Size(1067, 32)
+        Me.barra_iconos.Size = New System.Drawing.Size(1382, 35)
         Me.barra_iconos.TabIndex = 4
         Me.barra_iconos.Text = "ToolStrip1"
         '
@@ -97,19 +98,20 @@ Partial Class eliminarMaterial
         Me.icon_inicio.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.icon_inicio.Margin = New System.Windows.Forms.Padding(0, 1, 8, 2)
         Me.icon_inicio.Name = "icon_inicio"
-        Me.icon_inicio.Size = New System.Drawing.Size(29, 29)
+        Me.icon_inicio.Size = New System.Drawing.Size(32, 32)
         Me.icon_inicio.Text = "Inicio"
         Me.icon_inicio.ToolTipText = "Pulsar para volver a inicio"
         '
         'menu_eliminarMaterial
         '
         Me.menu_eliminarMaterial.BackColor = System.Drawing.Color.White
+        Me.menu_eliminarMaterial.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.menu_eliminarMaterial.ImageScalingSize = New System.Drawing.Size(25, 25)
         Me.menu_eliminarMaterial.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpcionesToolStripMenuItem})
         Me.menu_eliminarMaterial.Location = New System.Drawing.Point(0, 0)
         Me.menu_eliminarMaterial.Name = "menu_eliminarMaterial"
         Me.menu_eliminarMaterial.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.menu_eliminarMaterial.Size = New System.Drawing.Size(1067, 28)
+        Me.menu_eliminarMaterial.Size = New System.Drawing.Size(1382, 33)
         Me.menu_eliminarMaterial.TabIndex = 3
         Me.menu_eliminarMaterial.Text = "MenuStrip1"
         '
@@ -117,7 +119,7 @@ Partial Class eliminarMaterial
         '
         Me.OpcionesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menu_inicio, Me.menu_crear, Me.menu_modif, Me.menu_listar, Me.menu_eliminar})
         Me.OpcionesToolStripMenuItem.Name = "OpcionesToolStripMenuItem"
-        Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(85, 24)
+        Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(108, 32)
         Me.OpcionesToolStripMenuItem.Text = "&Opciones"
         Me.OpcionesToolStripMenuItem.ToolTipText = "Menú de opciones"
         '
@@ -125,28 +127,28 @@ Partial Class eliminarMaterial
         '
         Me.menu_inicio.Image = CType(resources.GetObject("menu_inicio.Image"), System.Drawing.Image)
         Me.menu_inicio.Name = "menu_inicio"
-        Me.menu_inicio.Size = New System.Drawing.Size(215, 26)
+        Me.menu_inicio.Size = New System.Drawing.Size(264, 32)
         Me.menu_inicio.Text = "&Inicio"
         '
         'menu_crear
         '
         Me.menu_crear.Image = CType(resources.GetObject("menu_crear.Image"), System.Drawing.Image)
         Me.menu_crear.Name = "menu_crear"
-        Me.menu_crear.Size = New System.Drawing.Size(215, 26)
+        Me.menu_crear.Size = New System.Drawing.Size(264, 32)
         Me.menu_crear.Text = "&Crear material"
         '
         'menu_modif
         '
         Me.menu_modif.Image = CType(resources.GetObject("menu_modif.Image"), System.Drawing.Image)
         Me.menu_modif.Name = "menu_modif"
-        Me.menu_modif.Size = New System.Drawing.Size(215, 26)
+        Me.menu_modif.Size = New System.Drawing.Size(264, 32)
         Me.menu_modif.Text = "&Modificar Material"
         '
         'menu_listar
         '
         Me.menu_listar.Image = CType(resources.GetObject("menu_listar.Image"), System.Drawing.Image)
         Me.menu_listar.Name = "menu_listar"
-        Me.menu_listar.Size = New System.Drawing.Size(215, 26)
+        Me.menu_listar.Size = New System.Drawing.Size(264, 32)
         Me.menu_listar.Text = "&Listar Materiales"
         '
         'menu_eliminar
@@ -154,7 +156,7 @@ Partial Class eliminarMaterial
         Me.menu_eliminar.Enabled = False
         Me.menu_eliminar.Image = CType(resources.GetObject("menu_eliminar.Image"), System.Drawing.Image)
         Me.menu_eliminar.Name = "menu_eliminar"
-        Me.menu_eliminar.Size = New System.Drawing.Size(215, 26)
+        Me.menu_eliminar.Size = New System.Drawing.Size(264, 32)
         Me.menu_eliminar.Text = "&Eliminar Material"
         Me.menu_eliminar.ToolTipText = "Ventana actual"
         '
@@ -171,10 +173,10 @@ Partial Class eliminarMaterial
         'lblnum_mat
         '
         Me.lblnum_mat.AutoSize = True
-        Me.lblnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblnum_mat.Location = New System.Drawing.Point(305, 178)
+        Me.lblnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblnum_mat.Location = New System.Drawing.Point(463, 270)
         Me.lblnum_mat.Name = "lblnum_mat"
-        Me.lblnum_mat.Size = New System.Drawing.Size(181, 24)
+        Me.lblnum_mat.Size = New System.Drawing.Size(188, 25)
         Me.lblnum_mat.TabIndex = 33
         Me.lblnum_mat.Text = "Número de Material:"
         '
@@ -182,8 +184,9 @@ Partial Class eliminarMaterial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.AliceBlue
-        Me.ClientSize = New System.Drawing.Size(1067, 743)
+        Me.ClientSize = New System.Drawing.Size(1382, 1033)
         Me.Controls.Add(Me.btn_eliminar)
         Me.Controls.Add(Me.txtnum_mat)
         Me.Controls.Add(Me.lblnum_mat)

@@ -54,7 +54,7 @@ Partial Class inicio
         Me.menu_inicioMateriales.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpcionesToolStripMenuItem})
         Me.menu_inicioMateriales.Location = New System.Drawing.Point(0, 0)
         Me.menu_inicioMateriales.Name = "menu_inicioMateriales"
-        Me.menu_inicioMateriales.Size = New System.Drawing.Size(1067, 28)
+        Me.menu_inicioMateriales.Size = New System.Drawing.Size(1382, 28)
         Me.menu_inicioMateriales.TabIndex = 0
         Me.menu_inicioMateriales.Text = "MenuStrip1"
         '
@@ -101,7 +101,7 @@ Partial Class inicio
         Me.barra_iconos.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.icon_crear, Me.icon_modificar, Me.icon_listar, Me.icon_eliminar})
         Me.barra_iconos.Location = New System.Drawing.Point(0, 28)
         Me.barra_iconos.Name = "barra_iconos"
-        Me.barra_iconos.Size = New System.Drawing.Size(1067, 32)
+        Me.barra_iconos.Size = New System.Drawing.Size(1382, 32)
         Me.barra_iconos.TabIndex = 1
         Me.barra_iconos.Text = "ToolStrip1"
         '
@@ -156,10 +156,10 @@ Partial Class inicio
         'btn_listar
         '
         Me.btn_listar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_listar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_listar.Location = New System.Drawing.Point(421, 420)
+        Me.btn_listar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_listar.Location = New System.Drawing.Point(556, 505)
         Me.btn_listar.Name = "btn_listar"
-        Me.btn_listar.Size = New System.Drawing.Size(224, 48)
+        Me.btn_listar.Size = New System.Drawing.Size(236, 64)
         Me.btn_listar.TabIndex = 3
         Me.btn_listar.Text = "Listar Materiales"
         Me.ayuda.SetToolTip(Me.btn_listar, "Pulsar para ")
@@ -189,10 +189,10 @@ Partial Class inicio
         'btn_crear
         '
         Me.btn_crear.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_crear.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_crear.Location = New System.Drawing.Point(421, 213)
+        Me.btn_crear.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_crear.Location = New System.Drawing.Point(556, 226)
         Me.btn_crear.Name = "btn_crear"
-        Me.btn_crear.Size = New System.Drawing.Size(224, 48)
+        Me.btn_crear.Size = New System.Drawing.Size(236, 64)
         Me.btn_crear.TabIndex = 1
         Me.btn_crear.Text = "Crear Material"
         Me.btn_crear.UseVisualStyleBackColor = True
@@ -200,10 +200,10 @@ Partial Class inicio
         'btn_modif
         '
         Me.btn_modif.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_modif.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_modif.Location = New System.Drawing.Point(421, 312)
+        Me.btn_modif.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_modif.Location = New System.Drawing.Point(556, 364)
         Me.btn_modif.Name = "btn_modif"
-        Me.btn_modif.Size = New System.Drawing.Size(224, 48)
+        Me.btn_modif.Size = New System.Drawing.Size(236, 64)
         Me.btn_modif.TabIndex = 2
         Me.btn_modif.Text = "Modificar Material"
         Me.btn_modif.UseVisualStyleBackColor = True
@@ -211,10 +211,10 @@ Partial Class inicio
         'btn_eliminar
         '
         Me.btn_eliminar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_eliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_eliminar.Location = New System.Drawing.Point(421, 525)
+        Me.btn_eliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_eliminar.Location = New System.Drawing.Point(556, 644)
         Me.btn_eliminar.Name = "btn_eliminar"
-        Me.btn_eliminar.Size = New System.Drawing.Size(224, 48)
+        Me.btn_eliminar.Size = New System.Drawing.Size(236, 64)
         Me.btn_eliminar.TabIndex = 4
         Me.btn_eliminar.Text = "Eliminar Material"
         Me.btn_eliminar.UseVisualStyleBackColor = True
@@ -224,7 +224,7 @@ Partial Class inicio
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.AliceBlue
-        Me.ClientSize = New System.Drawing.Size(1067, 743)
+        Me.ClientSize = New System.Drawing.Size(1382, 1033)
         Me.Controls.Add(Me.btn_eliminar)
         Me.Controls.Add(Me.btn_listar)
         Me.Controls.Add(Me.btn_modif)

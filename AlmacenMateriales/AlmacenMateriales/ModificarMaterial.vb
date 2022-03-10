@@ -232,7 +232,9 @@ Public Class modificarMaterial
         End Try
     End Sub
 
+    '+++++++++[ FUNCIONES MENÚ E ICONOS ]+++++++++++
     Private Sub icon_guardar_Click(sender As Object, e As EventArgs) Handles icon_guardar.Click
+        txtimp_com_LostFocus(txtimp_com, New EventArgs)
         If comprobarObligatorios() Then
             Try
                 actualizarDatos()
@@ -245,7 +247,6 @@ Public Class modificarMaterial
         End If
     End Sub
 
-    '++++++[[ ICONOS Y MENÚS ]]++++
     Private Sub menu_inicio_Click(sender As Object, e As EventArgs) Handles icon_inicio.Click, menu_inicio.Click
         Dim inicio As New inicio
         inicio.Show()
@@ -287,7 +288,7 @@ Public Class modificarMaterial
     End Sub
 
     '+++++++++[ STOCK SOLO NUMEROS NATURALES ]++++++++
-    Private Sub txtstock_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtstock.KeyPress
+    Private Sub txtstock_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtstock.KeyPress, txtmat_buscar.KeyPress
         If Char.IsNumber(e.KeyChar) Or Char.IsControl(e.KeyChar) Then
             e.Handled = False
         Else

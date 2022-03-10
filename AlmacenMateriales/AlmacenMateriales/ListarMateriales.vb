@@ -100,9 +100,7 @@ Public Class listarMateriales
     End Sub
 
     Private Sub limpiarCampos()
-        For Each control As Control In pnlFiltros.Controls
-            control.ResetText()
-        Next
+        txtnum_mat.ResetText()
         cmbcat.SelectedItem = Nothing
         cmbsub_cat.SelectedItem = Nothing
         cmbpasillo.SelectedItem = Nothing
@@ -137,7 +135,7 @@ Public Class listarMateriales
     End Sub
 
     '+++++++++[ NumMat SOLO NUMEROS NATURALES ]++++++++
-    Private Sub txtnum_mat_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtnum_mat.KeyPress
+    Private Sub txtnum_mat_KeyPress(sender As Object, e As KeyPressEventArgs)
         If Char.IsNumber(e.KeyChar) Or Char.IsControl(e.KeyChar) Then
             e.Handled = False
         Else

@@ -193,6 +193,7 @@ Public Class crearMaterial
 
     '+++++++++[ FUNCIONES MENÚ E ICONOS ]+++++++++++
     Private Sub icon_guardar_Click(sender As Object, e As EventArgs) Handles icon_guardar.Click
+        txtimp_com_LostFocus(txtimp_com, New EventArgs)
         If comprobarObligatorios() Then
             Try
                 enviarDatos()
