@@ -81,12 +81,13 @@ Partial Class modificarMaterial
         'menu_modificar
         '
         Me.menu_modificar.BackColor = System.Drawing.Color.White
-        Me.menu_modificar.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.menu_modificar.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.menu_modificar.ImageScalingSize = New System.Drawing.Size(25, 25)
         Me.menu_modificar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpcionesToolStripMenuItem})
         Me.menu_modificar.Location = New System.Drawing.Point(0, 0)
         Me.menu_modificar.Name = "menu_modificar"
-        Me.menu_modificar.Size = New System.Drawing.Size(1382, 36)
+        Me.menu_modificar.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.menu_modificar.Size = New System.Drawing.Size(967, 28)
         Me.menu_modificar.TabIndex = 1
         Me.menu_modificar.Text = "MenuStrip1"
         '
@@ -94,7 +95,7 @@ Partial Class modificarMaterial
         '
         Me.OpcionesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menu_inicio, Me.menu_crear, Me.menu_modif, Me.menu_listar, Me.menu_eliminar})
         Me.OpcionesToolStripMenuItem.Name = "OpcionesToolStripMenuItem"
-        Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(108, 32)
+        Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(83, 24)
         Me.OpcionesToolStripMenuItem.Text = "&Opciones"
         Me.OpcionesToolStripMenuItem.ToolTipText = "Menú de opciones"
         '
@@ -102,14 +103,14 @@ Partial Class modificarMaterial
         '
         Me.menu_inicio.Image = CType(resources.GetObject("menu_inicio.Image"), System.Drawing.Image)
         Me.menu_inicio.Name = "menu_inicio"
-        Me.menu_inicio.Size = New System.Drawing.Size(264, 32)
+        Me.menu_inicio.Size = New System.Drawing.Size(210, 32)
         Me.menu_inicio.Text = "&Inicio"
         '
         'menu_crear
         '
         Me.menu_crear.Image = CType(resources.GetObject("menu_crear.Image"), System.Drawing.Image)
         Me.menu_crear.Name = "menu_crear"
-        Me.menu_crear.Size = New System.Drawing.Size(264, 32)
+        Me.menu_crear.Size = New System.Drawing.Size(210, 32)
         Me.menu_crear.Text = "&Crear material"
         '
         'menu_modif
@@ -117,7 +118,7 @@ Partial Class modificarMaterial
         Me.menu_modif.Enabled = False
         Me.menu_modif.Image = CType(resources.GetObject("menu_modif.Image"), System.Drawing.Image)
         Me.menu_modif.Name = "menu_modif"
-        Me.menu_modif.Size = New System.Drawing.Size(264, 32)
+        Me.menu_modif.Size = New System.Drawing.Size(210, 32)
         Me.menu_modif.Text = "&Modificar Material"
         Me.menu_modif.ToolTipText = "Ventana actual"
         '
@@ -125,24 +126,24 @@ Partial Class modificarMaterial
         '
         Me.menu_listar.Image = CType(resources.GetObject("menu_listar.Image"), System.Drawing.Image)
         Me.menu_listar.Name = "menu_listar"
-        Me.menu_listar.Size = New System.Drawing.Size(264, 32)
+        Me.menu_listar.Size = New System.Drawing.Size(210, 32)
         Me.menu_listar.Text = "&Listar Materiales"
         '
         'menu_eliminar
         '
         Me.menu_eliminar.Image = CType(resources.GetObject("menu_eliminar.Image"), System.Drawing.Image)
         Me.menu_eliminar.Name = "menu_eliminar"
-        Me.menu_eliminar.Size = New System.Drawing.Size(264, 32)
+        Me.menu_eliminar.Size = New System.Drawing.Size(210, 32)
         Me.menu_eliminar.Text = "&Eliminar Material"
         '
         'barra_iconos
         '
         Me.barra_iconos.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.barra_iconos.ImageScalingSize = New System.Drawing.Size(28, 28)
+        Me.barra_iconos.ImageScalingSize = New System.Drawing.Size(25, 25)
         Me.barra_iconos.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.icon_inicio, Me.icon_guardar})
-        Me.barra_iconos.Location = New System.Drawing.Point(0, 36)
+        Me.barra_iconos.Location = New System.Drawing.Point(0, 28)
         Me.barra_iconos.Name = "barra_iconos"
-        Me.barra_iconos.Size = New System.Drawing.Size(1382, 35)
+        Me.barra_iconos.Size = New System.Drawing.Size(967, 32)
         Me.barra_iconos.TabIndex = 2
         Me.barra_iconos.Text = "ToolStrip1"
         '
@@ -153,7 +154,7 @@ Partial Class modificarMaterial
         Me.icon_inicio.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.icon_inicio.Margin = New System.Windows.Forms.Padding(0, 1, 8, 2)
         Me.icon_inicio.Name = "icon_inicio"
-        Me.icon_inicio.Size = New System.Drawing.Size(32, 32)
+        Me.icon_inicio.Size = New System.Drawing.Size(29, 29)
         Me.icon_inicio.Text = "Inicio"
         Me.icon_inicio.ToolTipText = "Pulsar para volver a inicio"
         '
@@ -164,16 +165,17 @@ Partial Class modificarMaterial
         Me.icon_guardar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.icon_guardar.Margin = New System.Windows.Forms.Padding(0, 1, 8, 2)
         Me.icon_guardar.Name = "icon_guardar"
-        Me.icon_guardar.Size = New System.Drawing.Size(32, 32)
+        Me.icon_guardar.Size = New System.Drawing.Size(29, 29)
         Me.icon_guardar.Text = "Guardar cambios"
         Me.icon_guardar.ToolTipText = "Guardar cambios realizados"
         '
         'img_icono
         '
         Me.img_icono.Image = CType(resources.GetObject("img_icono.Image"), System.Drawing.Image)
-        Me.img_icono.Location = New System.Drawing.Point(45, 88)
+        Me.img_icono.Location = New System.Drawing.Point(34, 72)
+        Me.img_icono.Margin = New System.Windows.Forms.Padding(2)
         Me.img_icono.Name = "img_icono"
-        Me.img_icono.Size = New System.Drawing.Size(89, 89)
+        Me.img_icono.Size = New System.Drawing.Size(67, 72)
         Me.img_icono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.img_icono.TabIndex = 30
         Me.img_icono.TabStop = False
@@ -182,19 +184,21 @@ Partial Class modificarMaterial
         'txtmat_buscar
         '
         Me.txtmat_buscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtmat_buscar.Location = New System.Drawing.Point(238, 27)
+        Me.txtmat_buscar.Location = New System.Drawing.Point(178, 15)
+        Me.txtmat_buscar.Margin = New System.Windows.Forms.Padding(2)
         Me.txtmat_buscar.MaxLength = 8
         Me.txtmat_buscar.Name = "txtmat_buscar"
-        Me.txtmat_buscar.Size = New System.Drawing.Size(109, 30)
+        Me.txtmat_buscar.Size = New System.Drawing.Size(83, 26)
         Me.txtmat_buscar.TabIndex = 1
         Me.ayuda.SetToolTip(Me.txtmat_buscar, "Número de material")
         '
         'btn_buscar
         '
         Me.btn_buscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_buscar.Location = New System.Drawing.Point(513, 22)
+        Me.btn_buscar.Location = New System.Drawing.Point(385, 12)
+        Me.btn_buscar.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_buscar.Name = "btn_buscar"
-        Me.btn_buscar.Size = New System.Drawing.Size(114, 37)
+        Me.btn_buscar.Size = New System.Drawing.Size(86, 30)
         Me.btn_buscar.TabIndex = 2
         Me.btn_buscar.Text = "Buscar"
         Me.ayuda.SetToolTip(Me.btn_buscar, "Buscar material indicado")
@@ -209,18 +213,20 @@ Partial Class modificarMaterial
         Me.pnlsec.Controls.Add(Me.rdbtC)
         Me.pnlsec.Controls.Add(Me.rdbtA)
         Me.pnlsec.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlsec.Location = New System.Drawing.Point(66, 549)
+        Me.pnlsec.Location = New System.Drawing.Point(50, 426)
+        Me.pnlsec.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlsec.Name = "pnlsec"
-        Me.pnlsec.Size = New System.Drawing.Size(307, 32)
+        Me.pnlsec.Size = New System.Drawing.Size(230, 26)
         Me.pnlsec.TabIndex = 24
         Me.ayuda.SetToolTip(Me.pnlsec, "Indicar sección donde se encuentra")
         '
         'rdbtF
         '
         Me.rdbtF.AutoSize = True
-        Me.rdbtF.Location = New System.Drawing.Point(254, 2)
+        Me.rdbtF.Location = New System.Drawing.Point(190, 2)
+        Me.rdbtF.Margin = New System.Windows.Forms.Padding(2)
         Me.rdbtF.Name = "rdbtF"
-        Me.rdbtF.Size = New System.Drawing.Size(43, 28)
+        Me.rdbtF.Size = New System.Drawing.Size(35, 22)
         Me.rdbtF.TabIndex = 0
         Me.rdbtF.TabStop = True
         Me.rdbtF.Text = "F"
@@ -229,9 +235,10 @@ Partial Class modificarMaterial
         'rdbtD
         '
         Me.rdbtD.AutoSize = True
-        Me.rdbtD.Location = New System.Drawing.Point(154, 2)
+        Me.rdbtD.Location = New System.Drawing.Point(116, 2)
+        Me.rdbtD.Margin = New System.Windows.Forms.Padding(2)
         Me.rdbtD.Name = "rdbtD"
-        Me.rdbtD.Size = New System.Drawing.Size(44, 28)
+        Me.rdbtD.Size = New System.Drawing.Size(37, 22)
         Me.rdbtD.TabIndex = 0
         Me.rdbtD.TabStop = True
         Me.rdbtD.Text = "D"
@@ -240,9 +247,10 @@ Partial Class modificarMaterial
         'rdbtB
         '
         Me.rdbtB.AutoSize = True
-        Me.rdbtB.Location = New System.Drawing.Point(54, 1)
+        Me.rdbtB.Location = New System.Drawing.Point(40, 1)
+        Me.rdbtB.Margin = New System.Windows.Forms.Padding(2)
         Me.rdbtB.Name = "rdbtB"
-        Me.rdbtB.Size = New System.Drawing.Size(43, 28)
+        Me.rdbtB.Size = New System.Drawing.Size(36, 22)
         Me.rdbtB.TabIndex = 0
         Me.rdbtB.TabStop = True
         Me.rdbtB.Text = "B"
@@ -251,9 +259,10 @@ Partial Class modificarMaterial
         'rdbtE
         '
         Me.rdbtE.AutoSize = True
-        Me.rdbtE.Location = New System.Drawing.Point(204, 2)
+        Me.rdbtE.Location = New System.Drawing.Point(153, 2)
+        Me.rdbtE.Margin = New System.Windows.Forms.Padding(2)
         Me.rdbtE.Name = "rdbtE"
-        Me.rdbtE.Size = New System.Drawing.Size(44, 28)
+        Me.rdbtE.Size = New System.Drawing.Size(36, 22)
         Me.rdbtE.TabIndex = 0
         Me.rdbtE.TabStop = True
         Me.rdbtE.Text = "E"
@@ -262,9 +271,10 @@ Partial Class modificarMaterial
         'rdbtC
         '
         Me.rdbtC.AutoSize = True
-        Me.rdbtC.Location = New System.Drawing.Point(104, 1)
+        Me.rdbtC.Location = New System.Drawing.Point(78, 1)
+        Me.rdbtC.Margin = New System.Windows.Forms.Padding(2)
         Me.rdbtC.Name = "rdbtC"
-        Me.rdbtC.Size = New System.Drawing.Size(44, 28)
+        Me.rdbtC.Size = New System.Drawing.Size(37, 22)
         Me.rdbtC.TabIndex = 0
         Me.rdbtC.TabStop = True
         Me.rdbtC.Text = "C"
@@ -273,9 +283,10 @@ Partial Class modificarMaterial
         'rdbtA
         '
         Me.rdbtA.AutoSize = True
-        Me.rdbtA.Location = New System.Drawing.Point(4, 2)
+        Me.rdbtA.Location = New System.Drawing.Point(3, 2)
+        Me.rdbtA.Margin = New System.Windows.Forms.Padding(2)
         Me.rdbtA.Name = "rdbtA"
-        Me.rdbtA.Size = New System.Drawing.Size(44, 28)
+        Me.rdbtA.Size = New System.Drawing.Size(35, 22)
         Me.rdbtA.TabIndex = 0
         Me.rdbtA.TabStop = True
         Me.rdbtA.Text = "A"
@@ -286,9 +297,10 @@ Partial Class modificarMaterial
         Me.cmbPasillo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbPasillo.FormattingEnabled = True
         Me.cmbPasillo.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8"})
-        Me.cmbPasillo.Location = New System.Drawing.Point(66, 492)
+        Me.cmbPasillo.Location = New System.Drawing.Point(50, 389)
+        Me.cmbPasillo.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbPasillo.Name = "cmbPasillo"
-        Me.cmbPasillo.Size = New System.Drawing.Size(83, 30)
+        Me.cmbPasillo.Size = New System.Drawing.Size(63, 25)
         Me.cmbPasillo.TabIndex = 22
         Me.ayuda.SetToolTip(Me.cmbPasillo, "Indicar pasillo en que se encuentra")
         '
@@ -296,9 +308,10 @@ Partial Class modificarMaterial
         '
         Me.fechafe_reg.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fechafe_reg.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.fechafe_reg.Location = New System.Drawing.Point(66, 236)
+        Me.fechafe_reg.Location = New System.Drawing.Point(50, 184)
+        Me.fechafe_reg.Margin = New System.Windows.Forms.Padding(2)
         Me.fechafe_reg.Name = "fechafe_reg"
-        Me.fechafe_reg.Size = New System.Drawing.Size(159, 28)
+        Me.fechafe_reg.Size = New System.Drawing.Size(120, 24)
         Me.fechafe_reg.TabIndex = 18
         Me.ayuda.SetToolTip(Me.fechafe_reg, "Indica la fecha de registro")
         Me.fechafe_reg.Value = New Date(2022, 2, 16, 20, 1, 5, 0)
@@ -307,10 +320,11 @@ Partial Class modificarMaterial
         '
         Me.cmbsub_cat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbsub_cat.FormattingEnabled = True
-        Me.cmbsub_cat.Location = New System.Drawing.Point(66, 181)
+        Me.cmbsub_cat.Location = New System.Drawing.Point(50, 141)
+        Me.cmbsub_cat.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbsub_cat.MaxLength = 50
         Me.cmbsub_cat.Name = "cmbsub_cat"
-        Me.cmbsub_cat.Size = New System.Drawing.Size(159, 30)
+        Me.cmbsub_cat.Size = New System.Drawing.Size(120, 25)
         Me.cmbsub_cat.TabIndex = 17
         Me.ayuda.SetToolTip(Me.cmbsub_cat, "Selecciona una subcategoría")
         '
@@ -319,32 +333,35 @@ Partial Class modificarMaterial
         Me.cmbcat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbcat.FormattingEnabled = True
         Me.cmbcat.Items.AddRange(New Object() {"Hardware", "Software"})
-        Me.cmbcat.Location = New System.Drawing.Point(66, 121)
+        Me.cmbcat.Location = New System.Drawing.Point(50, 98)
+        Me.cmbcat.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbcat.MaxLength = 50
         Me.cmbcat.Name = "cmbcat"
-        Me.cmbcat.Size = New System.Drawing.Size(159, 30)
+        Me.cmbcat.Size = New System.Drawing.Size(120, 25)
         Me.cmbcat.TabIndex = 16
         Me.ayuda.SetToolTip(Me.cmbcat, "Selecciona una categoría")
         '
         'txtdesc
         '
         Me.txtdesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtdesc.Location = New System.Drawing.Point(66, 289)
+        Me.txtdesc.Location = New System.Drawing.Point(50, 226)
+        Me.txtdesc.Margin = New System.Windows.Forms.Padding(2)
         Me.txtdesc.MaxLength = 250
         Me.txtdesc.Multiline = True
         Me.txtdesc.Name = "txtdesc"
         Me.txtdesc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtdesc.Size = New System.Drawing.Size(253, 85)
+        Me.txtdesc.Size = New System.Drawing.Size(191, 70)
         Me.txtdesc.TabIndex = 19
         Me.ayuda.SetToolTip(Me.txtdesc, "Introduce la descripción del producto")
         '
         'txtimp_com
         '
         Me.txtimp_com.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtimp_com.Location = New System.Drawing.Point(66, 391)
+        Me.txtimp_com.Location = New System.Drawing.Point(50, 313)
+        Me.txtimp_com.Margin = New System.Windows.Forms.Padding(2)
         Me.txtimp_com.MaxLength = 11
         Me.txtimp_com.Name = "txtimp_com"
-        Me.txtimp_com.Size = New System.Drawing.Size(126, 28)
+        Me.txtimp_com.Size = New System.Drawing.Size(96, 24)
         Me.txtimp_com.TabIndex = 20
         Me.txtimp_com.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.ayuda.SetToolTip(Me.txtimp_com, "Introduce el importe de compra")
@@ -352,10 +369,11 @@ Partial Class modificarMaterial
         'txtstock
         '
         Me.txtstock.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtstock.Location = New System.Drawing.Point(66, 603)
+        Me.txtstock.Location = New System.Drawing.Point(50, 466)
+        Me.txtstock.Margin = New System.Windows.Forms.Padding(2)
         Me.txtstock.MaxLength = 8
         Me.txtstock.Name = "txtstock"
-        Me.txtstock.Size = New System.Drawing.Size(110, 28)
+        Me.txtstock.Size = New System.Drawing.Size(84, 24)
         Me.txtstock.TabIndex = 26
         Me.ayuda.SetToolTip(Me.txtstock, "Introduce la cantidad de stock del material")
         '
@@ -363,10 +381,11 @@ Partial Class modificarMaterial
         '
         Me.txtimp_ven.Enabled = False
         Me.txtimp_ven.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtimp_ven.Location = New System.Drawing.Point(66, 441)
+        Me.txtimp_ven.Location = New System.Drawing.Point(50, 352)
+        Me.txtimp_ven.Margin = New System.Windows.Forms.Padding(2)
         Me.txtimp_ven.MaxLength = 11
         Me.txtimp_ven.Name = "txtimp_ven"
-        Me.txtimp_ven.Size = New System.Drawing.Size(126, 28)
+        Me.txtimp_ven.Size = New System.Drawing.Size(96, 24)
         Me.txtimp_ven.TabIndex = 21
         Me.txtimp_ven.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.ayuda.SetToolTip(Me.txtimp_ven, "Importe de venta del material")
@@ -375,20 +394,22 @@ Partial Class modificarMaterial
         '
         Me.txtnum_mat.Enabled = False
         Me.txtnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtnum_mat.Location = New System.Drawing.Point(66, 22)
+        Me.txtnum_mat.Location = New System.Drawing.Point(50, 18)
+        Me.txtnum_mat.Margin = New System.Windows.Forms.Padding(2)
         Me.txtnum_mat.MaxLength = 8
         Me.txtnum_mat.Name = "txtnum_mat"
-        Me.txtnum_mat.Size = New System.Drawing.Size(110, 28)
+        Me.txtnum_mat.Size = New System.Drawing.Size(84, 24)
         Me.txtnum_mat.TabIndex = 14
         Me.ayuda.SetToolTip(Me.txtnum_mat, "Número de material")
         '
         'txtmat
         '
         Me.txtmat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtmat.Location = New System.Drawing.Point(66, 75)
+        Me.txtmat.Location = New System.Drawing.Point(50, 61)
+        Me.txtmat.Margin = New System.Windows.Forms.Padding(2)
         Me.txtmat.MaxLength = 50
         Me.txtmat.Name = "txtmat"
-        Me.txtmat.Size = New System.Drawing.Size(253, 28)
+        Me.txtmat.Size = New System.Drawing.Size(191, 24)
         Me.txtmat.TabIndex = 15
         Me.ayuda.SetToolTip(Me.txtmat, "Introduce el nombre del material")
         '
@@ -396,9 +417,10 @@ Partial Class modificarMaterial
         '
         Me.lblstock.AutoSize = True
         Me.lblstock.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblstock.Location = New System.Drawing.Point(306, 849)
+        Me.lblstock.Location = New System.Drawing.Point(230, 652)
+        Me.lblstock.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblstock.Name = "lblstock"
-        Me.lblstock.Size = New System.Drawing.Size(68, 25)
+        Me.lblstock.Size = New System.Drawing.Size(54, 20)
         Me.lblstock.TabIndex = 24
         Me.lblstock.Text = "Stock:"
         '
@@ -406,9 +428,10 @@ Partial Class modificarMaterial
         '
         Me.lblimp_ven.AutoSize = True
         Me.lblimp_ven.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblimp_ven.Location = New System.Drawing.Point(306, 687)
+        Me.lblimp_ven.Location = New System.Drawing.Point(230, 538)
+        Me.lblimp_ven.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblimp_ven.Name = "lblimp_ven"
-        Me.lblimp_ven.Size = New System.Drawing.Size(167, 25)
+        Me.lblimp_ven.Size = New System.Drawing.Size(137, 20)
         Me.lblimp_ven.TabIndex = 25
         Me.lblimp_ven.Text = "Importe de Venta:"
         '
@@ -416,9 +439,10 @@ Partial Class modificarMaterial
         '
         Me.lblsub_cat.AutoSize = True
         Me.lblsub_cat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblsub_cat.Location = New System.Drawing.Point(306, 429)
+        Me.lblsub_cat.Location = New System.Drawing.Point(230, 328)
+        Me.lblsub_cat.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblsub_cat.Name = "lblsub_cat"
-        Me.lblsub_cat.Size = New System.Drawing.Size(134, 25)
+        Me.lblsub_cat.Size = New System.Drawing.Size(108, 20)
         Me.lblsub_cat.TabIndex = 22
         Me.lblsub_cat.Text = "Subcategoría:"
         '
@@ -426,9 +450,10 @@ Partial Class modificarMaterial
         '
         Me.lblpas.AutoSize = True
         Me.lblpas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblpas.Location = New System.Drawing.Point(306, 740)
+        Me.lblpas.Location = New System.Drawing.Point(230, 575)
+        Me.lblpas.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblpas.Name = "lblpas"
-        Me.lblpas.Size = New System.Drawing.Size(75, 25)
+        Me.lblpas.Size = New System.Drawing.Size(58, 20)
         Me.lblpas.TabIndex = 21
         Me.lblpas.Text = "Pasillo:"
         '
@@ -436,9 +461,10 @@ Partial Class modificarMaterial
         '
         Me.lbldesc.AutoSize = True
         Me.lbldesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbldesc.Location = New System.Drawing.Point(306, 533)
+        Me.lbldesc.Location = New System.Drawing.Point(230, 412)
+        Me.lbldesc.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbldesc.Name = "lbldesc"
-        Me.lbldesc.Size = New System.Drawing.Size(120, 25)
+        Me.lbldesc.Size = New System.Drawing.Size(96, 20)
         Me.lbldesc.TabIndex = 20
         Me.lbldesc.Text = "Descripción:"
         '
@@ -446,9 +472,10 @@ Partial Class modificarMaterial
         '
         Me.lblsec.AutoSize = True
         Me.lblsec.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblsec.Location = New System.Drawing.Point(306, 796)
+        Me.lblsec.Location = New System.Drawing.Point(229, 612)
+        Me.lblsec.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblsec.Name = "lblsec"
-        Me.lblsec.Size = New System.Drawing.Size(89, 25)
+        Me.lblsec.Size = New System.Drawing.Size(70, 20)
         Me.lblsec.TabIndex = 19
         Me.lblsec.Text = "Sección:"
         '
@@ -456,9 +483,10 @@ Partial Class modificarMaterial
         '
         Me.lblmat.AutoSize = True
         Me.lblmat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblmat.Location = New System.Drawing.Point(306, 321)
+        Me.lblmat.Location = New System.Drawing.Point(230, 247)
+        Me.lblmat.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblmat.Name = "lblmat"
-        Me.lblmat.Size = New System.Drawing.Size(87, 25)
+        Me.lblmat.Size = New System.Drawing.Size(69, 20)
         Me.lblmat.TabIndex = 18
         Me.lblmat.Text = "Material:"
         '
@@ -466,9 +494,10 @@ Partial Class modificarMaterial
         '
         Me.lblimp_com.AutoSize = True
         Me.lblimp_com.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblimp_com.Location = New System.Drawing.Point(306, 637)
+        Me.lblimp_com.Location = New System.Drawing.Point(230, 499)
+        Me.lblimp_com.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblimp_com.Name = "lblimp_com"
-        Me.lblimp_com.Size = New System.Drawing.Size(185, 25)
+        Me.lblimp_com.Size = New System.Drawing.Size(150, 20)
         Me.lblimp_com.TabIndex = 17
         Me.lblimp_com.Text = "Importe de Compra:"
         '
@@ -476,9 +505,10 @@ Partial Class modificarMaterial
         '
         Me.lblcat.AutoSize = True
         Me.lblcat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblcat.Location = New System.Drawing.Point(306, 369)
+        Me.lblcat.Location = New System.Drawing.Point(230, 285)
+        Me.lblcat.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblcat.Name = "lblcat"
-        Me.lblcat.Size = New System.Drawing.Size(103, 25)
+        Me.lblcat.Size = New System.Drawing.Size(82, 20)
         Me.lblcat.TabIndex = 16
         Me.lblcat.Text = "Categoría:"
         '
@@ -486,9 +516,10 @@ Partial Class modificarMaterial
         '
         Me.lblfe_reg.AutoSize = True
         Me.lblfe_reg.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblfe_reg.Location = New System.Drawing.Point(306, 482)
+        Me.lblfe_reg.Location = New System.Drawing.Point(230, 374)
+        Me.lblfe_reg.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblfe_reg.Name = "lblfe_reg"
-        Me.lblfe_reg.Size = New System.Drawing.Size(176, 25)
+        Me.lblfe_reg.Size = New System.Drawing.Size(144, 20)
         Me.lblfe_reg.TabIndex = 15
         Me.lblfe_reg.Text = "Fecha de Registro:"
         '
@@ -496,9 +527,10 @@ Partial Class modificarMaterial
         '
         Me.lblnum_mat.AutoSize = True
         Me.lblnum_mat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblnum_mat.Location = New System.Drawing.Point(306, 268)
+        Me.lblnum_mat.Location = New System.Drawing.Point(230, 207)
+        Me.lblnum_mat.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblnum_mat.Name = "lblnum_mat"
-        Me.lblnum_mat.Size = New System.Drawing.Size(188, 25)
+        Me.lblnum_mat.Size = New System.Drawing.Size(151, 20)
         Me.lblnum_mat.TabIndex = 14
         Me.lblnum_mat.Text = "Número de Material:"
         '
@@ -506,9 +538,10 @@ Partial Class modificarMaterial
         '
         Me.lblPantalla.AutoSize = True
         Me.lblPantalla.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPantalla.Location = New System.Drawing.Point(179, 88)
+        Me.lblPantalla.Location = New System.Drawing.Point(134, 72)
+        Me.lblPantalla.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPantalla.Name = "lblPantalla"
-        Me.lblPantalla.Size = New System.Drawing.Size(250, 36)
+        Me.lblPantalla.Size = New System.Drawing.Size(204, 29)
         Me.lblPantalla.TabIndex = 23
         Me.lblPantalla.Text = "Modificar Material"
         '
@@ -519,18 +552,20 @@ Partial Class modificarMaterial
         Me.pnlbuscar.Controls.Add(Me.txtmat_buscar)
         Me.pnlbuscar.Controls.Add(Me.lblmat_buscar)
         Me.pnlbuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlbuscar.Location = New System.Drawing.Point(303, 157)
+        Me.pnlbuscar.Location = New System.Drawing.Point(227, 128)
+        Me.pnlbuscar.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlbuscar.Name = "pnlbuscar"
-        Me.pnlbuscar.Size = New System.Drawing.Size(652, 80)
+        Me.pnlbuscar.Size = New System.Drawing.Size(489, 55)
         Me.pnlbuscar.TabIndex = 38
         '
         'lblmat_buscar
         '
         Me.lblmat_buscar.AutoSize = True
         Me.lblmat_buscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblmat_buscar.Location = New System.Drawing.Point(27, 32)
+        Me.lblmat_buscar.Location = New System.Drawing.Point(20, 18)
+        Me.lblmat_buscar.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblmat_buscar.Name = "lblmat_buscar"
-        Me.lblmat_buscar.Size = New System.Drawing.Size(188, 25)
+        Me.lblmat_buscar.Size = New System.Drawing.Size(151, 20)
         Me.lblmat_buscar.TabIndex = 15
         Me.lblmat_buscar.Text = "Número de Material:"
         '
@@ -548,19 +583,20 @@ Partial Class modificarMaterial
         Me.pnlCampos.Controls.Add(Me.txtnum_mat)
         Me.pnlCampos.Controls.Add(Me.txtmat)
         Me.pnlCampos.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlCampos.Location = New System.Drawing.Point(611, 243)
+        Me.pnlCampos.Location = New System.Drawing.Point(458, 186)
+        Me.pnlCampos.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlCampos.Name = "pnlCampos"
-        Me.pnlCampos.Size = New System.Drawing.Size(412, 698)
+        Me.pnlCampos.Size = New System.Drawing.Size(309, 513)
         Me.pnlCampos.TabIndex = 39
         '
         'modificarMaterial
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.AliceBlue
-        Me.ClientSize = New System.Drawing.Size(1382, 1033)
+        Me.ClientSize = New System.Drawing.Size(984, 561)
         Me.Controls.Add(Me.pnlCampos)
         Me.Controls.Add(Me.pnlbuscar)
         Me.Controls.Add(Me.lblstock)
@@ -579,6 +615,7 @@ Partial Class modificarMaterial
         Me.Controls.Add(Me.barra_iconos)
         Me.Controls.Add(Me.menu_modificar)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "modificarMaterial"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Almacén de Materiales"
